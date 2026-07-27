@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import Link from "next/link";
 import { Footer, Gallery, Header, Price, TourCard } from "../../../components";
 import { getTour, tours } from "../../../data";
 
@@ -7,7 +8,7 @@ export default async function TourPage({ params }: { params: Promise<{slug:strin
   const related = tours.filter(t => t.slug !== tour.slug && t.category.some(c=>tour.category.includes(c))).slice(0,3);
   const whatsapp = `https://wa.me/56900000000?text=${encodeURIComponent(`Olá! Quero consultar disponibilidade para o passeio ${tour.name}.`)}`;
   return <><Header/><main>
-    <section className="tour-heading"><a href="/chile/passeios">← Todos os passeios</a><p className="kicker">{tour.eyebrow}</p><h1>{tour.name}</h1><p>{tour.short}</p><div className="quick-facts"><span>◷ {tour.duration}</span><span>◉ {tour.mode}</span><span>❄ {tour.season}</span></div></section>
+    <section className="tour-heading"><Link href="/chile/passeios">← Todos os passeios</Link><p className="kicker">{tour.eyebrow}</p><h1>{tour.name}</h1><p>{tour.short}</p><div className="quick-facts"><span>◷ {tour.duration}</span><span>◉ {tour.mode}</span><span>❄ {tour.season}</span></div></section>
     <section className="tour-gallery-wrap"><Gallery tour={tour}/></section>
     <section className="tour-content">
       <div className="tour-copy">

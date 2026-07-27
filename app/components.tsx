@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import Link from "next/link";
 import type { Tour } from "./data";
 import { categories, tours } from "./data";
 
@@ -20,7 +21,7 @@ export function Header() {
         <button className="menu" onClick={() => setOpen(!open)} aria-expanded={open} aria-label="Abrir menu">☰</button>
         <nav className={open ? "nav nav-open" : "nav"}>
           <a href="/chile">Início</a>
-          <a href="/chile/passeios">Passeios</a>
+          <Link href="/chile/passeios">Passeios</Link>
           <a href="/chile/como-funciona">Como funciona</a>
           <a href="/chile/faq">Dúvidas</a>
           <a className="nav-cta" href={`${WHATSAPP}?text=Olá!%20Quero%20planejar%20minha%20viagem%20ao%20Chile.`}>Falar com especialista</a>
@@ -33,7 +34,7 @@ export function Header() {
 export function Footer() {
   return <footer><div className="footer-grid">
     <div><a className="brand footer-brand" href="/chile"><img src="/logo-destino-andes.png" alt="" /><span>Destino Andes<small>Chile</small></span></a><p>Experiências cuidadas por quem conhece cada caminho.</p></div>
-    <div><strong>Explore</strong><a href="/chile/passeios">Todos os passeios</a><a href="/chile/como-funciona">Como reservar</a><a href="/chile/faq">Perguntas frequentes</a></div>
+    <div><strong>Explore</strong><Link href="/chile/passeios">Todos os passeios</Link><a href="/chile/como-funciona">Como reservar</a><a href="/chile/faq">Perguntas frequentes</a></div>
     <div><strong>Planeje</strong><a href="/chile/como-funciona#pagamento">Formas de pagamento</a><a href="/chile/como-funciona#cancelamento">Alterações e cancelamento</a><a href="/chile/como-funciona#documentos">Documentos necessários</a></div>
     <div className="footer-card"><span>PRECISA DE AJUDA?</span><strong>Converse com quem vive o Chile.</strong><a href={WHATSAPP}>Abrir WhatsApp ↗</a></div>
   </div><div className="copyright">© 2026 Destino Andes Chile <span>Turismo com clareza, cuidado e presença local.</span></div></footer>;
