@@ -1,21 +1,21 @@
-import { Footer, Header, TourCard } from "./components";
-import { tours } from "./data";
 import Link from "next/link";
+import { Footer, Header } from "./components";
 
-export default function Home() {
+const countries = [
+  { name:"Chile", flag:"🇨🇱", href:"/chile", className:"country-chile", image:"/images/tours/img-003.jpg", copy:"Neve, vinhos, desertos e cidades entre a Cordilheira e o Pacífico.", cta:"Explorar o Chile" },
+  { name:"Peru", flag:"🇵🇪", href:"/peru", className:"country-peru", image:"/images/tours/img-302.jpg", copy:"História, cultura, gastronomia e caminhos que atravessam séculos.", cta:"Explorar o Peru" },
+  { name:"Argentina", flag:"🇦🇷", href:"/argentina", className:"country-argentina", image:"/images/tours/img-330.jpg", copy:"Sabores, paisagens e experiências do tango ao fim do mundo.", cta:"Explorar a Argentina" },
+];
+
+export default function BrandHome() {
   return <><Header/><main>
-    <section className="hero">
-      <div className="hero-image"><img src="/images/tours/img-003.jpg" alt="Cordilheira dos Andes no Chile"/></div>
-      <div className="hero-overlay"/><div className="hero-copy">
-        <p className="kicker light">DESTINO ANDES • CHILE</p><h1>O Chile começa<br/>muito antes da viagem.</h1>
-        <p>Começa no cuidado com cada escolha. Criamos passeios autênticos, seguros e organizados para você viver a Cordilheira, os vinhos e o Pacífico no seu ritmo.</p>
-        <div className="hero-actions"><Link className="btn gold" href="/chile/passeios">Explorar passeios</Link><a className="btn glass" href="https://wa.me/56900000000">Montar meu roteiro</a></div>
-      </div><div className="hero-proof"><span>Especialistas locais</span><span>Atendimento em português</span><span>Curadoria humana</span></div>
+    <section className="brand-hero">
+      <div className="brand-hero-image"/><div className="brand-hero-copy"><p className="kicker light">TRÊS PAÍSES · UMA CURADORIA</p><h1>Os Andes<br/><em>começam aqui.</em></h1><p>Chile, Peru e Argentina em experiências criadas para o seu jeito de viajar — com cuidado local, organização e presença humana.</p><div className="hero-actions"><a className="btn gold" href="#destinos">Escolher meu destino</a><Link className="btn glass" href="/contato">Falar com um especialista</Link></div></div>
+      <div className="brand-signature">Destino Andes<small>CHILE · PERU · ARGENTINA</small></div>
     </section>
-    <section className="intro"><div><p className="kicker">VIAJE COM PRESENÇA LOCAL</p><h2>Seu tempo no Chile merece mais do que um roteiro pronto.</h2></div><div><p>A Destino Andes combina conhecimento local e atendimento próximo para transformar dias de viagem em experiências que fazem sentido para você.</p><a className="text-link" href="/chile/como-funciona">Entenda como cuidamos da sua viagem →</a></div></section>
-    <section className="featured section"><div className="section-title"><div><p className="kicker">EXPERIÊNCIAS EM DESTAQUE</p><h2>Escolhas que revelam o Chile</h2></div><Link className="text-link" href="/chile/passeios">Ver todos os passeios →</Link></div><div className="tour-grid">{tours.slice(0,6).map(t=><TourCard key={t.slug} tour={t}/>)}</div></section>
-    <section className="split-story"><img src="/images/tours/img-219.jpg" alt="Vinhedos chilenos aos pés da Cordilheira"/><div><p className="kicker light">FEITO PARA O SEU JEITO DE VIAJAR</p><h2>Compartilhe o caminho.<br/><em>Ou crie o seu.</em></h2><p>Passeios compartilhados para conhecer mais viajantes, experiências privativas para ter liberdade de ritmo e roteiros personalizados para combinar o melhor dos dois.</p><div className="story-links"><a href="/chile/como-funciona#compartilhados">Passeios compartilhados <span>→</span></a><a href="/chile/como-funciona#privativos">Privativos e personalizados <span>→</span></a></div></div></section>
-    <section className="process section"><div className="section-title"><div><p className="kicker">SIMPLES, CLARO E HUMANO</p><h2>Da ideia ao embarque</h2></div></div><div className="steps"><article><b>01</b><h3>Conte seus planos</h3><p>Datas, perfil dos viajantes e experiências que fazem seus olhos brilharem.</p></article><article><b>02</b><h3>Receba nossa curadoria</h3><p>Avaliamos clima, logística e ritmo para recomendar as melhores escolhas.</p></article><article><b>03</b><h3>Confirme com segurança</h3><p>Você recebe valores, condições e todos os detalhes antes de reservar.</p></article><article><b>04</b><h3>Viva o Chile</h3><p>Conte com nosso suporte local antes, durante e depois de cada passeio.</p></article></div></section>
-    <section className="cta-banner"><p className="kicker light">SEU PRÓXIMO CAPÍTULO</p><h2>Os Andes estão esperando.<br/>Vamos encontrar o seu caminho?</h2><a className="btn gold" href="https://wa.me/56900000000">Falar com um especialista</a></section>
+    <section className="brand-intro section"><p className="kicker">AMÉRICA DO SUL, COM PROFUNDIDADE</p><h2>Uma agência.<br/>Três formas de viver os Andes.</h2><p>Não vendemos apenas destinos. Traduzimos cada país em jornadas bem pensadas, conectando paisagem, cultura, tempo e o seu jeito de viajar.</p></section>
+    <section className="country-showcase" id="destinos">{countries.map(country=><Link href={country.href} className={`country-panel ${country.className}`} key={country.name}><img src={country.image} alt=""/><div className="country-panel-overlay"/><div className="country-panel-copy"><span>{country.flag}</span><p>DESTINO ANDES</p><h2>{country.name}</h2><em>{country.copy}</em><b>{country.cta} →</b></div></Link>)}</section>
+    <section className="brand-values section"><div className="section-title"><div><p className="kicker">NOSSO JEITO DE CUIDAR</p><h2>Conhecimento local.<br/>Escolhas com intenção.</h2></div></div><div className="value-grid"><article><span>01</span><h3>Curadoria humana</h3><p>Recomendações construídas por pessoas que escutam, conhecem e acompanham.</p></article><article><span>02</span><h3>Especialização regional</h3><p>Três países conectados pelos Andes e uma leitura profunda de cada destino.</p></article><article><span>03</span><h3>Clareza em cada etapa</h3><p>Roteiros, valores, condições e suporte apresentados sem letras miúdas.</p></article><article><span>04</span><h3>Liberdade com segurança</h3><p>Viagens personalizadas sem perder a tranquilidade de uma operação organizada.</p></article></div></section>
+    <section className="journey-banner"><div><p className="kicker light">DO PRIMEIRO PLANO À ÚLTIMA MEMÓRIA</p><h2>Você escolhe o horizonte.<br/>Nós cuidamos do caminho.</h2><Link className="btn gold" href="/contato">Começar meu planejamento</Link></div></section>
   </main><Footer/></>;
 }

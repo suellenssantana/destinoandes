@@ -1,14 +1,19 @@
-# Destino Andes Chile
+# Destino Andes
 
-Site completo da Destino Andes Chile, criado com Next.js, React, TypeScript e CSS responsivo.
+Plataforma multidestino da Destino Andes para Chile, Peru e Argentina, criada com Next.js, React, TypeScript e CSS responsivo.
 
-## Conteúdo
+## Experiências disponíveis
 
-- homepage editorial;
-- catálogo em `/chile/passeios`;
+- homepage institucional em `/`;
+- páginas de país em `/chile`, `/peru` e `/argentina`;
+- seletores persistentes de país e idioma (PT, ES e EN);
+- catálogo chileno em `/chile/passeios`;
 - filtros por categoria, duração, modalidade, temporada e faixa de preço;
 - 14 páginas individuais de passeios;
-- galerias, roteiros, inclusões, recomendações, clima, cancelamento e CTAs;
+- blog em `/blog` com seis guias e páginas individuais;
+- contato em `/contato`, com formulário conectado ao WhatsApp;
+- newsletter, redes sociais e seletores no footer;
+- botão persistente de WhatsApp;
 - páginas `/chile/como-funciona` e `/chile/faq`;
 - preços centralizados em `app/data.ts`.
 
@@ -21,25 +26,23 @@ npm install
 npm run dev
 ```
 
-Abra o endereço informado pelo terminal.
-
 ## Personalização
 
-- Tours, preços, textos e imagens: `app/data.ts`
-- Número de WhatsApp: constante `WHATSAPP` em `app/components.tsx` e links editoriais
-- Estilos e identidade visual: `app/globals.css`
+- Tours e preços: `app/data.ts`
+- Artigos: `app/blog/data.ts`
+- Número de WhatsApp: `WHATSAPP_NUMBER` em `app/components.tsx`
+- E-mail e telefone: `app/contato/page.tsx`
+- Redes sociais: `Footer` em `app/components.tsx`
+- Estilos: `app/globals.css`
 - Logo: `public/logo-destino-andes.png`
 - Fotografias: `public/images/tours`
 
-O campo de preço segue esta estrutura:
+Antes da publicação comercial definitiva, substitua:
 
-```ts
-price: {
-  clp: 50000,
-  brlReference: 323,
-  updatedAt: "2026-01-06",
-  referenceOnly: true
-}
-```
+- WhatsApp demonstrativo `56900000000`;
+- telefone `+55 11 4000-0000`;
+- e-mail `ola@destinoandes.com`, caso não seja o endereço oficial;
+- links `#` das redes sociais;
+- metadado `metadataBase` pelo domínio oficial.
 
-Antes de publicar definitivamente, substitua o número demonstrativo `56900000000` pelo WhatsApp comercial real.
+As páginas de Peru e Argentina já possuem arquitetura editorial e CTAs, mas estão identificadas como catálogo em expansão para não apresentar serviços ainda não cadastrados.

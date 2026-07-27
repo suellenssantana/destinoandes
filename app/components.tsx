@@ -1,43 +1,136 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { FormEvent, useEffect, useMemo, useRef, useState, useSyncExternalStore } from "react";
 import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
 import type { Tour } from "./data";
 import { categories, tours } from "./data";
 
-const WHATSAPP = "https://wa.me/56900000000";
+export const WHATSAPP_NUMBER = "56900000000";
+export const WHATSAPP = `https://wa.me/${WHATSAPP_NUMBER}`;
 const money = new Intl.NumberFormat("es-CL", { style: "currency", currency: "CLP", maximumFractionDigits: 0 });
+type Language = "PT" | "ES" | "EN";
+type Country = "chile" | "peru" | "argentina";
+
+const countries: { id: Country; flag: string; name: string; href: string }[] = [
+  { id: "chile", flag: "🇨🇱", name: "Chile", href: "/chile" },
+  { id: "peru", flag: "🇵🇪", name: "Peru", href: "/peru" },
+  { id: "argentina", flag: "🇦🇷", name: "Argentina", href: "/argentina" },
+];
+
+const ui = {
+  PT: { home:"Início", tours:"Passeios", blog:"Blog", how:"Como funciona", contact:"Contato", doubts:"Dúvidas", talk:"Montar minha viagem", specialist:"Fale com um especialista", newsletter:"Receba nossos guias por e-mail", monthly:"Uma vez por mês, sem spam.", subscribe:"Assinar", placeholder:"seu@email.com", saved:"Inscrição recebida!", explore:"Explore", plan:"Planeje", allTours:"Todos os passeios", reserve:"Como reservar", faq:"Perguntas frequentes", payments:"Formas de pagamento", cancellation:"Alterações e cancelamento", documents:"Documentos necessários" },
+  ES: { home:"Inicio", tours:"Tours", blog:"Blog", how:"Cómo funciona", contact:"Contacto", doubts:"Dudas", talk:"Planificar mi viaje", specialist:"Habla con un especialista", newsletter:"Recibe nuestras guías por e-mail", monthly:"Una vez al mes, sin spam.", subscribe:"Suscribirme", placeholder:"tu@email.com", saved:"¡Suscripción recibida!", explore:"Explora", plan:"Planifica", allTours:"Todos los tours", reserve:"Cómo reservar", faq:"Preguntas frecuentes", payments:"Formas de pago", cancellation:"Cambios y cancelación", documents:"Documentos necesarios" },
+  EN: { home:"Home", tours:"Tours", blog:"Blog", how:"How it works", contact:"Contact", doubts:"FAQ", talk:"Plan my trip", specialist:"Talk to a specialist", newsletter:"Get our travel guides by email", monthly:"Once a month, no spam.", subscribe:"Subscribe", placeholder:"your@email.com", saved:"Subscription received!", explore:"Explore", plan:"Plan", allTours:"All tours", reserve:"How to book", faq:"Frequently asked questions", payments:"Payment methods", cancellation:"Changes and cancellation", documents:"Required documents" },
+};
+
+function currentCountry(pathname: string): Country {
+  if (pathname.startsWith("/peru")) return "peru";
+  if (pathname.startsWith("/argentina")) return "argentina";
+  return "chile";
+}
+
+function useLanguage() {
+  const language = useSyncExternalStore(
+    (onStoreChange) => {
+      window.addEventListener("destino-language", onStoreChange);
+      return () => window.removeEventListener("destino-language", onStoreChange);
+    },
+    () => {
+    const stored = window.localStorage.getItem("destino-andes-language") as Language | null;
+    return stored && ["PT","ES","EN"].includes(stored) ? stored : "PT";
+    },
+    () => "PT" as Language,
+  );
+  const choose = (value: Language) => {
+    window.localStorage.setItem("destino-andes-language", value);
+    window.dispatchEvent(new Event("destino-language"));
+  };
+  return { language, choose, labels: ui[language] };
+}
+
+export function CountrySwitcher({ compact=false }: { compact?: boolean }) {
+  const pathname = usePathname();
+  const router = useRouter();
+  const [open, setOpen] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+  const selected = countries.find(country => country.id === currentCountry(pathname)) ?? countries[0];
+  useEffect(() => {
+    const close = (event: MouseEvent) => { if (!ref.current?.contains(event.target as Node)) setOpen(false); };
+    document.addEventListener("click", close);
+    return () => document.removeEventListener("click", close);
+  }, []);
+  const choose = (country: typeof countries[number]) => {
+    window.localStorage.setItem("destino-andes-country", country.id);
+    setOpen(false);
+    router.push(country.href);
+  };
+  return <div className={`switcher-wrap ${compact?"compact":""}`} ref={ref}>
+    <button className="country-switch" onClick={() => setOpen(!open)} aria-expanded={open} aria-haspopup="listbox"><span>{selected.flag}</span>{selected.name}<b>⌄</b></button>
+    {open && <div className="country-menu" role="listbox">{countries.map(country=><button role="option" aria-selected={country.id===selected.id} key={country.id} className={country.id===selected.id?"selected":""} onClick={()=>choose(country)}><span>{country.flag}</span>{country.name}{country.id===selected.id&&<b>✓</b>}</button>)}</div>}
+  </div>;
+}
+
+export function LanguageSwitcher({ compact=false }: { compact?: boolean }) {
+  const { language, choose } = useLanguage();
+  return <label className={`language-switch ${compact?"compact":""}`} aria-label="Idioma"><span>◎</span><select value={language} onChange={e=>choose(e.target.value as Language)}><option value="PT">PT</option><option value="ES">ES</option><option value="EN">EN</option></select></label>;
+}
 
 export function Header() {
   const [open, setOpen] = useState(false);
-  return (
-    <>
-      <div className="announcement">Atendimento local em português • Planejamento humano do início ao fim</div>
-      <header className="header">
-        <a className="brand" href="/chile" aria-label="Destino Andes Chile, página inicial">
-          <img src="/logo-destino-andes.png" alt="" />
-          <span>Destino Andes<small>Chile</small></span>
-        </a>
-        <button className="menu" onClick={() => setOpen(!open)} aria-expanded={open} aria-label="Abrir menu">☰</button>
-        <nav className={open ? "nav nav-open" : "nav"}>
-          <a href="/chile">Início</a>
-          <Link href="/chile/passeios">Passeios</Link>
-          <a href="/chile/como-funciona">Como funciona</a>
-          <a href="/chile/faq">Dúvidas</a>
-          <a className="nav-cta" href={`${WHATSAPP}?text=Olá!%20Quero%20planejar%20minha%20viagem%20ao%20Chile.`}>Falar com especialista</a>
-        </nav>
-      </header>
-    </>
-  );
+  const { labels } = useLanguage();
+  const pathname = usePathname();
+  const country = currentCountry(pathname);
+  const countryHome = `/${country}`;
+  const toursHref = country === "chile" ? "/chile/passeios" : `${countryHome}#experiencias`;
+  const message = encodeURIComponent(`Olá! Quero planejar minha viagem para ${countries.find(c=>c.id===country)?.name}.`);
+  return <>
+    <div className="announcement">Chile · Peru · Argentina <span>•</span> Curadoria humana em português, espanhol e inglês</div>
+    <header className="header">
+      <Link className="brand wordmark" href="/" aria-label="Destino Andes, página inicial">
+        <span>Destino Andes<small>CHILE · PERU · ARGENTINA</small></span>
+      </Link>
+      <button className="menu" onClick={() => setOpen(!open)} aria-expanded={open} aria-label="Abrir menu">☰</button>
+      <nav className={open ? "nav nav-open" : "nav"}>
+        <Link href={countryHome}>{labels.home}</Link>
+        <Link href={toursHref}>{labels.tours}</Link>
+        <Link href="/blog">{labels.blog}</Link>
+        <Link href={country==="chile"?"/chile/como-funciona":"/contato"}>{labels.how}</Link>
+        <Link href="/contato">{labels.contact}</Link>
+        <div className="nav-switchers"><CountrySwitcher/><LanguageSwitcher/></div>
+        <a className="nav-cta" href={`${WHATSAPP}?text=${message}`}>{labels.talk}</a>
+      </nav>
+    </header>
+  </>;
+}
+
+function Newsletter() {
+  const { labels } = useLanguage();
+  const [sent, setSent] = useState(false);
+  const submit = (event: FormEvent<HTMLFormElement>) => { event.preventDefault(); setSent(true); };
+  return <div className="newsletter"><div><span>{labels.newsletter}</span><p>{labels.monthly}</p></div>{sent?<strong>✓ {labels.saved}</strong>:<form onSubmit={submit}><input required type="email" aria-label="E-mail" placeholder={labels.placeholder}/><button type="submit">↗ {labels.subscribe}</button></form>}</div>;
 }
 
 export function Footer() {
-  return <footer><div className="footer-grid">
-    <div><a className="brand footer-brand" href="/chile"><img src="/logo-destino-andes.png" alt="" /><span>Destino Andes<small>Chile</small></span></a><p>Experiências cuidadas por quem conhece cada caminho.</p></div>
-    <div><strong>Explore</strong><Link href="/chile/passeios">Todos os passeios</Link><a href="/chile/como-funciona">Como reservar</a><a href="/chile/faq">Perguntas frequentes</a></div>
-    <div><strong>Planeje</strong><a href="/chile/como-funciona#pagamento">Formas de pagamento</a><a href="/chile/como-funciona#cancelamento">Alterações e cancelamento</a><a href="/chile/como-funciona#documentos">Documentos necessários</a></div>
-    <div className="footer-card"><span>PRECISA DE AJUDA?</span><strong>Converse com quem vive o Chile.</strong><a href={WHATSAPP}>Abrir WhatsApp ↗</a></div>
-  </div><div className="copyright">© 2026 Destino Andes Chile <span>Turismo com clareza, cuidado e presença local.</span></div></footer>;
+  const { labels } = useLanguage();
+  return <footer>
+    <div className="footer-grid expanded">
+      <div><Link className="brand footer-brand wordmark" href="/"><span>Destino Andes<small>CHILE · PERU · ARGENTINA</small></span></Link><p>Experiências cuidadas por quem conhece cada caminho.</p><div className="socials"><a href="#" aria-label="Instagram">◎</a><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="YouTube">▶</a></div></div>
+      <div><strong>{labels.explore}</strong><Link href="/chile/passeios">{labels.allTours}</Link><Link href="/blog">{labels.blog}</Link><Link href="/contato">{labels.contact}</Link></div>
+      <div><strong>{labels.plan}</strong><Link href="/chile/como-funciona">{labels.reserve}</Link><Link href="/chile/faq">{labels.faq}</Link><Link href="/chile/como-funciona#pagamento">{labels.payments}</Link><Link href="/chile/como-funciona#cancelamento">{labels.cancellation}</Link></div>
+      <div className="footer-card"><span>ATENDIMENTO HUMANO</span><strong>{labels.specialist}</strong><a href={WHATSAPP}>Abrir WhatsApp ↗</a><Link href="/contato">Outros canais →</Link></div>
+    </div>
+    <div className="footer-news"><Newsletter/><div className="footer-settings"><CountrySwitcher compact/><LanguageSwitcher compact/></div></div>
+    <div className="copyright">© 2026 Destino Andes. Todos os direitos reservados.<span><Link href="/chile/como-funciona#cancelamento">Cancelamento</Link> · CNPJ configurável · Formas de pagamento</span></div>
+  </footer>;
+}
+
+export function WhatsAppFloat() {
+  return <a className="whatsapp-float" href={`${WHATSAPP}?text=${encodeURIComponent("Olá! Quero saber mais sobre a Destino Andes.")}`} aria-label="Falar com a Destino Andes pelo WhatsApp"><span>◔</span><b>WhatsApp</b></a>;
+}
+
+export function SiteFrame({children}:{children:React.ReactNode}) {
+  return <><Header/>{children}<Footer/><WhatsAppFloat/></>;
 }
 
 export function Price({ tour, compact = false }: { tour: Tour; compact?: boolean }) {
@@ -49,10 +142,10 @@ export function Price({ tour, compact = false }: { tour: Tour; compact?: boolean
 
 export function TourCard({ tour }: { tour: Tour }) {
   return <article className="tour-card">
-    <a className="card-image" href={`/chile/passeios/${tour.slug}`}><img src={tour.images[0]} alt={tour.name} loading="lazy" /><span>{tour.duration}</span></a>
-    <div className="card-body"><p className="kicker">{tour.eyebrow}</p><h3><a href={`/chile/passeios/${tour.slug}`}>{tour.name}</a></h3><p>{tour.short}</p>
+    <Link className="card-image" href={`/chile/passeios/${tour.slug}`}><img src={tour.images[0]} alt={tour.name} loading="lazy" /><span>{tour.duration}</span></Link>
+    <div className="card-body"><p className="kicker">{tour.eyebrow}</p><h3><Link href={`/chile/passeios/${tour.slug}`}>{tour.name}</Link></h3><p>{tour.short}</p>
       <div className="chips">{tour.category.slice(0,2).map(c => <span key={c}>{c}</span>)}</div>
-      <Price tour={tour} compact/><a className="text-link" href={`/chile/passeios/${tour.slug}`}>Ver experiência <span>→</span></a>
+      <Price tour={tour} compact/><Link className="text-link" href={`/chile/passeios/${tour.slug}`}>Ver experiência <span>→</span></Link>
     </div>
   </article>;
 }
@@ -89,4 +182,16 @@ export function Gallery({ tour }: { tour: Tour }) {
 
 export function FAQ({ items }: { items: [string,string][] }) {
   return <div className="faq-list">{items.map(([q,a])=><details key={q}><summary>{q}<span>＋</span></summary><p>{a}</p></details>)}</div>;
+}
+
+export function ContactForm() {
+  const [sent, setSent] = useState(false);
+  const submit = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    const data = new FormData(event.currentTarget);
+    const message = `Olá! Meu nome é ${data.get("name")}. Meu e-mail é ${data.get("email")}.\n\n${data.get("message")}`;
+    window.open(`${WHATSAPP}?text=${encodeURIComponent(message)}`, "_blank", "noopener,noreferrer");
+    setSent(true);
+  };
+  return <form className="contact-form" onSubmit={submit}><label>Nome<input name="name" required/></label><label>E-mail<input name="email" type="email" required/></label><label>Mensagem<textarea name="message" rows={6} required/></label><button className="btn dark" type="submit">{sent?"Mensagem preparada ✓":"Enviar mensagem"}</button><small>Ao enviar, abriremos o WhatsApp com sua mensagem pronta para confirmação.</small></form>;
 }
