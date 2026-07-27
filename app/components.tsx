@@ -121,7 +121,7 @@ export function Footer() {
       <div className="footer-card"><span>ATENDIMENTO HUMANO</span><strong>{labels.specialist}</strong><a href={WHATSAPP}>Abrir WhatsApp ↗</a><Link href="/contato">Outros canais →</Link></div>
     </div>
     <div className="footer-news"><Newsletter/><div className="footer-settings"><CountrySwitcher compact/><LanguageSwitcher compact/></div></div>
-    <div className="copyright">© 2026 Destino Andes. Todos os direitos reservados.<span><Link href="/chile/como-funciona#cancelamento">Cancelamento</Link> · CNPJ configurável · Formas de pagamento</span></div>
+    <div className="copyright">© 2026 Destino Andes. Todos os direitos reservados.<span><Link href="/politica-de-privacidade">Privacidade</Link> · <Link href="/termos-de-uso">Termos de uso</Link> · <Link href="/chile/como-funciona#cancelamento">Cancelamento</Link></span></div>
   </footer>;
 }
 

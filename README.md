@@ -12,6 +12,8 @@ Plataforma multidestino da Destino Andes para Chile, Peru e Argentina, criada co
 - 14 páginas individuais de passeios;
 - blog em `/blog` com seis guias e páginas individuais;
 - contato em `/contato`, com formulário conectado ao WhatsApp;
+- Termos de Uso em `/termos-de-uso`;
+- Política de Privacidade e LGPD em `/politica-de-privacidade`;
 - newsletter, redes sociais e seletores no footer;
 - botão persistente de WhatsApp;
 - páginas `/chile/como-funciona` e `/chile/faq`;
