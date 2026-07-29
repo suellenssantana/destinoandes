@@ -6,8 +6,9 @@ const countries = [
   { name:"Peru", flag:"🇵🇪", href:"/peru", className:"country-peru", image:"/images/tours/img-302.jpg", copy:"História, cultura, gastronomia e caminhos que atravessam séculos.", cta:"Explorar o Peru" },
   { name:"Argentina", flag:"🇦🇷", href:"/argentina", className:"country-argentina", image:"/images/tours/img-330.jpg", copy:"Sabores, paisagens e experiências do tango ao fim do mundo.", cta:"Explorar a Argentina" },
 ];
+export { default } from "./chile/page";
 
-export default function BrandHome() {
+/* export default function BrandHome() {
   return <><Header/><main>
     <section className="brand-hero">
       <div className="brand-hero-image"/><div className="brand-hero-copy"><p className="kicker light">TRÊS PAÍSES · UMA CURADORIA</p><h1>Os Andes<br/><em>começam aqui.</em></h1><p>Chile, Peru e Argentina em experiências criadas para o seu jeito de viajar — com cuidado local, organização e presença humana.</p><div className="hero-actions"><a className="btn gold" href="#destinos">Escolher meu destino</a><Link className="btn glass" href="/contato">Falar com um especialista</Link></div></div>
@@ -19,3 +20,4 @@ export default function BrandHome() {
     <section className="journey-banner"><div><p className="kicker light">DO PRIMEIRO PLANO À ÚLTIMA MEMÓRIA</p><h2>Você escolhe o horizonte.<br/>Nós cuidamos do caminho.</h2><Link className="btn gold" href="/contato">Começar meu planejamento</Link></div></section>
   </main><Footer/></>;
 }
+ */
