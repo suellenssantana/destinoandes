@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import { WhatsAppFloat } from "./components";
 
@@ -13,5 +14,13 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({children}:{children:React.ReactNode}) {
-  return <html lang="pt-BR"><body>{children}<WhatsAppFloat/></body></html>;
+  return (
+    <html lang="pt-BR">
+      <body>
+        {children}
+        <WhatsAppFloat />
+        <Analytics />
+      </body>
+    </html>
+  );
 }
