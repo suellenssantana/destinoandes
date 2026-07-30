@@ -1,7 +1,140 @@
-export type Post={slug:string;title:string;excerpt:string;category:string;country:string;readTime:string;image:string;intro:string;sections:{title:string;body:string}[]};
-export const posts:Post[]=[
-{slug:"melhor-epoca-para-viajar-ao-chile",title:"Qual é a melhor época para viajar ao Chile?",excerpt:"Neve, vinhos, deserto ou lagos: entenda como as estações mudam completamente a experiência.",category:"Planejamento",country:"Chile",readTime:"7 min",image:"/images/tours/img-003.jpg",intro:"O Chile se estende por mais de 4.000 quilômetros e não cabe em uma única resposta. A melhor época depende menos do calendário e mais da viagem que você deseja viver.",sections:[{title:"Inverno: neve e Cordilheira",body:"Entre junho e setembro, a montanha ganha protagonismo. É a temporada mais disputada para Valle Nevado, Farellones e Portillo, por isso reservas antecipadas fazem diferença."},{title:"Primavera e outono: equilíbrio",body:"Temperaturas agradáveis, cidades menos cheias e vinhedos em transformação tornam março a maio e setembro a novembro excelentes para roteiros combinados."},{title:"Verão: litoral, lagos e Patagônia",body:"Dias longos favorecem viagens ao sul, caminhadas, regiões de lagos e litoral. Em Santiago, o clima é seco e ensolarado."}]},
-{slug:"liberdade-de-alugar-um-carro",title:"A liberdade de alugar um carro na viagem",excerpt:"Quando ter um veículo transforma o roteiro — e quando ele pode ser apenas um custo a mais.",category:"Dicas práticas",country:"Todos",readTime:"5 min",image:"/images/tours/img-113.jpg",intro:"Alugar um carro pode ampliar horizontes, permitir desvios espontâneos e tornar viagens em família mais confortáveis. Mas a decisão precisa considerar o destino.",sections:[{title:"Quando vale a pena",body:"Regiões vinícolas, lagos, litoral e cidades menores costumam ganhar muito com a liberdade de um veículo."},{title:"Custos além da diária",body:"Inclua seguro, combustível, pedágios, estacionamento e taxas de devolução na comparação."},{title:"Planeje a retirada",body:"Nem sempre você precisa do carro durante toda a viagem. Retirar apenas para um trecho pode ser mais eficiente."}]},
-{slug:"wise-como-levar-dinheiro",title:"Wise: como levar dinheiro para o exterior",excerpt:"Conta multimoeda, conversão e cartão: como usar a ferramenta com estratégia e segurança.",category:"Dinheiro",country:"Todos",readTime:"6 min",image:"/images/tours/img-218.jpg",intro:"Combinar diferentes meios de pagamento costuma ser mais seguro do que depender de uma única opção. A conta multimoeda pode integrar essa estratégia.",sections:[{title:"Como funciona",body:"Você converte valores entre moedas disponíveis e utiliza o saldo pelo cartão, conforme regras e disponibilidade do serviço."},{title:"Câmbio e taxas",body:"Compare o custo total da conversão, incluindo tarifas e impostos, no momento da operação."},{title:"Tenha um plano alternativo",body:"Viaje também com outro cartão e uma pequena quantia em espécie para situações em que uma forma de pagamento não seja aceita."}]},
+export type Post = {
+  slug: string;
+  title: string;
+  excerpt: string;
+  category: string;
+  country: "Chile";
+  readTime: string;
+  image: string;
+  intro: string;
+  sections: { title: string; body: string }[];
+};
+
+export const posts: Post[] = [
+  {
+    slug: "melhor-epoca-para-viajar-ao-chile",
+    title: "Melhor época para viajar ao Chile: escolha pela experiência",
+    excerpt:
+      "Neve, vinhos, litoral ou dias de céu aberto: descubra quando o Chile combina melhor com a viagem que você imagina.",
+    category: "Planejamento",
+    country: "Chile",
+    readTime: "7 min",
+    image: "/images/tours/img-003.jpg",
+    intro:
+      "O Chile se estende por mais de 4.000 quilômetros e muda completamente ao longo do ano. Em vez de procurar uma única época perfeita, comece pela pergunta certa: qual experiência você quer viver?",
+    sections: [
+      {
+        title: "Inverno para encontrar a Cordilheira vestida de branco",
+        body:
+          "Entre junho e setembro, a neve transforma os Andes e aumenta a procura por Valle Nevado, Farellones e Portillo. É a época de reservar com antecedência, acompanhar as condições da montanha e deixar alguma flexibilidade no roteiro.",
+      },
+      {
+        title: "Primavera e outono para equilibrar clima e movimento",
+        body:
+          "Temperaturas mais amenas e cidades menos concorridas favorecem passeios urbanos, vinícolas e combinações entre Santiago e o litoral. São estações excelentes para quem prefere viajar com mais calma.",
+      },
+      {
+        title: "Verão para dias longos e grandes paisagens",
+        body:
+          "Os dias mais longos ampliam o tempo ao ar livre e favorecem litoral, lagos e Patagônia. Em Santiago, espere um clima geralmente seco e ensolarado, ideal para explorar a cidade e seus arredores.",
+      },
+    ],
+  },
+  {
+    slug: "o-que-fazer-em-santiago",
+    title: "O que fazer em Santiago: cidade, Cordilheira e vinhos",
+    excerpt:
+      "Uma seleção inteligente para viver a capital chilena sem escolher entre cultura, montanha e os sabores do Valle del Maipo.",
+    category: "Santiago",
+    country: "Chile",
+    readTime: "8 min",
+    image: "/images/tours/img-152.jpg",
+    intro:
+      "Santiago funciona melhor quando você olha além do centro: a capital reúne bairros históricos, gastronomia, mirantes e acesso privilegiado à Cordilheira e a alguns dos vinhedos mais tradicionais do Chile.",
+    sections: [
+      {
+        title: "Comece pela cidade para entender o destino",
+        body:
+          "Plaza de Armas, La Moneda, Santa Lucía, Lastarria e o Parque Forestal ajudam a ler as diferentes camadas de Santiago. Um passeio com contexto transforma edifícios e bairros em uma introdução viva à história chilena.",
+      },
+      {
+        title: "Reserve um dia para sentir a escala dos Andes",
+        body:
+          "A proximidade entre Santiago e a Cordilheira permite trocar o ritmo urbano por estradas panorâmicas, mirantes e centros de montanha. No inverno, a neve assume o protagonismo; em outras épocas, a paisagem continua impressionante.",
+      },
+      {
+        title: "Inclua uma vinícola sem dirigir depois da degustação",
+        body:
+          "O Valle del Maipo reúne vinícolas históricas, jardins, caves e experiências de degustação próximas à capital. Um passeio organizado permite aproveitar os vinhos com tranquilidade e sem preocupação com o deslocamento.",
+      },
+    ],
+  },
+  {
+    slug: "neve-no-chile-primeira-vez",
+    title: "Neve no Chile pela primeira vez: o que realmente planejar",
+    excerpt:
+      "Roupa, horários, estrada e escolha do passeio: um guia direto para aproveitar a neve com conforto e sem expectativas erradas.",
+    category: "Cordilheira",
+    country: "Chile",
+    readTime: "6 min",
+    image: "/images/tours/img-042.jpg",
+    intro:
+      "Ver a Cordilheira coberta de neve costuma ser um dos momentos mais esperados da viagem. A experiência fica muito melhor quando você entende que montanha tem ritmo próprio e exige preparação.",
+    sections: [
+      {
+        title: "Escolha a experiência, não apenas o destino",
+        body:
+          "Valle Nevado, Farellones, Portillo e os roteiros panorâmicos entregam propostas diferentes. Pense se o objetivo é contemplar, brincar na neve, conhecer um centro de esqui ou passar um dia inteiro em família.",
+      },
+      {
+        title: "Vista-se em camadas e proteja as extremidades",
+        body:
+          "Roupa térmica, camada impermeável, luvas, meias adequadas e calçado com boa aderência fazem diferença. Óculos de sol e protetor solar continuam importantes mesmo em dias frios ou nublados.",
+      },
+      {
+        title: "Aceite a flexibilidade como parte da montanha",
+        body:
+          "Neve, vento, trânsito e decisões das autoridades podem alterar horários, paradas ou até a operação. Escolha fornecedores que comuniquem as condições com clareza e priorizem segurança acima do roteiro.",
+      },
+    ],
+  },
+  {
+    slug: "valparaiso-vina-del-mar-vinicolas",
+    title: "Valparaíso, Viña del Mar e vinícolas: combine o Chile central",
+    excerpt:
+      "Arte, Pacífico e vinhos em experiências que revelam como paisagens muito diferentes convivem a pouca distância de Santiago.",
+    category: "Litoral & vinhos",
+    country: "Chile",
+    readTime: "7 min",
+    image: "/images/tours/img-113.jpg",
+    intro:
+      "Uma das melhores qualidades do Chile central é a possibilidade de atravessar universos diferentes em poucos dias: a energia de Santiago, os morros de Valparaíso, a elegância de Viña del Mar e os vales do vinho.",
+    sections: [
+      {
+        title: "Valparaíso pede tempo para observar",
+        body:
+          "Escadarias, elevadores, arte urbana, casarões e vistas do porto formam uma cidade que não se resume a um único cartão-postal. Caminhar com contexto ajuda a entender sua identidade artística e portuária.",
+      },
+      {
+        title: "Viña del Mar muda o ritmo do dia",
+        body:
+          "Jardins, orla e mar trazem uma pausa mais leve ao roteiro. Mesmo no verão, vale levar uma camada extra: manhãs nubladas e vento fazem parte da atmosfera do litoral central.",
+      },
+      {
+        title: "Os vales do vinho completam a viagem",
+        body:
+          "Maipo, Casablanca e outros vales próximos reúnem paisagem, história e gastronomia. Escolha a vinícola pelo estilo de experiência que você procura, do tour clássico à degustação intimista ao pôr do sol.",
+      },
+    ],
+  },
 ];
-export const getPost=(slug:string)=>posts.find(post=>post.slug===slug);
+
+const legacySlugs: Record<string, string> = {
+  "liberdade-de-alugar-um-carro": "o-que-fazer-em-santiago",
+  "wise-como-levar-dinheiro": "neve-no-chile-primeira-vez",
+};
+
+export const getPost = (slug: string) => {
+  const currentSlug = legacySlugs[slug] ?? slug;
+  return posts.find((post) => post.slug === currentSlug);
+};
