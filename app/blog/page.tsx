@@ -4,9 +4,9 @@ import { Footer, Header } from "../components";
 import { posts } from "./data";
 
 export const metadata: Metadata = {
-  title: "Blog do Chile: dicas, roteiros e experiências",
+  title: "Guia Chile: seu melhor amigo na viagem",
   description:
-    "Guias práticos sobre o Chile: quando viajar, o que fazer em Santiago, neve, Cordilheira, vinícolas, litoral e escolhas para viver uma viagem inesquecível.",
+    "Seu Guia Chile sempre à mão: dicas próximas e práticas sobre Santiago, neve, Cordilheira, vinícolas, litoral e tudo para viver uma viagem incrível.",
   keywords: [
     "dicas sobre o Chile",
     "o que fazer no Chile",
@@ -18,9 +18,9 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "/blog" },
   openGraph: {
-    title: "Blog Destino Andes | O Chile bem vivido",
+    title: "Guia Chile | Seu melhor amigo na viagem",
     description:
-      "Dicas certeiras, curiosidades e experiências escolhidas para você aproveitar o melhor do Chile.",
+      "Dicas que ajudam de verdade, curiosidades e experiências para você aproveitar o melhor do Chile.",
     type: "website",
     url: "/blog",
   },
@@ -37,22 +37,22 @@ export default function Blog() {
       <main>
         <section className="inner-hero blog-hero">
           <div className="blog-hero-copy">
-            <p className="kicker light">GUIA DO CHILE · DESTINO ANDES</p>
+            <p className="kicker light">GUIA CHILE · DESTINO ANDES</p>
             <h1>
-              O Chile,
+              Guia Chile.
               <br />
-              <em>bem vivido.</em>
+              <em>Seu melhor amigo na viagem.</em>
             </h1>
             <p>
-              Dicas certeiras, curiosidades locais e escolhas que transformam uma viagem bonita
-              em uma experiência inesquecível.
+              Sempre à mão, do primeiro plano ao último passeio — com dicas que ajudam de
+              verdade e aquele olhar de quem já conhece o caminho.
             </p>
             <div className="hero-actions">
               <Link className="btn gold" href="/chile/passeios">
-                Descobrir experiências
+                Quero descobrir o Chile
               </Link>
               <a className="btn glass" href="#guias">
-                Explorar os guias
+                Por onde eu começo?
               </a>
             </div>
           </div>
@@ -60,14 +60,14 @@ export default function Blog() {
 
         <section className="blog-intro section">
           <div>
-            <p className="kicker">CONTEÚDO PARA VIAJAR MELHOR</p>
-            <h2>Menos listas genéricas. Mais escolhas que fazem sentido.</h2>
+            <p className="kicker">SEU GUIA SEMPRE À MÃO</p>
+            <h2>Aquele amigo que sabe o que vale a pena — e te conta tudo.</h2>
           </div>
           <div>
             <p>
-              O Chile muda com a estação, a paisagem e o ritmo de cada viajante. Reunimos
-              informação prática e olhar local para ajudar você a escolher quando ir, o que
-              priorizar e como aproveitar melhor cada dia.
+              Sabe aquele amigo que avisa o que levar, onde vale parar e o que não pode ficar de
+              fora? É isso que queremos ser na sua viagem: informação prática, escolhas sinceras
+              e companhia para você aproveitar cada dia no Chile.
             </p>
             <div className="blog-topics" aria-label="Temas do blog">
               {topics.map((topic) => (
@@ -79,8 +79,8 @@ export default function Blog() {
 
         <section className="blog-feature section" aria-labelledby="guia-destaque">
           <div className="blog-section-label">
-            <p className="kicker">COMECE POR AQUI</p>
-            <span>Guia essencial para planejar a viagem</span>
+            <p className="kicker">SE É SUA PRIMEIRA VEZ, COMECE AQUI</p>
+            <span>Um guia para salvar antes de embarcar</span>
           </div>
           <Link href={`/blog/${featured.slug}`} className="featured-post">
             <img src={featured.image} alt={featured.title} />
@@ -90,7 +90,7 @@ export default function Blog() {
               </p>
               <h2 id="guia-destaque">{featured.title}</h2>
               <p>{featured.excerpt}</p>
-              <span>Ler o guia completo · {featured.readTime} →</span>
+              <span>Quero saber tudo · {featured.readTime} →</span>
             </div>
           </Link>
         </section>
@@ -98,11 +98,12 @@ export default function Blog() {
         <section className="blog-list section" id="guias">
           <div className="section-title">
             <div>
-              <p className="kicker">ESCOLHAS DESTINO ANDES</p>
-              <h2>Seu próximo capítulo no Chile começa aqui</h2>
+              <p className="kicker">O GUIA CHILE TE CONTA</p>
+              <h2>Dicas que você vai agradecer ter lido antes</h2>
             </div>
             <p className="blog-list-intro">
-              Guias diretos para combinar cidade, montanha, vinho, litoral e o seu jeito de viajar.
+              Sem complicação: cidade, montanha, vinho, litoral e as escolhas certas para o seu
+              jeito de viajar.
             </p>
           </div>
           <div className="post-grid">
@@ -122,19 +123,19 @@ export default function Blog() {
         </section>
 
         <section className="blog-cta">
-          <p className="kicker light">DO CONTEÚDO PARA A EXPERIÊNCIA</p>
+          <p className="kicker light">SEU GUIA TE TROUXE ATÉ AQUI</p>
           <h2>
-            Já imaginou o Chile.
+            Agora deixa a gente
             <br />
-            Agora vamos desenhar a viagem.
+            te levar pelo Chile.
           </h2>
           <p>
-            Conte seus planos e receba uma seleção de experiências pensada para as suas datas,
+            Você conta o que imagina. A gente aproxima as melhores experiências das suas datas,
             interesses e ritmo.
           </p>
           <div className="hero-actions">
             <Link className="btn gold" href="/contato">
-              Criar meu roteiro
+              Quero planejar minha viagem
             </Link>
             <Link className="btn glass" href="/chile/passeios">
               Ver passeios no Chile

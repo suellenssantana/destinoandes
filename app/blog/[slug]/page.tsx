@@ -39,7 +39,7 @@ export default async function PostPage({ params }: PostPageProps) {
       <main>
         <article className="article">
           <header>
-            <Link href="/blog">← Voltar ao guia do Chile</Link>
+            <Link href="/blog">← Voltar ao Guia Chile</Link>
             <p className="kicker">
               {post.country} · {post.category}
             </p>
@@ -57,14 +57,15 @@ export default async function PostPage({ params }: PostPageProps) {
               </section>
             ))}
             <aside>
-              <p className="kicker light">VIVA O CHILE COM QUEM CONHECE</p>
-              <h3>Transforme inspiração em uma viagem com o seu ritmo.</h3>
+              <p className="kicker light">GOSTOU? A GENTE TE AJUDA A VIVER ISSO</p>
+              <h3>Seu Guia Chile não te deixa só na inspiração.</h3>
               <p>
-                Selecionamos experiências de acordo com suas datas, interesses e jeito de viajar.
+                Conta para a gente como você imagina a viagem. Nós aproximamos as experiências
+                certas das suas datas, interesses e ritmo.
               </p>
               <div className="article-cta-actions">
                 <Link className="btn gold" href="/contato">
-                  Criar meu roteiro
+                  Quero ajuda para planejar
                 </Link>
                 <Link className="btn glass" href="/chile/passeios">
                   Ver experiências
@@ -76,8 +77,8 @@ export default async function PostPage({ params }: PostPageProps) {
         <section className="related-posts section">
           <div className="section-title">
             <div>
-              <p className="kicker">CONTINUE DESCOBRINDO</p>
-              <h2>Mais ideias para viver o Chile</h2>
+              <p className="kicker">SEU GUIA CONTINUA</p>
+              <h2>Salve mais dicas para a viagem</h2>
             </div>
           </div>
           <div className="post-grid">
@@ -89,7 +90,7 @@ export default async function PostPage({ params }: PostPageProps) {
                     {item.country} · {item.category}
                   </p>
                   <h3>{item.title}</h3>
-                  <span>Ler guia →</span>
+                  <span>Quero ler →</span>
                 </div>
               </Link>
             ))}
