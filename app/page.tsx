@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Footer, Header } from "./components";
 
 const countries = [
-  { name:"Chile", flag:"🇨🇱", href:"/chile", className:"country-chile", image:"/images/tours/img-003.jpg", copy:"Neve, vinhos, desertos e cidades entre a Cordilheira e o Pacífico.", cta:"Explorar o Chile" },
+  { name:"Chile", flag:"🇨🇱", href:"/chile", className:"country-chile", image:"/images/library/cajon-del-maipo-embalse-el-yeso/cajon-del-maipo-embalse-el-yeso-031.webp", copy:"Neve, vinhos, desertos e cidades entre a Cordilheira e o Pacífico.", cta:"Explorar o Chile" },
   { name:"Peru", flag:"🇵🇪", href:"/peru", className:"country-peru", image:"/images/tours/img-302.jpg", copy:"História, cultura, gastronomia e caminhos que atravessam séculos.", cta:"Explorar o Peru" },
   { name:"Argentina", flag:"🇦🇷", href:"/argentina", className:"country-argentina", image:"/images/tours/img-330.jpg", copy:"Sabores, paisagens e experiências do tango ao fim do mundo.", cta:"Explorar a Argentina" },
 ];

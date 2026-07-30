@@ -19,7 +19,7 @@ export const posts: Post[] = [
     category: "Planejamento",
     country: "Chile",
     readTime: "7 min",
-    image: "/images/tours/img-003.jpg",
+    image: "/images/library/cordilheira-dos-andes/cordilheira-dos-andes-006.webp",
     intro:
       "O Chile se estende por mais de 4.000 quilômetros e muda completamente ao longo do ano. Em vez de procurar uma única época perfeita, comece pela pergunta certa: qual experiência você quer viver?",
     sections: [
@@ -48,7 +48,7 @@ export const posts: Post[] = [
     category: "Santiago",
     country: "Chile",
     readTime: "8 min",
-    image: "/images/tours/img-152.jpg",
+    image: "/images/library/santiago/santiago-003.webp",
     intro:
       "Santiago funciona melhor quando você olha além do centro: a capital reúne bairros históricos, gastronomia, mirantes e acesso privilegiado à Cordilheira e a alguns dos vinhedos mais tradicionais do Chile.",
     sections: [
@@ -77,7 +77,7 @@ export const posts: Post[] = [
     category: "Cordilheira",
     country: "Chile",
     readTime: "6 min",
-    image: "/images/tours/img-042.jpg",
+    image: "/images/library/farellones/farellones-008.webp",
     intro:
       "Ver a Cordilheira coberta de neve costuma ser um dos momentos mais esperados da viagem. A experiência fica muito melhor quando você entende que montanha tem ritmo próprio e exige preparação.",
     sections: [
@@ -106,7 +106,7 @@ export const posts: Post[] = [
     category: "Litoral & vinhos",
     country: "Chile",
     readTime: "7 min",
-    image: "/images/tours/img-113.jpg",
+    image: "/images/library/valparaiso-vina-del-mar/valparaiso-vina-del-mar-023.webp",
     intro:
       "Uma das melhores qualidades do Chile central é a possibilidade de atravessar universos diferentes em poucos dias: a energia de Santiago, os morros de Valparaíso, a elegância de Viña del Mar e os vales do vinho.",
     sections: [

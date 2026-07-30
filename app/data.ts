@@ -20,7 +20,8 @@ export type Tour = {
   images: string[];
 };
 
-const img = (name: string) => `/images/tours/${name}`;
+const media = (category: string, name: string) =>
+  `/images/library/${category}/${name}.webp`;
 const shared = {
   mode: "Compartilhado" as const,
   pickup: "Retirada em hospedagens localizadas na área de busca de Santiago. Endereços fora do perímetro são combinados previamente.",
@@ -40,7 +41,7 @@ export const tours: Tour[] = [
     price: price(50000, 323), times: "Saída a partir das 5h30 • retorno aproximado às 17h30",
     itinerary: ["Retirada na hospedagem", "Estrada Los Caracoles e mirantes", "Centro de esqui Portillo", "Laguna del Inca", "Tempo livre para contemplação e almoço", "Retorno a Santiago"],
     climate: "Passeio sujeito às condições da estrada, neve, vento e orientações das autoridades de montanha.",
-    images: [img("img-012.jpg"), img("img-003.jpg"), img("img-016.jpg")],
+    images: [media("portillo", "portillo-001"), media("portillo", "portillo-011"), media("portillo", "portillo-002")],
   },
   {
     ...shared, slug: "andes-panoramico", name: "Andes Panorâmico", eyebrow: "Neve sem complicação",
@@ -50,7 +51,7 @@ export const tours: Tour[] = [
     price: price(35000, 226), times: "Saída a partir das 6h • retorno aproximado às 17h",
     itinerary: ["Retirada na hospedagem", "Curva 40 e mirantes da Cordilheira", "Parada panorâmica na neve", "Tempo livre para fotos", "Povoado de Farellones", "Retorno a Santiago"],
     climate: "A rota e as paradas podem mudar por segurança, fluxo da estrada ou disponibilidade de neve.",
-    images: [img("img-042.jpg"), img("img-019.jpg"), img("img-053.jpg")],
+    images: [media("cajon-del-maipo-embalse-el-yeso", "cajon-del-maipo-embalse-el-yeso-031"), media("cordilheira-dos-andes", "cordilheira-dos-andes-001"), media("cajon-del-maipo-embalse-el-yeso", "cajon-del-maipo-embalse-el-yeso-019")],
   },
   {
     ...shared, slug: "valle-nevado", name: "Valle Nevado", eyebrow: "O alto dos Andes",
@@ -60,7 +61,7 @@ export const tours: Tour[] = [
     price: price(35000, 226), times: "Saída a partir das 5h30 • retorno aproximado às 18h",
     itinerary: ["Retirada na hospedagem", "Subida pela estrada de montanha", "Paradas panorâmicas", "Chegada a Valle Nevado", "Tempo livre e atividades opcionais", "Retorno a Santiago"],
     climate: "Operação condicionada à abertura da estrada e às regras do centro de montanha.",
-    images: [img("img-007.jpg"), img("img-056.jpg"), img("img-068.jpg")],
+    images: [media("valle-nevado", "valle-nevado-021"), media("valle-nevado", "valle-nevado-017"), media("valle-nevado", "valle-nevado-023")],
   },
   {
     ...shared, slug: "farellones", name: "Farellones", eyebrow: "Diversão na neve",
@@ -70,7 +71,7 @@ export const tours: Tour[] = [
     price: price(35000, 226), times: "Saída a partir das 5h30 • retorno aproximado às 18h",
     itinerary: ["Retirada na hospedagem", "Subida à Cordilheira", "Povoado de Farellones", "Tempo livre no parque", "Atividades opcionais", "Retorno a Santiago"],
     climate: "Neve e atrações variam conforme clima e operação do parque. Ingressos não estão incluídos.",
-    images: [img("img-090.jpg"), img("img-091.jpg"), img("img-097.jpg")],
+    images: [media("farellones", "farellones-008"), media("farellones", "farellones-009"), media("farellones", "farellones-007")],
   },
   {
     ...shared, slug: "vina-del-mar-valparaiso", name: "Viña del Mar + Valparaíso", eyebrow: "Pacífico & patrimônio",
@@ -80,7 +81,7 @@ export const tours: Tour[] = [
     price: price(38000, 245), times: "Saída a partir das 6h30 • retorno aproximado às 18h",
     itinerary: ["Retirada na hospedagem", "Congresso Nacional e porto", "Plaza Sotomayor e Cerro Alegre", "Escadarias e arte urbana", "Viña del Mar e Museu Fonck", "Relógio de Flores e orla", "Retorno a Santiago"],
     climate: "No litoral, manhãs nubladas e vento são comuns. Leve uma camada leve mesmo no verão.",
-    images: [img("img-113.jpg"), img("img-116.jpg"), img("img-119.jpg")],
+    images: [media("valparaiso-vina-del-mar", "valparaiso-vina-del-mar-023"), media("valparaiso-vina-del-mar", "valparaiso-vina-del-mar-027"), media("valparaiso-vina-del-mar", "valparaiso-vina-del-mar-006")],
   },
   {
     ...shared, slug: "zerando-sunset-dj", name: "Sunset nos Andes com DJ", eyebrow: "Capital em movimento",
@@ -91,7 +92,7 @@ export const tours: Tour[] = [
     pickup: "Ponto de encontro central informado na confirmação. Transporte de ida e retorno à hospedagem não incluído.",
     itinerary: ["Plaza de Armas", "Antigo Congresso e Calle Bandera", "Bolsa de Valores", "Palacio de La Moneda", "Paris-Londres", "Cerro Santa Lucía", "Barrio Lastarria e Parque Forestal"],
     climate: "Tour urbano operado com sol ou chuva leve. Em eventos oficiais, o percurso pode ser ajustado.",
-    images: [img("img-152.jpg"), img("img-153.jpg"), img("img-156.jpg")],
+    images: [media("cordilheira-dos-andes", "cordilheira-dos-andes-006"), media("cordilheira-dos-andes", "cordilheira-dos-andes-001"), media("cordilheira-dos-andes", "cordilheira-dos-andes-004")],
   },
   {
     ...shared, slug: "city-tour-santiago", name: "City Tour Santiago", eyebrow: "Capital em movimento",
@@ -102,7 +103,7 @@ export const tours: Tour[] = [
     pickup: "Ponto de encontro central informado na confirmação. Transporte de ida e retorno à hospedagem não incluído.",
     itinerary: ["Plaza de Armas", "Antigo Congresso e Calle Bandera", "Bolsa de Valores", "Palacio de La Moneda", "Paris-Londres", "Cerro Santa Lucía", "Barrio Lastarria e Parque Forestal"],
     climate: "Tour urbano operado com sol ou chuva leve. Em eventos oficiais, o percurso pode ser ajustado.",
-    images: [img("img-152.jpg"), img("img-153.jpg"), img("img-156.jpg")],
+    images: [media("santiago", "santiago-003"), media("santiago", "santiago-006"), media("santiago", "santiago-001")],
   },
   {
     ...shared, slug: "safari", name: "Safari", eyebrow: "Natureza para todas as idades",
@@ -112,7 +113,7 @@ export const tours: Tour[] = [
     price: price(65000, 419), times: "Saída a partir das 7h • retorno aproximado às 18h",
     itinerary: ["Retirada na hospedagem", "Viagem até Rancagua", "Entrada no parque", "Percursos e áreas de observação", "Tempo para alimentação", "Retorno a Santiago"],
     climate: "Algumas experiências podem ser suspensas por chuva, calor intenso ou bem-estar dos animais.",
-    images: [img("img-192.jpg"), img("img-193.jpg"), img("img-199.jpg")],
+    images: [media("parque-safari", "parque-safari-025"), media("parque-safari", "parque-safari-024"), media("parque-safari", "parque-safari-026")],
   },
   {
     ...shared, slug: "concha-y-toro-tradicional", name: "Concha y Toro Tradicional", eyebrow: "Clássico do vinho chileno",
@@ -122,7 +123,7 @@ export const tours: Tour[] = [
     price: price(40000, 258), times: "Turnos pela manhã ou tarde • cerca de 5 horas com deslocamentos",
     itinerary: ["Retirada na hospedagem", "Viagem até Pirque", "Jardins e antiga residência", "Vinhedos e adegas", "Casillero del Diablo", "Degustação tradicional", "Retorno"],
     climate: "A visita ocorre em áreas abertas e caves frescas; leve uma camada adicional.",
-    images: [img("img-218.jpg"), img("img-219.jpg"), img("img-222.jpg")],
+    images: [media("vinicola-concha-y-toro", "vinicola-concha-y-toro-006"), media("vinicola-concha-y-toro", "vinicola-concha-y-toro-005"), media("vinicola-concha-y-toro", "vinicola-concha-y-toro-002")],
   },
   {
     ...shared, slug: "concha-y-toro-marques", name: "Concha y Toro Marqués", eyebrow: "Degustação superior",
@@ -132,7 +133,7 @@ export const tours: Tour[] = [
     price: price(60000, 387), times: "Turnos sujeitos a reserva • cerca de 5 horas com deslocamentos",
     itinerary: ["Retirada na hospedagem", "Jardins e vinhedos", "Adegas históricas", "Casillero del Diablo", "Degustação seleção Marqués", "Loja da vinícola", "Retorno"],
     climate: "Atividade operada durante todo o ano; caves mantêm temperatura baixa.",
-    images: [img("img-225.jpg"), img("img-240.jpg"), img("img-241.jpg")],
+    images: [media("vinicola-concha-y-toro", "vinicola-concha-y-toro-004"), media("vinicola-concha-y-toro", "vinicola-concha-y-toro-005"), media("vinicola-concha-y-toro", "vinicola-concha-y-toro-001")],
   },
   {
     ...shared, slug: "santa-rita", name: "Santa Rita", eyebrow: "Vinho & história",
@@ -142,7 +143,7 @@ export const tours: Tour[] = [
     price: price(45000, 290), times: "Turnos pela manhã ou tarde • cerca de 6 horas",
     itinerary: ["Retirada na hospedagem", "Vinhedos e jardins", "Bodega dos 120 Patriotas", "Processo de produção", "Degustação guiada", "Tempo livre na loja", "Retorno"],
     climate: "Inclui caminhada externa e ambientes climatizados; use calçado confortável.",
-    images: [img("img-260.jpg"), img("img-261.jpg"), img("img-264.jpg")],
+    images: [media("vinicola-santa-rita", "vinicola-santa-rita-002"), media("vinicola-santa-rita", "vinicola-santa-rita-004"), media("vinicola-santa-rita", "vinicola-santa-rita-003")],
   },
   {
     ...shared, slug: "undurraga", name: "Undurraga", eyebrow: "Tradição desde 1885",
@@ -152,7 +153,7 @@ export const tours: Tour[] = [
     price: price(45000, 290), times: "Turnos pela manhã ou tarde • cerca de 5 horas",
     itinerary: ["Retirada na hospedagem", "Jardins e vinhedos", "Sala de aromas", "Caves subterrâneas", "História dos povos originários", "Degustação guiada", "Retorno"],
     climate: "Passeio disponível o ano inteiro; temperatura nas caves é mais fresca.",
-    images: [img("img-247.jpg"), img("img-267.jpg"), img("img-283.jpg")],
+    images: [media("vinicola-undurraga", "vinicola-undurraga-006"), media("vinicola-undurraga", "vinicola-undurraga-001"), media("vinicola-undurraga", "vinicola-undurraga-005")],
   },
   {
     ...shared, slug: "alyan", name: "Alyan", eyebrow: "Vinho ao pôr do sol",
@@ -162,7 +163,7 @@ export const tours: Tour[] = [
     price: price(45000, 290), times: "Saída no início da tarde • retorno à noite",
     itinerary: ["Retirada na hospedagem", "Recepção na vinícola", "Caminhada pelos vinhedos", "Visita à área de produção", "Degustação guiada", "Pôr do sol entre as parreiras", "Retorno"],
     climate: "A experiência ao ar livre depende da luz e do clima; leve agasalho para o anoitecer.",
-    images: [img("img-282.jpg"), img("img-286.jpg"), img("img-289.jpg")],
+    images: [media("vinicola-alyan", "vinicola-alyan-016"), media("vinicola-alyan", "vinicola-alyan-026"), media("vinicola-alyan", "vinicola-alyan-025")],
   },
   {
     ...shared, slug: "templo-bahai-cousino-macul", name: "Templo Bahá’í + Cousiño Macul", eyebrow: "Arquitetura & vinho",
@@ -172,7 +173,7 @@ export const tours: Tour[] = [
     price: price(50000, 323), times: "Saída a partir das 9h • retorno aproximado às 17h",
     itinerary: ["Retirada na hospedagem", "Visita ao Templo Bahá’í", "Tempo de contemplação e mirante", "Cousiño Macul", "Vinhedos e caves", "Degustação guiada", "Retorno"],
     climate: "O templo pode restringir acesso por eventos. A área externa está sujeita ao clima.",
-    images: [img("img-302.jpg"), img("img-303.jpg"), img("img-306.jpg")],
+    images: [media("templo-bahai", "templo-bahai-004"), media("templo-bahai", "templo-bahai-001"), media("templo-bahai", "templo-bahai-002")],
   },
   {
     ...shared, slug: "isla-negra-algarrobo-undurraga", name: "Isla Negra + Algarrobo + Undurraga", eyebrow: "Poesia, mar & vinho",
@@ -182,7 +183,7 @@ export const tours: Tour[] = [
     price: price(72000, 465), times: "Saída a partir das 6h30 • retorno aproximado às 20h",
     itinerary: ["Retirada na hospedagem", "Isla Negra e arredores da casa de Neruda", "Orla de Algarrobo", "Tempo livre para almoço", "Vinícola Undurraga", "Tour e degustação", "Retorno a Santiago"],
     climate: "Litoral com possibilidade de vento e neblina; a degustação segue regras da vinícola.",
-    images: [img("img-326.jpg"), img("img-330.jpg"), img("img-333.jpg")],
+    images: [media("algarrobo-isla-negra", "algarrobo-isla-negra-001"), media("vinicola-undurraga", "vinicola-undurraga-001"), media("algarrobo-isla-negra", "algarrobo-isla-negra-003")],
   },
 ];
 
