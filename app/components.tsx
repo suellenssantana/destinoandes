@@ -5,11 +5,17 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import type { Tour } from "./data";
 import { categories, tours } from "./data";
+import {
+  getStoredLanguage,
+  LANGUAGE_EVENT,
+  LANGUAGE_STORAGE_KEY,
+  translatePhrase,
+  type Language,
+} from "./i18n-runtime";
 
 export const WHATSAPP_NUMBER = "56988333161";
 export const WHATSAPP = `https://wa.me/${WHATSAPP_NUMBER}`;
 const money = new Intl.NumberFormat("es-CL", { style: "currency", currency: "CLP", maximumFractionDigits: 0 });
-type Language = "PT" | "ES" | "EN";
 type Country = "chile" | "peru" | "argentina";
 
 const countries: { id: Country; flag: string; name: string; href: string }[] = [
@@ -33,18 +39,15 @@ function currentCountry(pathname: string): Country {
 function useLanguage() {
   const language = useSyncExternalStore(
     (onStoreChange) => {
-      window.addEventListener("destino-language", onStoreChange);
-      return () => window.removeEventListener("destino-language", onStoreChange);
+      window.addEventListener(LANGUAGE_EVENT, onStoreChange);
+      return () => window.removeEventListener(LANGUAGE_EVENT, onStoreChange);
     },
-    () => {
-    const stored = window.localStorage.getItem("destino-andes-language") as Language | null;
-    return stored && ["PT","ES","EN"].includes(stored) ? stored : "PT";
-    },
+    getStoredLanguage,
     () => "PT" as Language,
   );
   const choose = (value: Language) => {
-    window.localStorage.setItem("destino-andes-language", value);
-    window.dispatchEvent(new Event("destino-language"));
+    window.localStorage.setItem(LANGUAGE_STORAGE_KEY, value);
+    window.dispatchEvent(new Event(LANGUAGE_EVENT));
   };
   return { language, choose, labels: ui[language] };
 }
@@ -78,12 +81,18 @@ export function LanguageSwitcher({ compact=false }: { compact?: boolean }) {
 
 export function Header() {
   const [open, setOpen] = useState(false);
-  const { labels } = useLanguage();
+  const { language, labels } = useLanguage();
   const pathname = usePathname();
   const country = currentCountry(pathname);
   const countryHome = `/${country}`;
   const toursHref = country === "chile" ? "/chile/passeios" : `${countryHome}#experiencias`;
-  const message = encodeURIComponent(`Olá! Quero planejar minha viagem para ${countries.find(c=>c.id===country)?.name}.`);
+  const countryName = countries.find(c=>c.id===country)?.name;
+  const messageByLanguage: Record<Language, string> = {
+    PT: `Olá! Quero planejar minha viagem para ${countryName}.`,
+    ES: `¡Hola! Quiero planificar mi viaje a ${countryName}.`,
+    EN: `Hello! I would like to plan my trip to ${countryName}.`,
+  };
+  const message = encodeURIComponent(messageByLanguage[language]);
   return <>
     <div className="announcement">Chile · Peru · Argentina <span>•</span> Curadoria humana em português, espanhol e inglês</div>
     <header className="header">
@@ -126,7 +135,13 @@ export function Footer() {
 }
 
 export function WhatsAppFloat() {
-  return <a className="whatsapp-float" href={`${WHATSAPP}?text=${encodeURIComponent("Olá! Quero saber mais sobre a Destino Andes.")}`} aria-label="Falar com a Destino Andes pelo WhatsApp"><span>◔</span><b>WhatsApp</b></a>;
+  const { language } = useLanguage();
+  const messages: Record<Language, string> = {
+    PT: "Olá! Quero saber mais sobre a Destino Andes.",
+    ES: "¡Hola! Quiero saber más sobre Destino Andes.",
+    EN: "Hello! I would like to learn more about Destino Andes.",
+  };
+  return <a className="whatsapp-float" href={`${WHATSAPP}?text=${encodeURIComponent(messages[language])}`} aria-label="Falar com a Destino Andes pelo WhatsApp"><span>◔</span><b>WhatsApp</b></a>;
 }
 
 export function SiteFrame({children}:{children:React.ReactNode}) {
@@ -185,13 +200,19 @@ export function FAQ({ items }: { items: [string,string][] }) {
 }
 
 export function ContactForm() {
+  const { language } = useLanguage();
   const [sent, setSent] = useState(false);
   const submit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
-    const message = `Olá! Meu nome é ${data.get("name")}. Meu e-mail é ${data.get("email")}.\n\n${data.get("message")}`;
+    const introductions: Record<Language, string> = {
+      PT: `Olá! Meu nome é ${data.get("name")}. Meu e-mail é ${data.get("email")}.`,
+      ES: `¡Hola! Mi nombre es ${data.get("name")}. Mi e-mail es ${data.get("email")}.`,
+      EN: `Hello! My name is ${data.get("name")}. My email is ${data.get("email")}.`,
+    };
+    const message = `${introductions[language]}\n\n${data.get("message")}`;
     window.open(`${WHATSAPP}?text=${encodeURIComponent(message)}`, "_blank", "noopener,noreferrer");
     setSent(true);
   };
-  return <form className="contact-form" onSubmit={submit}><label>Nome<input name="name" required/></label><label>E-mail<input name="email" type="email" required/></label><label>Mensagem<textarea name="message" rows={6} required/></label><button className="btn dark" type="submit">{sent?"Mensagem preparada ✓":"Enviar mensagem"}</button><small>Ao enviar, abriremos o WhatsApp com sua mensagem pronta para confirmação.</small></form>;
+  return <form className="contact-form" onSubmit={submit}><label>{translatePhrase("Nome", language)}<input name="name" required/></label><label>E-mail<input name="email" type="email" required/></label><label>{translatePhrase("Mensagem", language)}<textarea name="message" rows={6} required/></label><button className="btn dark" type="submit">{translatePhrase(sent?"Mensagem preparada ✓":"Enviar mensagem", language)}</button><small>{translatePhrase("Ao enviar, abriremos o WhatsApp com sua mensagem pronta para confirmação.", language)}</small></form>;
 }
