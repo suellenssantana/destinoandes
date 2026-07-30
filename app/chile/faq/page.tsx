@@ -1,4 +1,4 @@
-import { FAQ, Footer, Header } from "../../components";
+import { FAQ, Footer, Header, SocialLinks } from "../../components";
 const items: [string,string][] = [
   ["Com quanta antecedência devo reservar?", "No inverno, feriados e alta temporada, recomendamos reservar assim que suas datas estiverem definidas. As vagas e veículos são limitados."],
   ["O passeio acontece com chuva ou neve?", "Depende da experiência e das condições de segurança. Chuva leve normalmente não impede tours urbanos ou de vinícola; montanha depende da estrada e autoridades."],
@@ -11,4 +11,4 @@ const items: [string,string][] = [
   ["O que vestir para a neve?", "Use camadas térmicas, roupa impermeável, luvas, meias adequadas e calçado com boa aderência. Podemos orientar sobre aluguel de roupas."],
   ["E se a estrada fechar?", "A segurança vem primeiro. Quando uma operação é cancelada por força maior, avaliamos reagendamento, alternativa ou reembolso conforme valores recuperáveis."],
 ];
-export default function FaqPage(){return <><Header/><main><section className="inner-hero faq-hero"><p className="kicker light">PERGUNTAS FREQUENTES</p><h1>Viaje sabendo<br/><em>o que esperar.</em></h1></section><section className="faq-page section"><div><p className="kicker">RESPOSTAS DIRETAS</p><h2>Tudo que você precisa saber</h2><p>Não encontrou sua dúvida? Nosso atendimento ajuda com os detalhes da sua viagem.</p><a className="btn dark" href="https://wa.me/56900000000">Falar no WhatsApp</a></div><FAQ items={items}/></section></main><Footer/></>};
+export default function FaqPage(){return <><Header/><main><section className="inner-hero faq-hero"><p className="kicker light">PERGUNTAS FREQUENTES</p><h1>Viaje sabendo<br/><em>o que esperar.</em></h1></section><section className="faq-page section"><div><p className="kicker">RESPOSTAS DIRETAS</p><h2>Tudo que você precisa saber</h2><p>Não encontrou sua dúvida? Nosso atendimento ajuda com os detalhes da sua viagem.</p><SocialLinks className="faq-socials" /></div><FAQ items={items}/></section></main><Footer/></>};

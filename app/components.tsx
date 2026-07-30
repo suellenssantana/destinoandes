@@ -3,6 +3,7 @@
 import { FormEvent, useEffect, useMemo, useRef, useState, useSyncExternalStore } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
+import { FaEnvelope, FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import type { Tour } from "./data";
 import { categories, tours } from "./data";
 import {
@@ -15,6 +16,9 @@ import {
 
 export const WHATSAPP_NUMBER = "56988333161";
 export const WHATSAPP = `https://wa.me/${WHATSAPP_NUMBER}`;
+export const EMAIL = "destinoandes.cl@gmail.com";
+export const INSTAGRAM = "https://www.instagram.com/destinoandes/";
+export const FACEBOOK = "https://www.facebook.com/profile.php?id=61577088880597";
 const money = new Intl.NumberFormat("es-CL", { style: "currency", currency: "CLP", maximumFractionDigits: 0 });
 type Country = "chile" | "peru" | "argentina";
 
@@ -120,14 +124,29 @@ function Newsletter() {
   return <div className="newsletter"><div><span>{labels.newsletter}</span><p>{labels.monthly}</p></div>{sent?<strong>✓ {labels.saved}</strong>:<form onSubmit={submit}><input required type="email" aria-label="E-mail" placeholder={labels.placeholder}/><button type="submit">↗ {labels.subscribe}</button></form>}</div>;
 }
 
+export function SocialLinks({ className = "" }: { className?: string }) {
+  const channels = [
+    { href: INSTAGRAM, label: "Instagram", Icon: FaInstagram, external: true },
+    { href: FACEBOOK, label: "Facebook", Icon: FaFacebookF, external: true },
+    { href: `mailto:${EMAIL}`, label: "E-mail", Icon: FaEnvelope, external: false },
+    { href: WHATSAPP, label: "WhatsApp", Icon: FaWhatsapp, external: true },
+  ];
+
+  return <div className={`social-links ${className}`.trim()}>{channels.map(({ href, label, Icon, external }) =>
+    <a href={href} aria-label={label} title={label} key={label} target={external ? "_blank" : undefined} rel={external ? "noreferrer" : undefined}>
+      <Icon aria-hidden="true" />
+    </a>
+  )}</div>;
+}
+
 export function Footer() {
   const { labels } = useLanguage();
   return <footer>
     <div className="footer-grid expanded">
-      <div><Link className="brand footer-brand wordmark" href="/"><span>Destino Andes<small>CHILE · PERU · ARGENTINA</small></span></Link><p>Experiências cuidadas por quem conhece cada caminho.</p><div className="socials"><a href="#" aria-label="Instagram">◎</a><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="YouTube">▶</a></div></div>
+      <div><Link className="brand footer-brand wordmark" href="/"><span>Destino Andes<small>CHILE · PERU · ARGENTINA</small></span></Link><p>Experiências cuidadas por quem conhece cada caminho.</p><SocialLinks /></div>
       <div><strong>{labels.explore}</strong><Link href="/chile/passeios">{labels.allTours}</Link><Link href="/blog">{labels.blog}</Link><Link href="/contato">{labels.contact}</Link></div>
       <div><strong>{labels.plan}</strong><Link href="/chile/como-funciona">{labels.reserve}</Link><Link href="/chile/faq">{labels.faq}</Link><Link href="/chile/como-funciona#pagamento">{labels.payments}</Link><Link href="/chile/como-funciona#cancelamento">{labels.cancellation}</Link></div>
-      <div className="footer-card"><span>ATENDIMENTO HUMANO</span><strong>{labels.specialist}</strong><a href={WHATSAPP}>Abrir WhatsApp ↗</a><Link href="/contato">Outros canais →</Link></div>
+      <div className="footer-card"><span>ATENDIMENTO HUMANO</span><strong>{labels.specialist}</strong><SocialLinks className="footer-contact-icons" /></div>
     </div>
     <div className="footer-news"><Newsletter/><div className="footer-settings"><CountrySwitcher compact/><LanguageSwitcher compact/></div></div>
     <div className="copyright">© 2026 Destino Andes. Todos os direitos reservados.<span><Link href="/politica-de-privacidade">Privacidade</Link> · <Link href="/termos-de-uso">Termos de uso</Link> · <Link href="/chile/como-funciona#cancelamento">Cancelamento</Link></span></div>
@@ -141,7 +160,7 @@ export function WhatsAppFloat() {
     ES: "¡Hola! Quiero saber más sobre Destino Andes.",
     EN: "Hello! I would like to learn more about Destino Andes.",
   };
-  return <a className="whatsapp-float" href={`${WHATSAPP}?text=${encodeURIComponent(messages[language])}`} aria-label="Falar com a Destino Andes pelo WhatsApp"><span>◔</span><b>WhatsApp</b></a>;
+  return <a className="whatsapp-float" href={`${WHATSAPP}?text=${encodeURIComponent(messages[language])}`} aria-label="Falar com a Destino Andes pelo WhatsApp" title="WhatsApp"><FaWhatsapp aria-hidden="true" /></a>;
 }
 
 export function SiteFrame({children}:{children:React.ReactNode}) {
