@@ -10,6 +10,7 @@
     "build": "bash scripts/build-verified.sh",
     "build:vercel": "next build",
     "images:hd": "node scripts/upscale-tour-images.mjs",
+    "media:import": "node scripts/import-media-library.mjs",
     "start": "next start",
     "test": "npm run build && node --test tests/rendered-html.test.mjs",
     "validate:artifact": "bash scripts/validate-artifact.sh",

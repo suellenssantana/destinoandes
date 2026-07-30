@@ -1,0 +1,4843 @@
+{
+  "categories": [
+    {
+      "slug": "algarrobo-isla-negra",
+      "label": "Algarrobo e Isla Negra",
+      "count": 11,
+      "tags": [
+        "litoral",
+        "praia",
+        "cultura",
+        "algarrobo",
+        "isla-negra"
+      ]
+    },
+    {
+      "slug": "cajon-del-maipo-embalse-el-yeso",
+      "label": "Cajón del Maipo e Embalse El Yeso",
+      "count": 39,
+      "tags": [
+        "cajon-del-maipo",
+        "embalse-el-yeso",
+        "natureza",
+        "montanha"
+      ]
+    },
+    {
+      "slug": "cajon-del-maipo-termas",
+      "label": "Cajón del Maipo e Termas",
+      "count": 21,
+      "tags": [
+        "cajon-del-maipo",
+        "termas",
+        "natureza",
+        "montanha"
+      ]
+    },
+    {
+      "slug": "cordilheira-dos-andes",
+      "label": "Cordilheira dos Andes",
+      "count": 7,
+      "tags": [
+        "cordilheira",
+        "andes",
+        "montanha",
+        "por-do-sol"
+      ]
+    },
+    {
+      "slug": "farellones",
+      "label": "Farellones",
+      "count": 9,
+      "tags": [
+        "farellones",
+        "neve",
+        "montanha",
+        "inverno"
+      ]
+    },
+    {
+      "slug": "parque-safari",
+      "label": "Parque Safari",
+      "count": 27,
+      "tags": [
+        "parque-safari",
+        "animais",
+        "familia"
+      ]
+    },
+    {
+      "slug": "motoski-na-neve",
+      "label": "Passeio de motoski na neve",
+      "count": 1,
+      "tags": [
+        "motoski",
+        "neve",
+        "aventura",
+        "montanha",
+        "inverno"
+      ]
+    },
+    {
+      "slug": "portillo",
+      "label": "Portillo",
+      "count": 11,
+      "tags": [
+        "portillo",
+        "laguna-del-inca",
+        "neve",
+        "montanha"
+      ]
+    },
+    {
+      "slug": "santiago",
+      "label": "Santiago",
+      "count": 6,
+      "tags": [
+        "santiago",
+        "cidade",
+        "urbano"
+      ]
+    },
+    {
+      "slug": "templo-bahai",
+      "label": "Templo Bahá’í",
+      "count": 4,
+      "tags": [
+        "templo-bahai",
+        "arquitetura",
+        "santiago"
+      ]
+    },
+    {
+      "slug": "valle-nevado",
+      "label": "Valle Nevado",
+      "count": 25,
+      "tags": [
+        "valle-nevado",
+        "neve",
+        "esqui",
+        "montanha",
+        "inverno"
+      ]
+    },
+    {
+      "slug": "valparaiso-vina-del-mar",
+      "label": "Valparaíso e Viña del Mar",
+      "count": 35,
+      "tags": [
+        "valparaiso",
+        "vina-del-mar",
+        "litoral",
+        "praia"
+      ]
+    },
+    {
+      "slug": "vinicola-alyan",
+      "label": "Vinícola Alyan",
+      "count": 31,
+      "tags": [
+        "vinicola",
+        "alyan",
+        "vinho",
+        "enoturismo"
+      ]
+    },
+    {
+      "slug": "vinicola-concha-y-toro",
+      "label": "Vinícola Concha y Toro",
+      "count": 6,
+      "tags": [
+        "vinicola",
+        "concha-y-toro",
+        "vinho",
+        "enoturismo"
+      ]
+    },
+    {
+      "slug": "vinicola-santa-rita",
+      "label": "Vinícola Santa Rita",
+      "count": 5,
+      "tags": [
+        "vinicola",
+        "santa-rita",
+        "vinho",
+        "enoturismo"
+      ]
+    },
+    {
+      "slug": "vinicola-undurraga",
+      "label": "Vinícola Undurraga",
+      "count": 7,
+      "tags": [
+        "vinicola",
+        "undurraga",
+        "vinho",
+        "enoturismo"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "algarrobo-isla-negra-001",
+      "src": "/images/library/algarrobo-isla-negra/algarrobo-isla-negra-001.webp",
+      "alt": "Algarrobo e Isla Negra — imagem 01",
+      "category": "algarrobo-isla-negra",
+      "categories": [
+        "algarrobo-isla-negra"
+      ],
+      "label": "Algarrobo e Isla Negra",
+      "tags": [
+        "litoral",
+        "praia",
+        "cultura",
+        "algarrobo",
+        "isla-negra"
+      ],
+      "orientation": "portrait",
+      "width": 1280,
+      "height": 1920
+    },
+    {
+      "id": "algarrobo-isla-negra-002",
+      "src": "/images/library/algarrobo-isla-negra/algarrobo-isla-negra-002.webp",
+      "alt": "Algarrobo e Isla Negra — imagem 02",
+      "category": "algarrobo-isla-negra",
+      "categories": [
+        "algarrobo-isla-negra"
+      ],
+      "label": "Algarrobo e Isla Negra",
+      "tags": [
+        "litoral",
+        "praia",
+        "cultura",
+        "algarrobo",
+        "isla-negra"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1440
+    },
+    {
+      "id": "algarrobo-isla-negra-003",
+      "src": "/images/library/algarrobo-isla-negra/algarrobo-isla-negra-003.webp",
+      "alt": "Algarrobo e Isla Negra — imagem 03",
+      "category": "algarrobo-isla-negra",
+      "categories": [
+        "algarrobo-isla-negra"
+      ],
+      "label": "Algarrobo e Isla Negra",
+      "tags": [
+        "litoral",
+        "praia",
+        "cultura",
+        "algarrobo",
+        "isla-negra"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1442
+    },
+    {
+      "id": "algarrobo-isla-negra-004",
+      "src": "/images/library/algarrobo-isla-negra/algarrobo-isla-negra-004.webp",
+      "alt": "Algarrobo e Isla Negra — imagem 04",
+      "category": "algarrobo-isla-negra",
+      "categories": [
+        "algarrobo-isla-negra"
+      ],
+      "label": "Algarrobo e Isla Negra",
+      "tags": [
+        "litoral",
+        "praia",
+        "cultura",
+        "algarrobo",
+        "isla-negra"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "algarrobo-isla-negra-005",
+      "src": "/images/library/algarrobo-isla-negra/algarrobo-isla-negra-005.webp",
+      "alt": "Algarrobo e Isla Negra — imagem 05",
+      "category": "algarrobo-isla-negra",
+      "categories": [
+        "algarrobo-isla-negra"
+      ],
+      "label": "Algarrobo e Isla Negra",
+      "tags": [
+        "litoral",
+        "praia",
+        "cultura",
+        "algarrobo",
+        "isla-negra"
+      ],
+      "orientation": "portrait",
+      "width": 1557,
+      "height": 1920
+    },
+    {
+      "id": "algarrobo-isla-negra-006",
+      "src": "/images/library/algarrobo-isla-negra/algarrobo-isla-negra-006.webp",
+      "alt": "Algarrobo e Isla Negra — imagem 06",
+      "category": "algarrobo-isla-negra",
+      "categories": [
+        "algarrobo-isla-negra"
+      ],
+      "label": "Algarrobo e Isla Negra",
+      "tags": [
+        "litoral",
+        "praia",
+        "cultura",
+        "algarrobo",
+        "isla-negra"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "algarrobo-isla-negra-007",
+      "src": "/images/library/algarrobo-isla-negra/algarrobo-isla-negra-007.webp",
+      "alt": "Algarrobo e Isla Negra — imagem 07",
+      "category": "algarrobo-isla-negra",
+      "categories": [
+        "algarrobo-isla-negra"
+      ],
+      "label": "Algarrobo e Isla Negra",
+      "tags": [
+        "litoral",
+        "praia",
+        "cultura",
+        "algarrobo",
+        "isla-negra"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "algarrobo-isla-negra-008",
+      "src": "/images/library/algarrobo-isla-negra/algarrobo-isla-negra-008.webp",
+      "alt": "Algarrobo e Isla Negra — imagem 08",
+      "category": "algarrobo-isla-negra",
+      "categories": [
+        "algarrobo-isla-negra"
+      ],
+      "label": "Algarrobo e Isla Negra",
+      "tags": [
+        "litoral",
+        "praia",
+        "cultura",
+        "algarrobo",
+        "isla-negra"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1442
+    },
+    {
+      "id": "algarrobo-isla-negra-009",
+      "src": "/images/library/algarrobo-isla-negra/algarrobo-isla-negra-009.webp",
+      "alt": "Algarrobo e Isla Negra — imagem 09",
+      "category": "algarrobo-isla-negra",
+      "categories": [
+        "algarrobo-isla-negra"
+      ],
+      "label": "Algarrobo e Isla Negra",
+      "tags": [
+        "litoral",
+        "praia",
+        "cultura",
+        "algarrobo",
+        "isla-negra"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "algarrobo-isla-negra-010",
+      "src": "/images/library/algarrobo-isla-negra/algarrobo-isla-negra-010.webp",
+      "alt": "Algarrobo e Isla Negra — imagem 10",
+      "category": "algarrobo-isla-negra",
+      "categories": [
+        "algarrobo-isla-negra"
+      ],
+      "label": "Algarrobo e Isla Negra",
+      "tags": [
+        "litoral",
+        "praia",
+        "cultura",
+        "algarrobo",
+        "isla-negra"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1440
+    },
+    {
+      "id": "algarrobo-isla-negra-011",
+      "src": "/images/library/algarrobo-isla-negra/algarrobo-isla-negra-011.webp",
+      "alt": "Algarrobo e Isla Negra — imagem 11",
+      "category": "algarrobo-isla-negra",
+      "categories": [
+        "algarrobo-isla-negra"
+      ],
+      "label": "Algarrobo e Isla Negra",
+      "tags": [
+        "litoral",
+        "praia",
+        "cultura",
+        "algarrobo",
+        "isla-negra"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "cordilheira-dos-andes-001",
+      "src": "/images/library/cordilheira-dos-andes/cordilheira-dos-andes-001.webp",
+      "alt": "Cordilheira dos Andes — imagem 01",
+      "category": "cordilheira-dos-andes",
+      "categories": [
+        "cordilheira-dos-andes"
+      ],
+      "label": "Cordilheira dos Andes",
+      "tags": [
+        "cordilheira",
+        "andes",
+        "montanha",
+        "por-do-sol"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1280
+    },
+    {
+      "id": "cordilheira-dos-andes-002",
+      "src": "/images/library/cordilheira-dos-andes/cordilheira-dos-andes-002.webp",
+      "alt": "Cordilheira dos Andes — imagem 02",
+      "category": "cordilheira-dos-andes",
+      "categories": [
+        "cordilheira-dos-andes"
+      ],
+      "label": "Cordilheira dos Andes",
+      "tags": [
+        "cordilheira",
+        "andes",
+        "montanha",
+        "por-do-sol"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1280
+    },
+    {
+      "id": "cordilheira-dos-andes-003",
+      "src": "/images/library/cordilheira-dos-andes/cordilheira-dos-andes-003.webp",
+      "alt": "Cordilheira dos Andes — imagem 03",
+      "category": "cordilheira-dos-andes",
+      "categories": [
+        "cordilheira-dos-andes"
+      ],
+      "label": "Cordilheira dos Andes",
+      "tags": [
+        "cordilheira",
+        "andes",
+        "montanha",
+        "por-do-sol"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "cordilheira-dos-andes-004",
+      "src": "/images/library/cordilheira-dos-andes/cordilheira-dos-andes-004.webp",
+      "alt": "Cordilheira dos Andes — imagem 04",
+      "category": "cordilheira-dos-andes",
+      "categories": [
+        "cordilheira-dos-andes"
+      ],
+      "label": "Cordilheira dos Andes",
+      "tags": [
+        "cordilheira",
+        "andes",
+        "montanha",
+        "por-do-sol"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "cordilheira-dos-andes-005",
+      "src": "/images/library/cordilheira-dos-andes/cordilheira-dos-andes-005.webp",
+      "alt": "Cordilheira dos Andes — imagem 05",
+      "category": "cordilheira-dos-andes",
+      "categories": [
+        "cordilheira-dos-andes"
+      ],
+      "label": "Cordilheira dos Andes",
+      "tags": [
+        "cordilheira",
+        "andes",
+        "montanha",
+        "por-do-sol"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "cordilheira-dos-andes-006",
+      "src": "/images/library/cordilheira-dos-andes/cordilheira-dos-andes-006.webp",
+      "alt": "Cordilheira dos Andes — imagem 06",
+      "category": "cordilheira-dos-andes",
+      "categories": [
+        "cordilheira-dos-andes"
+      ],
+      "label": "Cordilheira dos Andes",
+      "tags": [
+        "cordilheira",
+        "andes",
+        "montanha",
+        "por-do-sol"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1280
+    },
+    {
+      "id": "cordilheira-dos-andes-007",
+      "src": "/images/library/cordilheira-dos-andes/cordilheira-dos-andes-007.webp",
+      "alt": "Cordilheira dos Andes — imagem 07",
+      "category": "cordilheira-dos-andes",
+      "categories": [
+        "cordilheira-dos-andes"
+      ],
+      "label": "Cordilheira dos Andes",
+      "tags": [
+        "cordilheira",
+        "andes",
+        "montanha",
+        "por-do-sol"
+      ],
+      "orientation": "portrait",
+      "width": 1080,
+      "height": 1920
+    },
+    {
+      "id": "farellones-001",
+      "src": "/images/library/farellones/farellones-001.webp",
+      "alt": "Farellones — imagem 01",
+      "category": "farellones",
+      "categories": [
+        "farellones"
+      ],
+      "label": "Farellones",
+      "tags": [
+        "farellones",
+        "neve",
+        "montanha",
+        "inverno"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1440
+    },
+    {
+      "id": "farellones-002",
+      "src": "/images/library/farellones/farellones-002.webp",
+      "alt": "Farellones — imagem 02",
+      "category": "farellones",
+      "categories": [
+        "farellones"
+      ],
+      "label": "Farellones",
+      "tags": [
+        "farellones",
+        "neve",
+        "montanha",
+        "inverno"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "farellones-003",
+      "src": "/images/library/farellones/farellones-003.webp",
+      "alt": "Farellones — imagem 03",
+      "category": "farellones",
+      "categories": [
+        "farellones"
+      ],
+      "label": "Farellones",
+      "tags": [
+        "farellones",
+        "neve",
+        "montanha",
+        "inverno"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1440
+    },
+    {
+      "id": "farellones-004",
+      "src": "/images/library/farellones/farellones-004.webp",
+      "alt": "Farellones — imagem 04",
+      "category": "farellones",
+      "categories": [
+        "farellones"
+      ],
+      "label": "Farellones",
+      "tags": [
+        "farellones",
+        "neve",
+        "montanha",
+        "inverno"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1440
+    },
+    {
+      "id": "farellones-005",
+      "src": "/images/library/farellones/farellones-005.webp",
+      "alt": "Farellones — imagem 05",
+      "category": "farellones",
+      "categories": [
+        "farellones"
+      ],
+      "label": "Farellones",
+      "tags": [
+        "farellones",
+        "neve",
+        "montanha",
+        "inverno"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "farellones-006",
+      "src": "/images/library/farellones/farellones-006.webp",
+      "alt": "Farellones — imagem 06",
+      "category": "farellones",
+      "categories": [
+        "farellones"
+      ],
+      "label": "Farellones",
+      "tags": [
+        "farellones",
+        "neve",
+        "montanha",
+        "inverno"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "farellones-007",
+      "src": "/images/library/farellones/farellones-007.webp",
+      "alt": "Farellones — imagem 07",
+      "category": "farellones",
+      "categories": [
+        "farellones"
+      ],
+      "label": "Farellones",
+      "tags": [
+        "farellones",
+        "neve",
+        "montanha",
+        "inverno"
+      ],
+      "orientation": "portrait",
+      "width": 1280,
+      "height": 1920
+    },
+    {
+      "id": "farellones-008",
+      "src": "/images/library/farellones/farellones-008.webp",
+      "alt": "Farellones — imagem 08",
+      "category": "farellones",
+      "categories": [
+        "farellones"
+      ],
+      "label": "Farellones",
+      "tags": [
+        "farellones",
+        "neve",
+        "montanha",
+        "inverno"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1047
+    },
+    {
+      "id": "farellones-009",
+      "src": "/images/library/farellones/farellones-009.webp",
+      "alt": "Farellones — imagem 09",
+      "category": "farellones",
+      "categories": [
+        "farellones"
+      ],
+      "label": "Farellones",
+      "tags": [
+        "farellones",
+        "neve",
+        "montanha",
+        "inverno"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1047
+    },
+    {
+      "id": "valle-nevado-001",
+      "src": "/images/library/valle-nevado/valle-nevado-001.webp",
+      "alt": "Valle Nevado — imagem 01",
+      "category": "valle-nevado",
+      "categories": [
+        "valle-nevado"
+      ],
+      "label": "Valle Nevado",
+      "tags": [
+        "valle-nevado",
+        "neve",
+        "esqui",
+        "montanha",
+        "inverno"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1442
+    },
+    {
+      "id": "valle-nevado-002",
+      "src": "/images/library/valle-nevado/valle-nevado-002.webp",
+      "alt": "Valle Nevado — imagem 02",
+      "category": "valle-nevado",
+      "categories": [
+        "valle-nevado"
+      ],
+      "label": "Valle Nevado",
+      "tags": [
+        "valle-nevado",
+        "neve",
+        "esqui",
+        "montanha",
+        "inverno"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1442
+    },
+    {
+      "id": "valle-nevado-003",
+      "src": "/images/library/valle-nevado/valle-nevado-003.webp",
+      "alt": "Valle Nevado — imagem 03",
+      "category": "valle-nevado",
+      "categories": [
+        "valle-nevado"
+      ],
+      "label": "Valle Nevado",
+      "tags": [
+        "valle-nevado",
+        "neve",
+        "esqui",
+        "montanha",
+        "inverno"
+      ],
+      "orientation": "portrait",
+      "width": 1442,
+      "height": 1920
+    },
+    {
+      "id": "valle-nevado-004",
+      "src": "/images/library/valle-nevado/valle-nevado-004.webp",
+      "alt": "Valle Nevado — imagem 04",
+      "category": "valle-nevado",
+      "categories": [
+        "valle-nevado"
+      ],
+      "label": "Valle Nevado",
+      "tags": [
+        "valle-nevado",
+        "neve",
+        "esqui",
+        "montanha",
+        "inverno"
+      ],
+      "orientation": "portrait",
+      "width": 1442,
+      "height": 1920
+    },
+    {
+      "id": "valle-nevado-005",
+      "src": "/images/library/valle-nevado/valle-nevado-005.webp",
+      "alt": "Valle Nevado — imagem 05",
+      "category": "valle-nevado",
+      "categories": [
+        "valle-nevado"
+      ],
+      "label": "Valle Nevado",
+      "tags": [
+        "valle-nevado",
+        "neve",
+        "esqui",
+        "montanha",
+        "inverno"
+      ],
+      "orientation": "portrait",
+      "width": 1442,
+      "height": 1920
+    },
+    {
+      "id": "valle-nevado-006",
+      "src": "/images/library/valle-nevado/valle-nevado-006.webp",
+      "alt": "Valle Nevado — imagem 06",
+      "category": "valle-nevado",
+      "categories": [
+        "valle-nevado"
+      ],
+      "label": "Valle Nevado",
+      "tags": [
+        "valle-nevado",
+        "neve",
+        "esqui",
+        "montanha",
+        "inverno"
+      ],
+      "orientation": "portrait",
+      "width": 1442,
+      "height": 1920
+    },
+    {
+      "id": "valle-nevado-007",
+      "src": "/images/library/valle-nevado/valle-nevado-007.webp",
+      "alt": "Valle Nevado — imagem 07",
+      "category": "valle-nevado",
+      "categories": [
+        "valle-nevado"
+      ],
+      "label": "Valle Nevado",
+      "tags": [
+        "valle-nevado",
+        "neve",
+        "esqui",
+        "montanha",
+        "inverno"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1442
+    },
+    {
+      "id": "valle-nevado-008",
+      "src": "/images/library/valle-nevado/valle-nevado-008.webp",
+      "alt": "Valle Nevado — imagem 08",
+      "category": "valle-nevado",
+      "categories": [
+        "valle-nevado"
+      ],
+      "label": "Valle Nevado",
+      "tags": [
+        "valle-nevado",
+        "neve",
+        "esqui",
+        "montanha",
+        "inverno"
+      ],
+      "orientation": "portrait",
+      "width": 1442,
+      "height": 1920
+    },
+    {
+      "id": "valle-nevado-009",
+      "src": "/images/library/valle-nevado/valle-nevado-009.webp",
+      "alt": "Valle Nevado — imagem 09",
+      "category": "valle-nevado",
+      "categories": [
+        "valle-nevado"
+      ],
+      "label": "Valle Nevado",
+      "tags": [
+        "valle-nevado",
+        "neve",
+        "esqui",
+        "montanha",
+        "inverno"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1442
+    },
+    {
+      "id": "valle-nevado-010",
+      "src": "/images/library/valle-nevado/valle-nevado-010.webp",
+      "alt": "Valle Nevado — imagem 10",
+      "category": "valle-nevado",
+      "categories": [
+        "valle-nevado"
+      ],
+      "label": "Valle Nevado",
+      "tags": [
+        "valle-nevado",
+        "neve",
+        "esqui",
+        "montanha",
+        "inverno"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1442
+    },
+    {
+      "id": "valle-nevado-011",
+      "src": "/images/library/valle-nevado/valle-nevado-011.webp",
+      "alt": "Valle Nevado — imagem 11",
+      "category": "valle-nevado",
+      "categories": [
+        "valle-nevado"
+      ],
+      "label": "Valle Nevado",
+      "tags": [
+        "valle-nevado",
+        "neve",
+        "esqui",
+        "montanha",
+        "inverno"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1442
+    },
+    {
+      "id": "valle-nevado-012",
+      "src": "/images/library/valle-nevado/valle-nevado-012.webp",
+      "alt": "Valle Nevado — imagem 12",
+      "category": "valle-nevado",
+      "categories": [
+        "valle-nevado"
+      ],
+      "label": "Valle Nevado",
+      "tags": [
+        "valle-nevado",
+        "neve",
+        "esqui",
+        "montanha",
+        "inverno"
+      ],
+      "orientation": "portrait",
+      "width": 1442,
+      "height": 1920
+    },
+    {
+      "id": "valle-nevado-013",
+      "src": "/images/library/valle-nevado/valle-nevado-013.webp",
+      "alt": "Valle Nevado — imagem 13",
+      "category": "valle-nevado",
+      "categories": [
+        "valle-nevado"
+      ],
+      "label": "Valle Nevado",
+      "tags": [
+        "valle-nevado",
+        "neve",
+        "esqui",
+        "montanha",
+        "inverno"
+      ],
+      "orientation": "portrait",
+      "width": 1442,
+      "height": 1920
+    },
+    {
+      "id": "valle-nevado-014",
+      "src": "/images/library/valle-nevado/valle-nevado-014.webp",
+      "alt": "Valle Nevado — imagem 14",
+      "category": "valle-nevado",
+      "categories": [
+        "valle-nevado"
+      ],
+      "label": "Valle Nevado",
+      "tags": [
+        "valle-nevado",
+        "neve",
+        "esqui",
+        "montanha",
+        "inverno"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1442
+    },
+    {
+      "id": "valle-nevado-015",
+      "src": "/images/library/valle-nevado/valle-nevado-015.webp",
+      "alt": "Valle Nevado — imagem 15",
+      "category": "valle-nevado",
+      "categories": [
+        "valle-nevado"
+      ],
+      "label": "Valle Nevado",
+      "tags": [
+        "valle-nevado",
+        "neve",
+        "esqui",
+        "montanha",
+        "inverno"
+      ],
+      "orientation": "portrait",
+      "width": 1442,
+      "height": 1920
+    },
+    {
+      "id": "valle-nevado-016",
+      "src": "/images/library/valle-nevado/valle-nevado-016.webp",
+      "alt": "Valle Nevado — imagem 16",
+      "category": "valle-nevado",
+      "categories": [
+        "valle-nevado"
+      ],
+      "label": "Valle Nevado",
+      "tags": [
+        "valle-nevado",
+        "neve",
+        "esqui",
+        "montanha",
+        "inverno"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1442
+    },
+    {
+      "id": "valle-nevado-017",
+      "src": "/images/library/valle-nevado/valle-nevado-017.webp",
+      "alt": "Valle Nevado — imagem 17",
+      "category": "valle-nevado",
+      "categories": [
+        "valle-nevado"
+      ],
+      "label": "Valle Nevado",
+      "tags": [
+        "valle-nevado",
+        "neve",
+        "esqui",
+        "montanha",
+        "inverno"
+      ],
+      "orientation": "portrait",
+      "width": 1280,
+      "height": 1920
+    },
+    {
+      "id": "valle-nevado-018",
+      "src": "/images/library/valle-nevado/valle-nevado-018.webp",
+      "alt": "Valle Nevado — imagem 18",
+      "category": "valle-nevado",
+      "categories": [
+        "valle-nevado"
+      ],
+      "label": "Valle Nevado",
+      "tags": [
+        "valle-nevado",
+        "neve",
+        "esqui",
+        "montanha",
+        "inverno"
+      ],
+      "orientation": "portrait",
+      "width": 1442,
+      "height": 1920
+    },
+    {
+      "id": "valle-nevado-019",
+      "src": "/images/library/valle-nevado/valle-nevado-019.webp",
+      "alt": "Valle Nevado — imagem 19",
+      "category": "valle-nevado",
+      "categories": [
+        "valle-nevado"
+      ],
+      "label": "Valle Nevado",
+      "tags": [
+        "valle-nevado",
+        "neve",
+        "esqui",
+        "montanha",
+        "inverno"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1442
+    },
+    {
+      "id": "valle-nevado-020",
+      "src": "/images/library/valle-nevado/valle-nevado-020.webp",
+      "alt": "Valle Nevado — imagem 20",
+      "category": "valle-nevado",
+      "categories": [
+        "valle-nevado"
+      ],
+      "label": "Valle Nevado",
+      "tags": [
+        "valle-nevado",
+        "neve",
+        "esqui",
+        "montanha",
+        "inverno"
+      ],
+      "orientation": "portrait",
+      "width": 1442,
+      "height": 1920
+    },
+    {
+      "id": "valle-nevado-021",
+      "src": "/images/library/valle-nevado/valle-nevado-021.webp",
+      "alt": "Valle Nevado — imagem 21",
+      "category": "valle-nevado",
+      "categories": [
+        "valle-nevado"
+      ],
+      "label": "Valle Nevado",
+      "tags": [
+        "valle-nevado",
+        "neve",
+        "esqui",
+        "montanha",
+        "inverno"
+      ],
+      "orientation": "portrait",
+      "width": 1561,
+      "height": 1920
+    },
+    {
+      "id": "valle-nevado-022",
+      "src": "/images/library/valle-nevado/valle-nevado-022.webp",
+      "alt": "Valle Nevado — imagem 22",
+      "category": "valle-nevado",
+      "categories": [
+        "valle-nevado"
+      ],
+      "label": "Valle Nevado",
+      "tags": [
+        "valle-nevado",
+        "neve",
+        "esqui",
+        "montanha",
+        "inverno"
+      ],
+      "orientation": "portrait",
+      "width": 1280,
+      "height": 1920
+    },
+    {
+      "id": "valle-nevado-023",
+      "src": "/images/library/valle-nevado/valle-nevado-023.webp",
+      "alt": "Valle Nevado — imagem 23",
+      "category": "valle-nevado",
+      "categories": [
+        "valle-nevado"
+      ],
+      "label": "Valle Nevado",
+      "tags": [
+        "valle-nevado",
+        "neve",
+        "esqui",
+        "montanha",
+        "inverno"
+      ],
+      "orientation": "portrait",
+      "width": 1280,
+      "height": 1920
+    },
+    {
+      "id": "valle-nevado-024",
+      "src": "/images/library/valle-nevado/valle-nevado-024.webp",
+      "alt": "Valle Nevado — imagem 24",
+      "category": "valle-nevado",
+      "categories": [
+        "valle-nevado"
+      ],
+      "label": "Valle Nevado",
+      "tags": [
+        "valle-nevado",
+        "neve",
+        "esqui",
+        "montanha",
+        "inverno"
+      ],
+      "orientation": "portrait",
+      "width": 1280,
+      "height": 1920
+    },
+    {
+      "id": "valle-nevado-025",
+      "src": "/images/library/valle-nevado/valle-nevado-025.webp",
+      "alt": "Valle Nevado — imagem 25",
+      "category": "valle-nevado",
+      "categories": [
+        "valle-nevado"
+      ],
+      "label": "Valle Nevado",
+      "tags": [
+        "valle-nevado",
+        "neve",
+        "esqui",
+        "montanha",
+        "inverno"
+      ],
+      "orientation": "portrait",
+      "width": 1280,
+      "height": 1920
+    },
+    {
+      "id": "cajon-del-maipo-embalse-el-yeso-001",
+      "src": "/images/library/cajon-del-maipo-embalse-el-yeso/cajon-del-maipo-embalse-el-yeso-001.webp",
+      "alt": "Cajón del Maipo e Embalse El Yeso — imagem 01",
+      "category": "cajon-del-maipo-embalse-el-yeso",
+      "categories": [
+        "cajon-del-maipo-embalse-el-yeso"
+      ],
+      "label": "Cajón del Maipo e Embalse El Yeso",
+      "tags": [
+        "cajon-del-maipo",
+        "embalse-el-yeso",
+        "natureza",
+        "montanha"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1374
+    },
+    {
+      "id": "cajon-del-maipo-embalse-el-yeso-002",
+      "src": "/images/library/cajon-del-maipo-embalse-el-yeso/cajon-del-maipo-embalse-el-yeso-002.webp",
+      "alt": "Cajón del Maipo e Embalse El Yeso — imagem 02",
+      "category": "cajon-del-maipo-embalse-el-yeso",
+      "categories": [
+        "cajon-del-maipo-embalse-el-yeso"
+      ],
+      "label": "Cajón del Maipo e Embalse El Yeso",
+      "tags": [
+        "cajon-del-maipo",
+        "embalse-el-yeso",
+        "natureza",
+        "montanha"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1440
+    },
+    {
+      "id": "cajon-del-maipo-embalse-el-yeso-003",
+      "src": "/images/library/cajon-del-maipo-embalse-el-yeso/cajon-del-maipo-embalse-el-yeso-003.webp",
+      "alt": "Cajón del Maipo e Embalse El Yeso — imagem 03",
+      "category": "cajon-del-maipo-embalse-el-yeso",
+      "categories": [
+        "cajon-del-maipo-embalse-el-yeso",
+        "cajon-del-maipo-termas"
+      ],
+      "label": "Cajón del Maipo e Embalse El Yeso",
+      "tags": [
+        "cajon-del-maipo",
+        "embalse-el-yeso",
+        "natureza",
+        "montanha",
+        "termas"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1440
+    },
+    {
+      "id": "cajon-del-maipo-embalse-el-yeso-004",
+      "src": "/images/library/cajon-del-maipo-embalse-el-yeso/cajon-del-maipo-embalse-el-yeso-004.webp",
+      "alt": "Cajón del Maipo e Embalse El Yeso — imagem 04",
+      "category": "cajon-del-maipo-embalse-el-yeso",
+      "categories": [
+        "cajon-del-maipo-embalse-el-yeso"
+      ],
+      "label": "Cajón del Maipo e Embalse El Yeso",
+      "tags": [
+        "cajon-del-maipo",
+        "embalse-el-yeso",
+        "natureza",
+        "montanha"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1440
+    },
+    {
+      "id": "cajon-del-maipo-embalse-el-yeso-005",
+      "src": "/images/library/cajon-del-maipo-embalse-el-yeso/cajon-del-maipo-embalse-el-yeso-005.webp",
+      "alt": "Cajón del Maipo e Embalse El Yeso — imagem 05",
+      "category": "cajon-del-maipo-embalse-el-yeso",
+      "categories": [
+        "cajon-del-maipo-embalse-el-yeso"
+      ],
+      "label": "Cajón del Maipo e Embalse El Yeso",
+      "tags": [
+        "cajon-del-maipo",
+        "embalse-el-yeso",
+        "natureza",
+        "montanha"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1280
+    },
+    {
+      "id": "cajon-del-maipo-embalse-el-yeso-006",
+      "src": "/images/library/cajon-del-maipo-embalse-el-yeso/cajon-del-maipo-embalse-el-yeso-006.webp",
+      "alt": "Cajón del Maipo e Embalse El Yeso — imagem 06",
+      "category": "cajon-del-maipo-embalse-el-yeso",
+      "categories": [
+        "cajon-del-maipo-embalse-el-yeso"
+      ],
+      "label": "Cajón del Maipo e Embalse El Yeso",
+      "tags": [
+        "cajon-del-maipo",
+        "embalse-el-yeso",
+        "natureza",
+        "montanha"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "cajon-del-maipo-embalse-el-yeso-007",
+      "src": "/images/library/cajon-del-maipo-embalse-el-yeso/cajon-del-maipo-embalse-el-yeso-007.webp",
+      "alt": "Cajón del Maipo e Embalse El Yeso — imagem 07",
+      "category": "cajon-del-maipo-embalse-el-yeso",
+      "categories": [
+        "cajon-del-maipo-embalse-el-yeso"
+      ],
+      "label": "Cajón del Maipo e Embalse El Yeso",
+      "tags": [
+        "cajon-del-maipo",
+        "embalse-el-yeso",
+        "natureza",
+        "montanha"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "cajon-del-maipo-embalse-el-yeso-008",
+      "src": "/images/library/cajon-del-maipo-embalse-el-yeso/cajon-del-maipo-embalse-el-yeso-008.webp",
+      "alt": "Cajón del Maipo e Embalse El Yeso — imagem 08",
+      "category": "cajon-del-maipo-embalse-el-yeso",
+      "categories": [
+        "cajon-del-maipo-embalse-el-yeso"
+      ],
+      "label": "Cajón del Maipo e Embalse El Yeso",
+      "tags": [
+        "cajon-del-maipo",
+        "embalse-el-yeso",
+        "natureza",
+        "montanha"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1440
+    },
+    {
+      "id": "cajon-del-maipo-embalse-el-yeso-009",
+      "src": "/images/library/cajon-del-maipo-embalse-el-yeso/cajon-del-maipo-embalse-el-yeso-009.webp",
+      "alt": "Cajón del Maipo e Embalse El Yeso — imagem 09",
+      "category": "cajon-del-maipo-embalse-el-yeso",
+      "categories": [
+        "cajon-del-maipo-embalse-el-yeso"
+      ],
+      "label": "Cajón del Maipo e Embalse El Yeso",
+      "tags": [
+        "cajon-del-maipo",
+        "embalse-el-yeso",
+        "natureza",
+        "montanha"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "cajon-del-maipo-embalse-el-yeso-010",
+      "src": "/images/library/cajon-del-maipo-embalse-el-yeso/cajon-del-maipo-embalse-el-yeso-010.webp",
+      "alt": "Cajón del Maipo e Embalse El Yeso — imagem 10",
+      "category": "cajon-del-maipo-embalse-el-yeso",
+      "categories": [
+        "cajon-del-maipo-embalse-el-yeso"
+      ],
+      "label": "Cajón del Maipo e Embalse El Yeso",
+      "tags": [
+        "cajon-del-maipo",
+        "embalse-el-yeso",
+        "natureza",
+        "montanha"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1280
+    },
+    {
+      "id": "cajon-del-maipo-embalse-el-yeso-011",
+      "src": "/images/library/cajon-del-maipo-embalse-el-yeso/cajon-del-maipo-embalse-el-yeso-011.webp",
+      "alt": "Cajón del Maipo e Embalse El Yeso — imagem 11",
+      "category": "cajon-del-maipo-embalse-el-yeso",
+      "categories": [
+        "cajon-del-maipo-embalse-el-yeso"
+      ],
+      "label": "Cajón del Maipo e Embalse El Yeso",
+      "tags": [
+        "cajon-del-maipo",
+        "embalse-el-yeso",
+        "natureza",
+        "montanha"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1280
+    },
+    {
+      "id": "cajon-del-maipo-embalse-el-yeso-012",
+      "src": "/images/library/cajon-del-maipo-embalse-el-yeso/cajon-del-maipo-embalse-el-yeso-012.webp",
+      "alt": "Cajón del Maipo e Embalse El Yeso — imagem 12",
+      "category": "cajon-del-maipo-embalse-el-yeso",
+      "categories": [
+        "cajon-del-maipo-embalse-el-yeso",
+        "cajon-del-maipo-termas"
+      ],
+      "label": "Cajón del Maipo e Embalse El Yeso",
+      "tags": [
+        "cajon-del-maipo",
+        "embalse-el-yeso",
+        "natureza",
+        "montanha",
+        "termas"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1440
+    },
+    {
+      "id": "cajon-del-maipo-embalse-el-yeso-013",
+      "src": "/images/library/cajon-del-maipo-embalse-el-yeso/cajon-del-maipo-embalse-el-yeso-013.webp",
+      "alt": "Cajón del Maipo e Embalse El Yeso — imagem 13",
+      "category": "cajon-del-maipo-embalse-el-yeso",
+      "categories": [
+        "cajon-del-maipo-embalse-el-yeso"
+      ],
+      "label": "Cajón del Maipo e Embalse El Yeso",
+      "tags": [
+        "cajon-del-maipo",
+        "embalse-el-yeso",
+        "natureza",
+        "montanha"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1440
+    },
+    {
+      "id": "cajon-del-maipo-embalse-el-yeso-014",
+      "src": "/images/library/cajon-del-maipo-embalse-el-yeso/cajon-del-maipo-embalse-el-yeso-014.webp",
+      "alt": "Cajón del Maipo e Embalse El Yeso — imagem 14",
+      "category": "cajon-del-maipo-embalse-el-yeso",
+      "categories": [
+        "cajon-del-maipo-embalse-el-yeso"
+      ],
+      "label": "Cajón del Maipo e Embalse El Yeso",
+      "tags": [
+        "cajon-del-maipo",
+        "embalse-el-yeso",
+        "natureza",
+        "montanha"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "cajon-del-maipo-embalse-el-yeso-015",
+      "src": "/images/library/cajon-del-maipo-embalse-el-yeso/cajon-del-maipo-embalse-el-yeso-015.webp",
+      "alt": "Cajón del Maipo e Embalse El Yeso — imagem 15",
+      "category": "cajon-del-maipo-embalse-el-yeso",
+      "categories": [
+        "cajon-del-maipo-embalse-el-yeso"
+      ],
+      "label": "Cajón del Maipo e Embalse El Yeso",
+      "tags": [
+        "cajon-del-maipo",
+        "embalse-el-yeso",
+        "natureza",
+        "montanha"
+      ],
+      "orientation": "portrait",
+      "width": 1550,
+      "height": 1920
+    },
+    {
+      "id": "cajon-del-maipo-embalse-el-yeso-016",
+      "src": "/images/library/cajon-del-maipo-embalse-el-yeso/cajon-del-maipo-embalse-el-yeso-016.webp",
+      "alt": "Cajón del Maipo e Embalse El Yeso — imagem 16",
+      "category": "cajon-del-maipo-embalse-el-yeso",
+      "categories": [
+        "cajon-del-maipo-embalse-el-yeso"
+      ],
+      "label": "Cajón del Maipo e Embalse El Yeso",
+      "tags": [
+        "cajon-del-maipo",
+        "embalse-el-yeso",
+        "natureza",
+        "montanha"
+      ],
+      "orientation": "portrait",
+      "width": 1280,
+      "height": 1920
+    },
+    {
+      "id": "cajon-del-maipo-embalse-el-yeso-017",
+      "src": "/images/library/cajon-del-maipo-embalse-el-yeso/cajon-del-maipo-embalse-el-yeso-017.webp",
+      "alt": "Cajón del Maipo e Embalse El Yeso — imagem 17",
+      "category": "cajon-del-maipo-embalse-el-yeso",
+      "categories": [
+        "cajon-del-maipo-embalse-el-yeso"
+      ],
+      "label": "Cajón del Maipo e Embalse El Yeso",
+      "tags": [
+        "cajon-del-maipo",
+        "embalse-el-yeso",
+        "natureza",
+        "montanha"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "cajon-del-maipo-embalse-el-yeso-018",
+      "src": "/images/library/cajon-del-maipo-embalse-el-yeso/cajon-del-maipo-embalse-el-yeso-018.webp",
+      "alt": "Cajón del Maipo e Embalse El Yeso — imagem 18",
+      "category": "cajon-del-maipo-embalse-el-yeso",
+      "categories": [
+        "cajon-del-maipo-embalse-el-yeso"
+      ],
+      "label": "Cajón del Maipo e Embalse El Yeso",
+      "tags": [
+        "cajon-del-maipo",
+        "embalse-el-yeso",
+        "natureza",
+        "montanha"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1280
+    },
+    {
+      "id": "cajon-del-maipo-embalse-el-yeso-019",
+      "src": "/images/library/cajon-del-maipo-embalse-el-yeso/cajon-del-maipo-embalse-el-yeso-019.webp",
+      "alt": "Cajón del Maipo e Embalse El Yeso — imagem 19",
+      "category": "cajon-del-maipo-embalse-el-yeso",
+      "categories": [
+        "cajon-del-maipo-embalse-el-yeso"
+      ],
+      "label": "Cajón del Maipo e Embalse El Yeso",
+      "tags": [
+        "cajon-del-maipo",
+        "embalse-el-yeso",
+        "natureza",
+        "montanha"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1440
+    },
+    {
+      "id": "cajon-del-maipo-embalse-el-yeso-020",
+      "src": "/images/library/cajon-del-maipo-embalse-el-yeso/cajon-del-maipo-embalse-el-yeso-020.webp",
+      "alt": "Cajón del Maipo e Embalse El Yeso — imagem 20",
+      "category": "cajon-del-maipo-embalse-el-yeso",
+      "categories": [
+        "cajon-del-maipo-embalse-el-yeso"
+      ],
+      "label": "Cajón del Maipo e Embalse El Yeso",
+      "tags": [
+        "cajon-del-maipo",
+        "embalse-el-yeso",
+        "natureza",
+        "montanha"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1280
+    },
+    {
+      "id": "cajon-del-maipo-embalse-el-yeso-021",
+      "src": "/images/library/cajon-del-maipo-embalse-el-yeso/cajon-del-maipo-embalse-el-yeso-021.webp",
+      "alt": "Cajón del Maipo e Embalse El Yeso — imagem 21",
+      "category": "cajon-del-maipo-embalse-el-yeso",
+      "categories": [
+        "cajon-del-maipo-embalse-el-yeso"
+      ],
+      "label": "Cajón del Maipo e Embalse El Yeso",
+      "tags": [
+        "cajon-del-maipo",
+        "embalse-el-yeso",
+        "natureza",
+        "montanha"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 960
+    },
+    {
+      "id": "cajon-del-maipo-embalse-el-yeso-022",
+      "src": "/images/library/cajon-del-maipo-embalse-el-yeso/cajon-del-maipo-embalse-el-yeso-022.webp",
+      "alt": "Cajón del Maipo e Embalse El Yeso — imagem 22",
+      "category": "cajon-del-maipo-embalse-el-yeso",
+      "categories": [
+        "cajon-del-maipo-embalse-el-yeso"
+      ],
+      "label": "Cajón del Maipo e Embalse El Yeso",
+      "tags": [
+        "cajon-del-maipo",
+        "embalse-el-yeso",
+        "natureza",
+        "montanha"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1280
+    },
+    {
+      "id": "cajon-del-maipo-embalse-el-yeso-023",
+      "src": "/images/library/cajon-del-maipo-embalse-el-yeso/cajon-del-maipo-embalse-el-yeso-023.webp",
+      "alt": "Cajón del Maipo e Embalse El Yeso — imagem 23",
+      "category": "cajon-del-maipo-embalse-el-yeso",
+      "categories": [
+        "cajon-del-maipo-embalse-el-yeso"
+      ],
+      "label": "Cajón del Maipo e Embalse El Yeso",
+      "tags": [
+        "cajon-del-maipo",
+        "embalse-el-yeso",
+        "natureza",
+        "montanha"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "cajon-del-maipo-embalse-el-yeso-024",
+      "src": "/images/library/cajon-del-maipo-embalse-el-yeso/cajon-del-maipo-embalse-el-yeso-024.webp",
+      "alt": "Cajón del Maipo e Embalse El Yeso — imagem 24",
+      "category": "cajon-del-maipo-embalse-el-yeso",
+      "categories": [
+        "cajon-del-maipo-embalse-el-yeso"
+      ],
+      "label": "Cajón del Maipo e Embalse El Yeso",
+      "tags": [
+        "cajon-del-maipo",
+        "embalse-el-yeso",
+        "natureza",
+        "montanha"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1280
+    },
+    {
+      "id": "cajon-del-maipo-embalse-el-yeso-025",
+      "src": "/images/library/cajon-del-maipo-embalse-el-yeso/cajon-del-maipo-embalse-el-yeso-025.webp",
+      "alt": "Cajón del Maipo e Embalse El Yeso — imagem 25",
+      "category": "cajon-del-maipo-embalse-el-yeso",
+      "categories": [
+        "cajon-del-maipo-embalse-el-yeso"
+      ],
+      "label": "Cajón del Maipo e Embalse El Yeso",
+      "tags": [
+        "cajon-del-maipo",
+        "embalse-el-yeso",
+        "natureza",
+        "montanha"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1280
+    },
+    {
+      "id": "cajon-del-maipo-embalse-el-yeso-026",
+      "src": "/images/library/cajon-del-maipo-embalse-el-yeso/cajon-del-maipo-embalse-el-yeso-026.webp",
+      "alt": "Cajón del Maipo e Embalse El Yeso — imagem 26",
+      "category": "cajon-del-maipo-embalse-el-yeso",
+      "categories": [
+        "cajon-del-maipo-embalse-el-yeso"
+      ],
+      "label": "Cajón del Maipo e Embalse El Yeso",
+      "tags": [
+        "cajon-del-maipo",
+        "embalse-el-yeso",
+        "natureza",
+        "montanha"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1280
+    },
+    {
+      "id": "cajon-del-maipo-embalse-el-yeso-027",
+      "src": "/images/library/cajon-del-maipo-embalse-el-yeso/cajon-del-maipo-embalse-el-yeso-027.webp",
+      "alt": "Cajón del Maipo e Embalse El Yeso — imagem 27",
+      "category": "cajon-del-maipo-embalse-el-yeso",
+      "categories": [
+        "cajon-del-maipo-embalse-el-yeso",
+        "cajon-del-maipo-termas"
+      ],
+      "label": "Cajón del Maipo e Embalse El Yeso",
+      "tags": [
+        "cajon-del-maipo",
+        "embalse-el-yeso",
+        "natureza",
+        "montanha",
+        "termas"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1440
+    },
+    {
+      "id": "cajon-del-maipo-embalse-el-yeso-028",
+      "src": "/images/library/cajon-del-maipo-embalse-el-yeso/cajon-del-maipo-embalse-el-yeso-028.webp",
+      "alt": "Cajón del Maipo e Embalse El Yeso — imagem 28",
+      "category": "cajon-del-maipo-embalse-el-yeso",
+      "categories": [
+        "cajon-del-maipo-embalse-el-yeso"
+      ],
+      "label": "Cajón del Maipo e Embalse El Yeso",
+      "tags": [
+        "cajon-del-maipo",
+        "embalse-el-yeso",
+        "natureza",
+        "montanha"
+      ],
+      "orientation": "portrait",
+      "width": 1280,
+      "height": 1920
+    },
+    {
+      "id": "cajon-del-maipo-embalse-el-yeso-029",
+      "src": "/images/library/cajon-del-maipo-embalse-el-yeso/cajon-del-maipo-embalse-el-yeso-029.webp",
+      "alt": "Cajón del Maipo e Embalse El Yeso — imagem 29",
+      "category": "cajon-del-maipo-embalse-el-yeso",
+      "categories": [
+        "cajon-del-maipo-embalse-el-yeso"
+      ],
+      "label": "Cajón del Maipo e Embalse El Yeso",
+      "tags": [
+        "cajon-del-maipo",
+        "embalse-el-yeso",
+        "natureza",
+        "montanha"
+      ],
+      "orientation": "portrait",
+      "width": 1442,
+      "height": 1920
+    },
+    {
+      "id": "cajon-del-maipo-embalse-el-yeso-030",
+      "src": "/images/library/cajon-del-maipo-embalse-el-yeso/cajon-del-maipo-embalse-el-yeso-030.webp",
+      "alt": "Cajón del Maipo e Embalse El Yeso — imagem 30",
+      "category": "cajon-del-maipo-embalse-el-yeso",
+      "categories": [
+        "cajon-del-maipo-embalse-el-yeso"
+      ],
+      "label": "Cajón del Maipo e Embalse El Yeso",
+      "tags": [
+        "cajon-del-maipo",
+        "embalse-el-yeso",
+        "natureza",
+        "montanha"
+      ],
+      "orientation": "portrait",
+      "width": 1280,
+      "height": 1920
+    },
+    {
+      "id": "cajon-del-maipo-embalse-el-yeso-031",
+      "src": "/images/library/cajon-del-maipo-embalse-el-yeso/cajon-del-maipo-embalse-el-yeso-031.webp",
+      "alt": "Cajón del Maipo e Embalse El Yeso — imagem 31",
+      "category": "cajon-del-maipo-embalse-el-yeso",
+      "categories": [
+        "cajon-del-maipo-embalse-el-yeso"
+      ],
+      "label": "Cajón del Maipo e Embalse El Yeso",
+      "tags": [
+        "cajon-del-maipo",
+        "embalse-el-yeso",
+        "natureza",
+        "montanha"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1280
+    },
+    {
+      "id": "cajon-del-maipo-embalse-el-yeso-032",
+      "src": "/images/library/cajon-del-maipo-embalse-el-yeso/cajon-del-maipo-embalse-el-yeso-032.webp",
+      "alt": "Cajón del Maipo e Embalse El Yeso — imagem 32",
+      "category": "cajon-del-maipo-embalse-el-yeso",
+      "categories": [
+        "cajon-del-maipo-embalse-el-yeso"
+      ],
+      "label": "Cajón del Maipo e Embalse El Yeso",
+      "tags": [
+        "cajon-del-maipo",
+        "embalse-el-yeso",
+        "natureza",
+        "montanha"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1280
+    },
+    {
+      "id": "cajon-del-maipo-embalse-el-yeso-033",
+      "src": "/images/library/cajon-del-maipo-embalse-el-yeso/cajon-del-maipo-embalse-el-yeso-033.webp",
+      "alt": "Cajón del Maipo e Embalse El Yeso — imagem 33",
+      "category": "cajon-del-maipo-embalse-el-yeso",
+      "categories": [
+        "cajon-del-maipo-embalse-el-yeso"
+      ],
+      "label": "Cajón del Maipo e Embalse El Yeso",
+      "tags": [
+        "cajon-del-maipo",
+        "embalse-el-yeso",
+        "natureza",
+        "montanha"
+      ],
+      "orientation": "portrait",
+      "width": 1280,
+      "height": 1920
+    },
+    {
+      "id": "cajon-del-maipo-embalse-el-yeso-034",
+      "src": "/images/library/cajon-del-maipo-embalse-el-yeso/cajon-del-maipo-embalse-el-yeso-034.webp",
+      "alt": "Cajón del Maipo e Embalse El Yeso — imagem 34",
+      "category": "cajon-del-maipo-embalse-el-yeso",
+      "categories": [
+        "cajon-del-maipo-embalse-el-yeso"
+      ],
+      "label": "Cajón del Maipo e Embalse El Yeso",
+      "tags": [
+        "cajon-del-maipo",
+        "embalse-el-yeso",
+        "natureza",
+        "montanha"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1280
+    },
+    {
+      "id": "cajon-del-maipo-embalse-el-yeso-035",
+      "src": "/images/library/cajon-del-maipo-embalse-el-yeso/cajon-del-maipo-embalse-el-yeso-035.webp",
+      "alt": "Cajón del Maipo e Embalse El Yeso — imagem 35",
+      "category": "cajon-del-maipo-embalse-el-yeso",
+      "categories": [
+        "cajon-del-maipo-embalse-el-yeso"
+      ],
+      "label": "Cajón del Maipo e Embalse El Yeso",
+      "tags": [
+        "cajon-del-maipo",
+        "embalse-el-yeso",
+        "natureza",
+        "montanha"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1280
+    },
+    {
+      "id": "cajon-del-maipo-embalse-el-yeso-036",
+      "src": "/images/library/cajon-del-maipo-embalse-el-yeso/cajon-del-maipo-embalse-el-yeso-036.webp",
+      "alt": "Cajón del Maipo e Embalse El Yeso — imagem 36",
+      "category": "cajon-del-maipo-embalse-el-yeso",
+      "categories": [
+        "cajon-del-maipo-embalse-el-yeso"
+      ],
+      "label": "Cajón del Maipo e Embalse El Yeso",
+      "tags": [
+        "cajon-del-maipo",
+        "embalse-el-yeso",
+        "natureza",
+        "montanha"
+      ],
+      "orientation": "portrait",
+      "width": 1280,
+      "height": 1920
+    },
+    {
+      "id": "cajon-del-maipo-embalse-el-yeso-037",
+      "src": "/images/library/cajon-del-maipo-embalse-el-yeso/cajon-del-maipo-embalse-el-yeso-037.webp",
+      "alt": "Cajón del Maipo e Embalse El Yeso — imagem 37",
+      "category": "cajon-del-maipo-embalse-el-yeso",
+      "categories": [
+        "cajon-del-maipo-embalse-el-yeso"
+      ],
+      "label": "Cajón del Maipo e Embalse El Yeso",
+      "tags": [
+        "cajon-del-maipo",
+        "embalse-el-yeso",
+        "natureza",
+        "montanha"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1280
+    },
+    {
+      "id": "cajon-del-maipo-embalse-el-yeso-038",
+      "src": "/images/library/cajon-del-maipo-embalse-el-yeso/cajon-del-maipo-embalse-el-yeso-038.webp",
+      "alt": "Cajón del Maipo e Embalse El Yeso — imagem 38",
+      "category": "cajon-del-maipo-embalse-el-yeso",
+      "categories": [
+        "cajon-del-maipo-embalse-el-yeso"
+      ],
+      "label": "Cajón del Maipo e Embalse El Yeso",
+      "tags": [
+        "cajon-del-maipo",
+        "embalse-el-yeso",
+        "natureza",
+        "montanha"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "cajon-del-maipo-embalse-el-yeso-039",
+      "src": "/images/library/cajon-del-maipo-embalse-el-yeso/cajon-del-maipo-embalse-el-yeso-039.webp",
+      "alt": "Cajón del Maipo e Embalse El Yeso — imagem 39",
+      "category": "cajon-del-maipo-embalse-el-yeso",
+      "categories": [
+        "cajon-del-maipo-embalse-el-yeso"
+      ],
+      "label": "Cajón del Maipo e Embalse El Yeso",
+      "tags": [
+        "cajon-del-maipo",
+        "embalse-el-yeso",
+        "natureza",
+        "montanha"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1440
+    },
+    {
+      "id": "cajon-del-maipo-termas-001",
+      "src": "/images/library/cajon-del-maipo-termas/cajon-del-maipo-termas-001.webp",
+      "alt": "Cajón del Maipo e Termas — imagem 01",
+      "category": "cajon-del-maipo-termas",
+      "categories": [
+        "cajon-del-maipo-termas"
+      ],
+      "label": "Cajón del Maipo e Termas",
+      "tags": [
+        "cajon-del-maipo",
+        "termas",
+        "natureza",
+        "montanha"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "cajon-del-maipo-termas-002",
+      "src": "/images/library/cajon-del-maipo-termas/cajon-del-maipo-termas-002.webp",
+      "alt": "Cajón del Maipo e Termas — imagem 02",
+      "category": "cajon-del-maipo-termas",
+      "categories": [
+        "cajon-del-maipo-termas"
+      ],
+      "label": "Cajón del Maipo e Termas",
+      "tags": [
+        "cajon-del-maipo",
+        "termas",
+        "natureza",
+        "montanha"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1440
+    },
+    {
+      "id": "cajon-del-maipo-termas-003",
+      "src": "/images/library/cajon-del-maipo-termas/cajon-del-maipo-termas-003.webp",
+      "alt": "Cajón del Maipo e Termas — imagem 03",
+      "category": "cajon-del-maipo-termas",
+      "categories": [
+        "cajon-del-maipo-termas"
+      ],
+      "label": "Cajón del Maipo e Termas",
+      "tags": [
+        "cajon-del-maipo",
+        "termas",
+        "natureza",
+        "montanha"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1440
+    },
+    {
+      "id": "cajon-del-maipo-termas-004",
+      "src": "/images/library/cajon-del-maipo-termas/cajon-del-maipo-termas-004.webp",
+      "alt": "Cajón del Maipo e Termas — imagem 04",
+      "category": "cajon-del-maipo-termas",
+      "categories": [
+        "cajon-del-maipo-termas"
+      ],
+      "label": "Cajón del Maipo e Termas",
+      "tags": [
+        "cajon-del-maipo",
+        "termas",
+        "natureza",
+        "montanha"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "cajon-del-maipo-termas-005",
+      "src": "/images/library/cajon-del-maipo-termas/cajon-del-maipo-termas-005.webp",
+      "alt": "Cajón del Maipo e Termas — imagem 05",
+      "category": "cajon-del-maipo-termas",
+      "categories": [
+        "cajon-del-maipo-termas"
+      ],
+      "label": "Cajón del Maipo e Termas",
+      "tags": [
+        "cajon-del-maipo",
+        "termas",
+        "natureza",
+        "montanha"
+      ],
+      "orientation": "portrait",
+      "width": 1275,
+      "height": 1920
+    },
+    {
+      "id": "cajon-del-maipo-termas-006",
+      "src": "/images/library/cajon-del-maipo-termas/cajon-del-maipo-termas-006.webp",
+      "alt": "Cajón del Maipo e Termas — imagem 06",
+      "category": "cajon-del-maipo-termas",
+      "categories": [
+        "cajon-del-maipo-termas"
+      ],
+      "label": "Cajón del Maipo e Termas",
+      "tags": [
+        "cajon-del-maipo",
+        "termas",
+        "natureza",
+        "montanha"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1280
+    },
+    {
+      "id": "cajon-del-maipo-termas-007",
+      "src": "/images/library/cajon-del-maipo-termas/cajon-del-maipo-termas-007.webp",
+      "alt": "Cajón del Maipo e Termas — imagem 07",
+      "category": "cajon-del-maipo-termas",
+      "categories": [
+        "cajon-del-maipo-termas"
+      ],
+      "label": "Cajón del Maipo e Termas",
+      "tags": [
+        "cajon-del-maipo",
+        "termas",
+        "natureza",
+        "montanha"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1280
+    },
+    {
+      "id": "cajon-del-maipo-termas-008",
+      "src": "/images/library/cajon-del-maipo-termas/cajon-del-maipo-termas-008.webp",
+      "alt": "Cajón del Maipo e Termas — imagem 08",
+      "category": "cajon-del-maipo-termas",
+      "categories": [
+        "cajon-del-maipo-termas"
+      ],
+      "label": "Cajón del Maipo e Termas",
+      "tags": [
+        "cajon-del-maipo",
+        "termas",
+        "natureza",
+        "montanha"
+      ],
+      "orientation": "portrait",
+      "width": 1536,
+      "height": 1920
+    },
+    {
+      "id": "cajon-del-maipo-termas-009",
+      "src": "/images/library/cajon-del-maipo-termas/cajon-del-maipo-termas-009.webp",
+      "alt": "Cajón del Maipo e Termas — imagem 09",
+      "category": "cajon-del-maipo-termas",
+      "categories": [
+        "cajon-del-maipo-termas"
+      ],
+      "label": "Cajón del Maipo e Termas",
+      "tags": [
+        "cajon-del-maipo",
+        "termas",
+        "natureza",
+        "montanha"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "cajon-del-maipo-termas-010",
+      "src": "/images/library/cajon-del-maipo-termas/cajon-del-maipo-termas-010.webp",
+      "alt": "Cajón del Maipo e Termas — imagem 10",
+      "category": "cajon-del-maipo-termas",
+      "categories": [
+        "cajon-del-maipo-termas"
+      ],
+      "label": "Cajón del Maipo e Termas",
+      "tags": [
+        "cajon-del-maipo",
+        "termas",
+        "natureza",
+        "montanha"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1440
+    },
+    {
+      "id": "cajon-del-maipo-termas-011",
+      "src": "/images/library/cajon-del-maipo-termas/cajon-del-maipo-termas-011.webp",
+      "alt": "Cajón del Maipo e Termas — imagem 11",
+      "category": "cajon-del-maipo-termas",
+      "categories": [
+        "cajon-del-maipo-termas"
+      ],
+      "label": "Cajón del Maipo e Termas",
+      "tags": [
+        "cajon-del-maipo",
+        "termas",
+        "natureza",
+        "montanha"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1443
+    },
+    {
+      "id": "cajon-del-maipo-termas-012",
+      "src": "/images/library/cajon-del-maipo-termas/cajon-del-maipo-termas-012.webp",
+      "alt": "Cajón del Maipo e Termas — imagem 12",
+      "category": "cajon-del-maipo-termas",
+      "categories": [
+        "cajon-del-maipo-termas"
+      ],
+      "label": "Cajón del Maipo e Termas",
+      "tags": [
+        "cajon-del-maipo",
+        "termas",
+        "natureza",
+        "montanha"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "cajon-del-maipo-termas-013",
+      "src": "/images/library/cajon-del-maipo-termas/cajon-del-maipo-termas-013.webp",
+      "alt": "Cajón del Maipo e Termas — imagem 13",
+      "category": "cajon-del-maipo-termas",
+      "categories": [
+        "cajon-del-maipo-termas"
+      ],
+      "label": "Cajón del Maipo e Termas",
+      "tags": [
+        "cajon-del-maipo",
+        "termas",
+        "natureza",
+        "montanha"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1440
+    },
+    {
+      "id": "cajon-del-maipo-termas-014",
+      "src": "/images/library/cajon-del-maipo-termas/cajon-del-maipo-termas-014.webp",
+      "alt": "Cajón del Maipo e Termas — imagem 14",
+      "category": "cajon-del-maipo-termas",
+      "categories": [
+        "cajon-del-maipo-termas"
+      ],
+      "label": "Cajón del Maipo e Termas",
+      "tags": [
+        "cajon-del-maipo",
+        "termas",
+        "natureza",
+        "montanha"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1611
+    },
+    {
+      "id": "cajon-del-maipo-termas-015",
+      "src": "/images/library/cajon-del-maipo-termas/cajon-del-maipo-termas-015.webp",
+      "alt": "Cajón del Maipo e Termas — imagem 15",
+      "category": "cajon-del-maipo-termas",
+      "categories": [
+        "cajon-del-maipo-termas"
+      ],
+      "label": "Cajón del Maipo e Termas",
+      "tags": [
+        "cajon-del-maipo",
+        "termas",
+        "natureza",
+        "montanha"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1440
+    },
+    {
+      "id": "cajon-del-maipo-termas-016",
+      "src": "/images/library/cajon-del-maipo-termas/cajon-del-maipo-termas-016.webp",
+      "alt": "Cajón del Maipo e Termas — imagem 16",
+      "category": "cajon-del-maipo-termas",
+      "categories": [
+        "cajon-del-maipo-termas"
+      ],
+      "label": "Cajón del Maipo e Termas",
+      "tags": [
+        "cajon-del-maipo",
+        "termas",
+        "natureza",
+        "montanha"
+      ],
+      "orientation": "portrait",
+      "width": 1280,
+      "height": 1920
+    },
+    {
+      "id": "cajon-del-maipo-termas-017",
+      "src": "/images/library/cajon-del-maipo-termas/cajon-del-maipo-termas-017.webp",
+      "alt": "Cajón del Maipo e Termas — imagem 17",
+      "category": "cajon-del-maipo-termas",
+      "categories": [
+        "cajon-del-maipo-termas"
+      ],
+      "label": "Cajón del Maipo e Termas",
+      "tags": [
+        "cajon-del-maipo",
+        "termas",
+        "natureza",
+        "montanha"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1440
+    },
+    {
+      "id": "cajon-del-maipo-termas-018",
+      "src": "/images/library/cajon-del-maipo-termas/cajon-del-maipo-termas-018.webp",
+      "alt": "Cajón del Maipo e Termas — imagem 18",
+      "category": "cajon-del-maipo-termas",
+      "categories": [
+        "cajon-del-maipo-termas"
+      ],
+      "label": "Cajón del Maipo e Termas",
+      "tags": [
+        "cajon-del-maipo",
+        "termas",
+        "natureza",
+        "montanha"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1079
+    },
+    {
+      "id": "cajon-del-maipo-termas-019",
+      "src": "/images/library/cajon-del-maipo-termas/cajon-del-maipo-termas-019.webp",
+      "alt": "Cajón del Maipo e Termas — imagem 19",
+      "category": "cajon-del-maipo-termas",
+      "categories": [
+        "cajon-del-maipo-termas"
+      ],
+      "label": "Cajón del Maipo e Termas",
+      "tags": [
+        "cajon-del-maipo",
+        "termas",
+        "natureza",
+        "montanha"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "cajon-del-maipo-termas-020",
+      "src": "/images/library/cajon-del-maipo-termas/cajon-del-maipo-termas-020.webp",
+      "alt": "Cajón del Maipo e Termas — imagem 20",
+      "category": "cajon-del-maipo-termas",
+      "categories": [
+        "cajon-del-maipo-termas"
+      ],
+      "label": "Cajón del Maipo e Termas",
+      "tags": [
+        "cajon-del-maipo",
+        "termas",
+        "natureza",
+        "montanha"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1440
+    },
+    {
+      "id": "motoski-na-neve-001",
+      "src": "/images/library/motoski-na-neve/motoski-na-neve-001.webp",
+      "alt": "Passeio de motoski na neve — imagem 01",
+      "category": "motoski-na-neve",
+      "categories": [
+        "motoski-na-neve"
+      ],
+      "label": "Passeio de motoski na neve",
+      "tags": [
+        "motoski",
+        "neve",
+        "aventura",
+        "montanha",
+        "inverno"
+      ],
+      "orientation": "portrait",
+      "width": 1280,
+      "height": 1920
+    },
+    {
+      "id": "cajon-del-maipo-termas-021",
+      "src": "/images/library/cajon-del-maipo-termas/cajon-del-maipo-termas-021.webp",
+      "alt": "Cajón del Maipo e Termas — imagem 21",
+      "category": "cajon-del-maipo-termas",
+      "categories": [
+        "cajon-del-maipo-termas"
+      ],
+      "label": "Cajón del Maipo e Termas",
+      "tags": [
+        "cajon-del-maipo",
+        "termas",
+        "natureza",
+        "montanha"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1280
+    },
+    {
+      "id": "parque-safari-001",
+      "src": "/images/library/parque-safari/parque-safari-001.webp",
+      "alt": "Parque Safari — imagem 01",
+      "category": "parque-safari",
+      "categories": [
+        "parque-safari"
+      ],
+      "label": "Parque Safari",
+      "tags": [
+        "parque-safari",
+        "animais",
+        "familia"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "parque-safari-002",
+      "src": "/images/library/parque-safari/parque-safari-002.webp",
+      "alt": "Parque Safari — imagem 02",
+      "category": "parque-safari",
+      "categories": [
+        "parque-safari"
+      ],
+      "label": "Parque Safari",
+      "tags": [
+        "parque-safari",
+        "animais",
+        "familia"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "parque-safari-003",
+      "src": "/images/library/parque-safari/parque-safari-003.webp",
+      "alt": "Parque Safari — imagem 03",
+      "category": "parque-safari",
+      "categories": [
+        "parque-safari"
+      ],
+      "label": "Parque Safari",
+      "tags": [
+        "parque-safari",
+        "animais",
+        "familia"
+      ],
+      "orientation": "portrait",
+      "width": 1080,
+      "height": 1920
+    },
+    {
+      "id": "parque-safari-004",
+      "src": "/images/library/parque-safari/parque-safari-004.webp",
+      "alt": "Parque Safari — imagem 04",
+      "category": "parque-safari",
+      "categories": [
+        "parque-safari"
+      ],
+      "label": "Parque Safari",
+      "tags": [
+        "parque-safari",
+        "animais",
+        "familia"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "parque-safari-005",
+      "src": "/images/library/parque-safari/parque-safari-005.webp",
+      "alt": "Parque Safari — imagem 05",
+      "category": "parque-safari",
+      "categories": [
+        "parque-safari"
+      ],
+      "label": "Parque Safari",
+      "tags": [
+        "parque-safari",
+        "animais",
+        "familia"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "parque-safari-006",
+      "src": "/images/library/parque-safari/parque-safari-006.webp",
+      "alt": "Parque Safari — imagem 06",
+      "category": "parque-safari",
+      "categories": [
+        "parque-safari"
+      ],
+      "label": "Parque Safari",
+      "tags": [
+        "parque-safari",
+        "animais",
+        "familia"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "parque-safari-007",
+      "src": "/images/library/parque-safari/parque-safari-007.webp",
+      "alt": "Parque Safari — imagem 07",
+      "category": "parque-safari",
+      "categories": [
+        "parque-safari"
+      ],
+      "label": "Parque Safari",
+      "tags": [
+        "parque-safari",
+        "animais",
+        "familia"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "parque-safari-008",
+      "src": "/images/library/parque-safari/parque-safari-008.webp",
+      "alt": "Parque Safari — imagem 08",
+      "category": "parque-safari",
+      "categories": [
+        "parque-safari"
+      ],
+      "label": "Parque Safari",
+      "tags": [
+        "parque-safari",
+        "animais",
+        "familia"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "parque-safari-009",
+      "src": "/images/library/parque-safari/parque-safari-009.webp",
+      "alt": "Parque Safari — imagem 09",
+      "category": "parque-safari",
+      "categories": [
+        "parque-safari"
+      ],
+      "label": "Parque Safari",
+      "tags": [
+        "parque-safari",
+        "animais",
+        "familia"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "parque-safari-010",
+      "src": "/images/library/parque-safari/parque-safari-010.webp",
+      "alt": "Parque Safari — imagem 10",
+      "category": "parque-safari",
+      "categories": [
+        "parque-safari"
+      ],
+      "label": "Parque Safari",
+      "tags": [
+        "parque-safari",
+        "animais",
+        "familia"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "parque-safari-011",
+      "src": "/images/library/parque-safari/parque-safari-011.webp",
+      "alt": "Parque Safari — imagem 11",
+      "category": "parque-safari",
+      "categories": [
+        "parque-safari"
+      ],
+      "label": "Parque Safari",
+      "tags": [
+        "parque-safari",
+        "animais",
+        "familia"
+      ],
+      "orientation": "square",
+      "width": 1920,
+      "height": 1920
+    },
+    {
+      "id": "parque-safari-012",
+      "src": "/images/library/parque-safari/parque-safari-012.webp",
+      "alt": "Parque Safari — imagem 12",
+      "category": "parque-safari",
+      "categories": [
+        "parque-safari"
+      ],
+      "label": "Parque Safari",
+      "tags": [
+        "parque-safari",
+        "animais",
+        "familia"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "parque-safari-013",
+      "src": "/images/library/parque-safari/parque-safari-013.webp",
+      "alt": "Parque Safari — imagem 13",
+      "category": "parque-safari",
+      "categories": [
+        "parque-safari"
+      ],
+      "label": "Parque Safari",
+      "tags": [
+        "parque-safari",
+        "animais",
+        "familia"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "parque-safari-014",
+      "src": "/images/library/parque-safari/parque-safari-014.webp",
+      "alt": "Parque Safari — imagem 14",
+      "category": "parque-safari",
+      "categories": [
+        "parque-safari"
+      ],
+      "label": "Parque Safari",
+      "tags": [
+        "parque-safari",
+        "animais",
+        "familia"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "parque-safari-015",
+      "src": "/images/library/parque-safari/parque-safari-015.webp",
+      "alt": "Parque Safari — imagem 15",
+      "category": "parque-safari",
+      "categories": [
+        "parque-safari"
+      ],
+      "label": "Parque Safari",
+      "tags": [
+        "parque-safari",
+        "animais",
+        "familia"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "parque-safari-016",
+      "src": "/images/library/parque-safari/parque-safari-016.webp",
+      "alt": "Parque Safari — imagem 16",
+      "category": "parque-safari",
+      "categories": [
+        "parque-safari"
+      ],
+      "label": "Parque Safari",
+      "tags": [
+        "parque-safari",
+        "animais",
+        "familia"
+      ],
+      "orientation": "portrait",
+      "width": 1080,
+      "height": 1920
+    },
+    {
+      "id": "parque-safari-017",
+      "src": "/images/library/parque-safari/parque-safari-017.webp",
+      "alt": "Parque Safari — imagem 17",
+      "category": "parque-safari",
+      "categories": [
+        "parque-safari"
+      ],
+      "label": "Parque Safari",
+      "tags": [
+        "parque-safari",
+        "animais",
+        "familia"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "parque-safari-018",
+      "src": "/images/library/parque-safari/parque-safari-018.webp",
+      "alt": "Parque Safari — imagem 18",
+      "category": "parque-safari",
+      "categories": [
+        "parque-safari"
+      ],
+      "label": "Parque Safari",
+      "tags": [
+        "parque-safari",
+        "animais",
+        "familia"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1280
+    },
+    {
+      "id": "parque-safari-019",
+      "src": "/images/library/parque-safari/parque-safari-019.webp",
+      "alt": "Parque Safari — imagem 19",
+      "category": "parque-safari",
+      "categories": [
+        "parque-safari"
+      ],
+      "label": "Parque Safari",
+      "tags": [
+        "parque-safari",
+        "animais",
+        "familia"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1280
+    },
+    {
+      "id": "parque-safari-020",
+      "src": "/images/library/parque-safari/parque-safari-020.webp",
+      "alt": "Parque Safari — imagem 20",
+      "category": "parque-safari",
+      "categories": [
+        "parque-safari"
+      ],
+      "label": "Parque Safari",
+      "tags": [
+        "parque-safari",
+        "animais",
+        "familia"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1280
+    },
+    {
+      "id": "parque-safari-021",
+      "src": "/images/library/parque-safari/parque-safari-021.webp",
+      "alt": "Parque Safari — imagem 21",
+      "category": "parque-safari",
+      "categories": [
+        "parque-safari"
+      ],
+      "label": "Parque Safari",
+      "tags": [
+        "parque-safari",
+        "animais",
+        "familia"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1280
+    },
+    {
+      "id": "parque-safari-022",
+      "src": "/images/library/parque-safari/parque-safari-022.webp",
+      "alt": "Parque Safari — imagem 22",
+      "category": "parque-safari",
+      "categories": [
+        "parque-safari"
+      ],
+      "label": "Parque Safari",
+      "tags": [
+        "parque-safari",
+        "animais",
+        "familia"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1280
+    },
+    {
+      "id": "parque-safari-023",
+      "src": "/images/library/parque-safari/parque-safari-023.webp",
+      "alt": "Parque Safari — imagem 23",
+      "category": "parque-safari",
+      "categories": [
+        "parque-safari"
+      ],
+      "label": "Parque Safari",
+      "tags": [
+        "parque-safari",
+        "animais",
+        "familia"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1280
+    },
+    {
+      "id": "parque-safari-024",
+      "src": "/images/library/parque-safari/parque-safari-024.webp",
+      "alt": "Parque Safari — imagem 24",
+      "category": "parque-safari",
+      "categories": [
+        "parque-safari"
+      ],
+      "label": "Parque Safari",
+      "tags": [
+        "parque-safari",
+        "animais",
+        "familia"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1280
+    },
+    {
+      "id": "parque-safari-025",
+      "src": "/images/library/parque-safari/parque-safari-025.webp",
+      "alt": "Parque Safari — imagem 25",
+      "category": "parque-safari",
+      "categories": [
+        "parque-safari"
+      ],
+      "label": "Parque Safari",
+      "tags": [
+        "parque-safari",
+        "animais",
+        "familia"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1280
+    },
+    {
+      "id": "parque-safari-026",
+      "src": "/images/library/parque-safari/parque-safari-026.webp",
+      "alt": "Parque Safari — imagem 26",
+      "category": "parque-safari",
+      "categories": [
+        "parque-safari"
+      ],
+      "label": "Parque Safari",
+      "tags": [
+        "parque-safari",
+        "animais",
+        "familia"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1280
+    },
+    {
+      "id": "parque-safari-027",
+      "src": "/images/library/parque-safari/parque-safari-027.webp",
+      "alt": "Parque Safari — imagem 27",
+      "category": "parque-safari",
+      "categories": [
+        "parque-safari"
+      ],
+      "label": "Parque Safari",
+      "tags": [
+        "parque-safari",
+        "animais",
+        "familia"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1280
+    },
+    {
+      "id": "portillo-001",
+      "src": "/images/library/portillo/portillo-001.webp",
+      "alt": "Portillo — imagem 01",
+      "category": "portillo",
+      "categories": [
+        "portillo"
+      ],
+      "label": "Portillo",
+      "tags": [
+        "portillo",
+        "laguna-del-inca",
+        "neve",
+        "montanha"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1440
+    },
+    {
+      "id": "portillo-002",
+      "src": "/images/library/portillo/portillo-002.webp",
+      "alt": "Portillo — imagem 02",
+      "category": "portillo",
+      "categories": [
+        "portillo"
+      ],
+      "label": "Portillo",
+      "tags": [
+        "portillo",
+        "laguna-del-inca",
+        "neve",
+        "montanha"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 440
+    },
+    {
+      "id": "portillo-003",
+      "src": "/images/library/portillo/portillo-003.webp",
+      "alt": "Portillo — imagem 03",
+      "category": "portillo",
+      "categories": [
+        "portillo"
+      ],
+      "label": "Portillo",
+      "tags": [
+        "portillo",
+        "laguna-del-inca",
+        "neve",
+        "montanha"
+      ],
+      "orientation": "portrait",
+      "width": 1080,
+      "height": 1920
+    },
+    {
+      "id": "portillo-004",
+      "src": "/images/library/portillo/portillo-004.webp",
+      "alt": "Portillo — imagem 04",
+      "category": "portillo",
+      "categories": [
+        "portillo"
+      ],
+      "label": "Portillo",
+      "tags": [
+        "portillo",
+        "laguna-del-inca",
+        "neve",
+        "montanha"
+      ],
+      "orientation": "portrait",
+      "width": 1441,
+      "height": 1920
+    },
+    {
+      "id": "portillo-005",
+      "src": "/images/library/portillo/portillo-005.webp",
+      "alt": "Portillo — imagem 05",
+      "category": "portillo",
+      "categories": [
+        "portillo"
+      ],
+      "label": "Portillo",
+      "tags": [
+        "portillo",
+        "laguna-del-inca",
+        "neve",
+        "montanha"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1440
+    },
+    {
+      "id": "portillo-006",
+      "src": "/images/library/portillo/portillo-006.webp",
+      "alt": "Portillo — imagem 06",
+      "category": "portillo",
+      "categories": [
+        "portillo"
+      ],
+      "label": "Portillo",
+      "tags": [
+        "portillo",
+        "laguna-del-inca",
+        "neve",
+        "montanha"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "portillo-007",
+      "src": "/images/library/portillo/portillo-007.webp",
+      "alt": "Portillo — imagem 07",
+      "category": "portillo",
+      "categories": [
+        "portillo"
+      ],
+      "label": "Portillo",
+      "tags": [
+        "portillo",
+        "laguna-del-inca",
+        "neve",
+        "montanha"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "portillo-008",
+      "src": "/images/library/portillo/portillo-008.webp",
+      "alt": "Portillo — imagem 08",
+      "category": "portillo",
+      "categories": [
+        "portillo"
+      ],
+      "label": "Portillo",
+      "tags": [
+        "portillo",
+        "laguna-del-inca",
+        "neve",
+        "montanha"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "portillo-009",
+      "src": "/images/library/portillo/portillo-009.webp",
+      "alt": "Portillo — imagem 09",
+      "category": "portillo",
+      "categories": [
+        "portillo"
+      ],
+      "label": "Portillo",
+      "tags": [
+        "portillo",
+        "laguna-del-inca",
+        "neve",
+        "montanha"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "portillo-010",
+      "src": "/images/library/portillo/portillo-010.webp",
+      "alt": "Portillo — imagem 10",
+      "category": "portillo",
+      "categories": [
+        "portillo"
+      ],
+      "label": "Portillo",
+      "tags": [
+        "portillo",
+        "laguna-del-inca",
+        "neve",
+        "montanha"
+      ],
+      "orientation": "portrait",
+      "width": 1080,
+      "height": 1920
+    },
+    {
+      "id": "portillo-011",
+      "src": "/images/library/portillo/portillo-011.webp",
+      "alt": "Portillo — imagem 11",
+      "category": "portillo",
+      "categories": [
+        "portillo"
+      ],
+      "label": "Portillo",
+      "tags": [
+        "portillo",
+        "laguna-del-inca",
+        "neve",
+        "montanha"
+      ],
+      "orientation": "portrait",
+      "width": 1280,
+      "height": 1920
+    },
+    {
+      "id": "santiago-001",
+      "src": "/images/library/santiago/santiago-001.webp",
+      "alt": "Santiago — imagem 01",
+      "category": "santiago",
+      "categories": [
+        "santiago"
+      ],
+      "label": "Santiago",
+      "tags": [
+        "santiago",
+        "cidade",
+        "urbano"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "santiago-002",
+      "src": "/images/library/santiago/santiago-002.webp",
+      "alt": "Santiago — imagem 02",
+      "category": "santiago",
+      "categories": [
+        "santiago"
+      ],
+      "label": "Santiago",
+      "tags": [
+        "santiago",
+        "cidade",
+        "urbano"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "santiago-003",
+      "src": "/images/library/santiago/santiago-003.webp",
+      "alt": "Santiago — imagem 03",
+      "category": "santiago",
+      "categories": [
+        "santiago"
+      ],
+      "label": "Santiago",
+      "tags": [
+        "santiago",
+        "cidade",
+        "urbano"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "id": "santiago-004",
+      "src": "/images/library/santiago/santiago-004.webp",
+      "alt": "Santiago — imagem 04",
+      "category": "santiago",
+      "categories": [
+        "santiago"
+      ],
+      "label": "Santiago",
+      "tags": [
+        "santiago",
+        "cidade",
+        "urbano"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "id": "santiago-005",
+      "src": "/images/library/santiago/santiago-005.webp",
+      "alt": "Santiago — imagem 05",
+      "category": "santiago",
+      "categories": [
+        "santiago"
+      ],
+      "label": "Santiago",
+      "tags": [
+        "santiago",
+        "cidade",
+        "urbano"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "id": "santiago-006",
+      "src": "/images/library/santiago/santiago-006.webp",
+      "alt": "Santiago — imagem 06",
+      "category": "santiago",
+      "categories": [
+        "santiago"
+      ],
+      "label": "Santiago",
+      "tags": [
+        "santiago",
+        "cidade",
+        "urbano"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "templo-bahai-001",
+      "src": "/images/library/templo-bahai/templo-bahai-001.webp",
+      "alt": "Templo Bahá’í — imagem 01",
+      "category": "templo-bahai",
+      "categories": [
+        "templo-bahai"
+      ],
+      "label": "Templo Bahá’í",
+      "tags": [
+        "templo-bahai",
+        "arquitetura",
+        "santiago"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "templo-bahai-002",
+      "src": "/images/library/templo-bahai/templo-bahai-002.webp",
+      "alt": "Templo Bahá’í — imagem 02",
+      "category": "templo-bahai",
+      "categories": [
+        "templo-bahai"
+      ],
+      "label": "Templo Bahá’í",
+      "tags": [
+        "templo-bahai",
+        "arquitetura",
+        "santiago"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "templo-bahai-003",
+      "src": "/images/library/templo-bahai/templo-bahai-003.webp",
+      "alt": "Templo Bahá’í — imagem 03",
+      "category": "templo-bahai",
+      "categories": [
+        "templo-bahai"
+      ],
+      "label": "Templo Bahá’í",
+      "tags": [
+        "templo-bahai",
+        "arquitetura",
+        "santiago"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "templo-bahai-004",
+      "src": "/images/library/templo-bahai/templo-bahai-004.webp",
+      "alt": "Templo Bahá’í — imagem 04",
+      "category": "templo-bahai",
+      "categories": [
+        "templo-bahai"
+      ],
+      "label": "Templo Bahá’í",
+      "tags": [
+        "templo-bahai",
+        "arquitetura",
+        "santiago"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "valparaiso-vina-del-mar-001",
+      "src": "/images/library/valparaiso-vina-del-mar/valparaiso-vina-del-mar-001.webp",
+      "alt": "Valparaíso e Viña del Mar — imagem 01",
+      "category": "valparaiso-vina-del-mar",
+      "categories": [
+        "valparaiso-vina-del-mar"
+      ],
+      "label": "Valparaíso e Viña del Mar",
+      "tags": [
+        "valparaiso",
+        "vina-del-mar",
+        "litoral",
+        "praia"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1280
+    },
+    {
+      "id": "valparaiso-vina-del-mar-002",
+      "src": "/images/library/valparaiso-vina-del-mar/valparaiso-vina-del-mar-002.webp",
+      "alt": "Valparaíso e Viña del Mar — imagem 02",
+      "category": "valparaiso-vina-del-mar",
+      "categories": [
+        "valparaiso-vina-del-mar"
+      ],
+      "label": "Valparaíso e Viña del Mar",
+      "tags": [
+        "valparaiso",
+        "vina-del-mar",
+        "litoral",
+        "praia"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1279
+    },
+    {
+      "id": "valparaiso-vina-del-mar-003",
+      "src": "/images/library/valparaiso-vina-del-mar/valparaiso-vina-del-mar-003.webp",
+      "alt": "Valparaíso e Viña del Mar — imagem 03",
+      "category": "valparaiso-vina-del-mar",
+      "categories": [
+        "valparaiso-vina-del-mar"
+      ],
+      "label": "Valparaíso e Viña del Mar",
+      "tags": [
+        "valparaiso",
+        "vina-del-mar",
+        "litoral",
+        "praia"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1280
+    },
+    {
+      "id": "valparaiso-vina-del-mar-004",
+      "src": "/images/library/valparaiso-vina-del-mar/valparaiso-vina-del-mar-004.webp",
+      "alt": "Valparaíso e Viña del Mar — imagem 04",
+      "category": "valparaiso-vina-del-mar",
+      "categories": [
+        "valparaiso-vina-del-mar"
+      ],
+      "label": "Valparaíso e Viña del Mar",
+      "tags": [
+        "valparaiso",
+        "vina-del-mar",
+        "litoral",
+        "praia"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "valparaiso-vina-del-mar-005",
+      "src": "/images/library/valparaiso-vina-del-mar/valparaiso-vina-del-mar-005.webp",
+      "alt": "Valparaíso e Viña del Mar — imagem 05",
+      "category": "valparaiso-vina-del-mar",
+      "categories": [
+        "valparaiso-vina-del-mar"
+      ],
+      "label": "Valparaíso e Viña del Mar",
+      "tags": [
+        "valparaiso",
+        "vina-del-mar",
+        "litoral",
+        "praia"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "valparaiso-vina-del-mar-006",
+      "src": "/images/library/valparaiso-vina-del-mar/valparaiso-vina-del-mar-006.webp",
+      "alt": "Valparaíso e Viña del Mar — imagem 06",
+      "category": "valparaiso-vina-del-mar",
+      "categories": [
+        "valparaiso-vina-del-mar"
+      ],
+      "label": "Valparaíso e Viña del Mar",
+      "tags": [
+        "valparaiso",
+        "vina-del-mar",
+        "litoral",
+        "praia"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1280
+    },
+    {
+      "id": "valparaiso-vina-del-mar-007",
+      "src": "/images/library/valparaiso-vina-del-mar/valparaiso-vina-del-mar-007.webp",
+      "alt": "Valparaíso e Viña del Mar — imagem 07",
+      "category": "valparaiso-vina-del-mar",
+      "categories": [
+        "valparaiso-vina-del-mar"
+      ],
+      "label": "Valparaíso e Viña del Mar",
+      "tags": [
+        "valparaiso",
+        "vina-del-mar",
+        "litoral",
+        "praia"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1440
+    },
+    {
+      "id": "valparaiso-vina-del-mar-008",
+      "src": "/images/library/valparaiso-vina-del-mar/valparaiso-vina-del-mar-008.webp",
+      "alt": "Valparaíso e Viña del Mar — imagem 08",
+      "category": "valparaiso-vina-del-mar",
+      "categories": [
+        "valparaiso-vina-del-mar"
+      ],
+      "label": "Valparaíso e Viña del Mar",
+      "tags": [
+        "valparaiso",
+        "vina-del-mar",
+        "litoral",
+        "praia"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "valparaiso-vina-del-mar-009",
+      "src": "/images/library/valparaiso-vina-del-mar/valparaiso-vina-del-mar-009.webp",
+      "alt": "Valparaíso e Viña del Mar — imagem 09",
+      "category": "valparaiso-vina-del-mar",
+      "categories": [
+        "valparaiso-vina-del-mar"
+      ],
+      "label": "Valparaíso e Viña del Mar",
+      "tags": [
+        "valparaiso",
+        "vina-del-mar",
+        "litoral",
+        "praia"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1440
+    },
+    {
+      "id": "valparaiso-vina-del-mar-010",
+      "src": "/images/library/valparaiso-vina-del-mar/valparaiso-vina-del-mar-010.webp",
+      "alt": "Valparaíso e Viña del Mar — imagem 10",
+      "category": "valparaiso-vina-del-mar",
+      "categories": [
+        "valparaiso-vina-del-mar"
+      ],
+      "label": "Valparaíso e Viña del Mar",
+      "tags": [
+        "valparaiso",
+        "vina-del-mar",
+        "litoral",
+        "praia"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1440
+    },
+    {
+      "id": "valparaiso-vina-del-mar-011",
+      "src": "/images/library/valparaiso-vina-del-mar/valparaiso-vina-del-mar-011.webp",
+      "alt": "Valparaíso e Viña del Mar — imagem 11",
+      "category": "valparaiso-vina-del-mar",
+      "categories": [
+        "valparaiso-vina-del-mar"
+      ],
+      "label": "Valparaíso e Viña del Mar",
+      "tags": [
+        "valparaiso",
+        "vina-del-mar",
+        "litoral",
+        "praia"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1440
+    },
+    {
+      "id": "valparaiso-vina-del-mar-012",
+      "src": "/images/library/valparaiso-vina-del-mar/valparaiso-vina-del-mar-012.webp",
+      "alt": "Valparaíso e Viña del Mar — imagem 12",
+      "category": "valparaiso-vina-del-mar",
+      "categories": [
+        "valparaiso-vina-del-mar"
+      ],
+      "label": "Valparaíso e Viña del Mar",
+      "tags": [
+        "valparaiso",
+        "vina-del-mar",
+        "litoral",
+        "praia"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1440
+    },
+    {
+      "id": "valparaiso-vina-del-mar-013",
+      "src": "/images/library/valparaiso-vina-del-mar/valparaiso-vina-del-mar-013.webp",
+      "alt": "Valparaíso e Viña del Mar — imagem 13",
+      "category": "valparaiso-vina-del-mar",
+      "categories": [
+        "valparaiso-vina-del-mar"
+      ],
+      "label": "Valparaíso e Viña del Mar",
+      "tags": [
+        "valparaiso",
+        "vina-del-mar",
+        "litoral",
+        "praia"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1280
+    },
+    {
+      "id": "valparaiso-vina-del-mar-014",
+      "src": "/images/library/valparaiso-vina-del-mar/valparaiso-vina-del-mar-014.webp",
+      "alt": "Valparaíso e Viña del Mar — imagem 14",
+      "category": "valparaiso-vina-del-mar",
+      "categories": [
+        "valparaiso-vina-del-mar"
+      ],
+      "label": "Valparaíso e Viña del Mar",
+      "tags": [
+        "valparaiso",
+        "vina-del-mar",
+        "litoral",
+        "praia"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1440
+    },
+    {
+      "id": "valparaiso-vina-del-mar-015",
+      "src": "/images/library/valparaiso-vina-del-mar/valparaiso-vina-del-mar-015.webp",
+      "alt": "Valparaíso e Viña del Mar — imagem 15",
+      "category": "valparaiso-vina-del-mar",
+      "categories": [
+        "valparaiso-vina-del-mar"
+      ],
+      "label": "Valparaíso e Viña del Mar",
+      "tags": [
+        "valparaiso",
+        "vina-del-mar",
+        "litoral",
+        "praia"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1280
+    },
+    {
+      "id": "valparaiso-vina-del-mar-016",
+      "src": "/images/library/valparaiso-vina-del-mar/valparaiso-vina-del-mar-016.webp",
+      "alt": "Valparaíso e Viña del Mar — imagem 16",
+      "category": "valparaiso-vina-del-mar",
+      "categories": [
+        "valparaiso-vina-del-mar"
+      ],
+      "label": "Valparaíso e Viña del Mar",
+      "tags": [
+        "valparaiso",
+        "vina-del-mar",
+        "litoral",
+        "praia"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1440
+    },
+    {
+      "id": "valparaiso-vina-del-mar-017",
+      "src": "/images/library/valparaiso-vina-del-mar/valparaiso-vina-del-mar-017.webp",
+      "alt": "Valparaíso e Viña del Mar — imagem 17",
+      "category": "valparaiso-vina-del-mar",
+      "categories": [
+        "valparaiso-vina-del-mar"
+      ],
+      "label": "Valparaíso e Viña del Mar",
+      "tags": [
+        "valparaiso",
+        "vina-del-mar",
+        "litoral",
+        "praia"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1440
+    },
+    {
+      "id": "valparaiso-vina-del-mar-018",
+      "src": "/images/library/valparaiso-vina-del-mar/valparaiso-vina-del-mar-018.webp",
+      "alt": "Valparaíso e Viña del Mar — imagem 18",
+      "category": "valparaiso-vina-del-mar",
+      "categories": [
+        "valparaiso-vina-del-mar"
+      ],
+      "label": "Valparaíso e Viña del Mar",
+      "tags": [
+        "valparaiso",
+        "vina-del-mar",
+        "litoral",
+        "praia"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1440
+    },
+    {
+      "id": "valparaiso-vina-del-mar-019",
+      "src": "/images/library/valparaiso-vina-del-mar/valparaiso-vina-del-mar-019.webp",
+      "alt": "Valparaíso e Viña del Mar — imagem 19",
+      "category": "valparaiso-vina-del-mar",
+      "categories": [
+        "valparaiso-vina-del-mar"
+      ],
+      "label": "Valparaíso e Viña del Mar",
+      "tags": [
+        "valparaiso",
+        "vina-del-mar",
+        "litoral",
+        "praia"
+      ],
+      "orientation": "portrait",
+      "width": 1280,
+      "height": 1920
+    },
+    {
+      "id": "valparaiso-vina-del-mar-020",
+      "src": "/images/library/valparaiso-vina-del-mar/valparaiso-vina-del-mar-020.webp",
+      "alt": "Valparaíso e Viña del Mar — imagem 20",
+      "category": "valparaiso-vina-del-mar",
+      "categories": [
+        "valparaiso-vina-del-mar"
+      ],
+      "label": "Valparaíso e Viña del Mar",
+      "tags": [
+        "valparaiso",
+        "vina-del-mar",
+        "litoral",
+        "praia"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1440
+    },
+    {
+      "id": "valparaiso-vina-del-mar-021",
+      "src": "/images/library/valparaiso-vina-del-mar/valparaiso-vina-del-mar-021.webp",
+      "alt": "Valparaíso e Viña del Mar — imagem 21",
+      "category": "valparaiso-vina-del-mar",
+      "categories": [
+        "valparaiso-vina-del-mar"
+      ],
+      "label": "Valparaíso e Viña del Mar",
+      "tags": [
+        "valparaiso",
+        "vina-del-mar",
+        "litoral",
+        "praia"
+      ],
+      "orientation": "portrait",
+      "width": 1535,
+      "height": 1920
+    },
+    {
+      "id": "valparaiso-vina-del-mar-022",
+      "src": "/images/library/valparaiso-vina-del-mar/valparaiso-vina-del-mar-022.webp",
+      "alt": "Valparaíso e Viña del Mar — imagem 22",
+      "category": "valparaiso-vina-del-mar",
+      "categories": [
+        "valparaiso-vina-del-mar"
+      ],
+      "label": "Valparaíso e Viña del Mar",
+      "tags": [
+        "valparaiso",
+        "vina-del-mar",
+        "litoral",
+        "praia"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1279
+    },
+    {
+      "id": "valparaiso-vina-del-mar-023",
+      "src": "/images/library/valparaiso-vina-del-mar/valparaiso-vina-del-mar-023.webp",
+      "alt": "Valparaíso e Viña del Mar — imagem 23",
+      "category": "valparaiso-vina-del-mar",
+      "categories": [
+        "valparaiso-vina-del-mar"
+      ],
+      "label": "Valparaíso e Viña del Mar",
+      "tags": [
+        "valparaiso",
+        "vina-del-mar",
+        "litoral",
+        "praia"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1280
+    },
+    {
+      "id": "valparaiso-vina-del-mar-024",
+      "src": "/images/library/valparaiso-vina-del-mar/valparaiso-vina-del-mar-024.webp",
+      "alt": "Valparaíso e Viña del Mar — imagem 24",
+      "category": "valparaiso-vina-del-mar",
+      "categories": [
+        "valparaiso-vina-del-mar"
+      ],
+      "label": "Valparaíso e Viña del Mar",
+      "tags": [
+        "valparaiso",
+        "vina-del-mar",
+        "litoral",
+        "praia"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1280
+    },
+    {
+      "id": "valparaiso-vina-del-mar-025",
+      "src": "/images/library/valparaiso-vina-del-mar/valparaiso-vina-del-mar-025.webp",
+      "alt": "Valparaíso e Viña del Mar — imagem 25",
+      "category": "valparaiso-vina-del-mar",
+      "categories": [
+        "valparaiso-vina-del-mar"
+      ],
+      "label": "Valparaíso e Viña del Mar",
+      "tags": [
+        "valparaiso",
+        "vina-del-mar",
+        "litoral",
+        "praia"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1440
+    },
+    {
+      "id": "valparaiso-vina-del-mar-026",
+      "src": "/images/library/valparaiso-vina-del-mar/valparaiso-vina-del-mar-026.webp",
+      "alt": "Valparaíso e Viña del Mar — imagem 26",
+      "category": "valparaiso-vina-del-mar",
+      "categories": [
+        "valparaiso-vina-del-mar"
+      ],
+      "label": "Valparaíso e Viña del Mar",
+      "tags": [
+        "valparaiso",
+        "vina-del-mar",
+        "litoral",
+        "praia"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "valparaiso-vina-del-mar-027",
+      "src": "/images/library/valparaiso-vina-del-mar/valparaiso-vina-del-mar-027.webp",
+      "alt": "Valparaíso e Viña del Mar — imagem 27",
+      "category": "valparaiso-vina-del-mar",
+      "categories": [
+        "valparaiso-vina-del-mar"
+      ],
+      "label": "Valparaíso e Viña del Mar",
+      "tags": [
+        "valparaiso",
+        "vina-del-mar",
+        "litoral",
+        "praia"
+      ],
+      "orientation": "portrait",
+      "width": 1280,
+      "height": 1920
+    },
+    {
+      "id": "valparaiso-vina-del-mar-028",
+      "src": "/images/library/valparaiso-vina-del-mar/valparaiso-vina-del-mar-028.webp",
+      "alt": "Valparaíso e Viña del Mar — imagem 28",
+      "category": "valparaiso-vina-del-mar",
+      "categories": [
+        "valparaiso-vina-del-mar"
+      ],
+      "label": "Valparaíso e Viña del Mar",
+      "tags": [
+        "valparaiso",
+        "vina-del-mar",
+        "litoral",
+        "praia"
+      ],
+      "orientation": "portrait",
+      "width": 1280,
+      "height": 1920
+    },
+    {
+      "id": "valparaiso-vina-del-mar-029",
+      "src": "/images/library/valparaiso-vina-del-mar/valparaiso-vina-del-mar-029.webp",
+      "alt": "Valparaíso e Viña del Mar — imagem 29",
+      "category": "valparaiso-vina-del-mar",
+      "categories": [
+        "valparaiso-vina-del-mar"
+      ],
+      "label": "Valparaíso e Viña del Mar",
+      "tags": [
+        "valparaiso",
+        "vina-del-mar",
+        "litoral",
+        "praia"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1440
+    },
+    {
+      "id": "valparaiso-vina-del-mar-030",
+      "src": "/images/library/valparaiso-vina-del-mar/valparaiso-vina-del-mar-030.webp",
+      "alt": "Valparaíso e Viña del Mar — imagem 30",
+      "category": "valparaiso-vina-del-mar",
+      "categories": [
+        "valparaiso-vina-del-mar"
+      ],
+      "label": "Valparaíso e Viña del Mar",
+      "tags": [
+        "valparaiso",
+        "vina-del-mar",
+        "litoral",
+        "praia"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1440
+    },
+    {
+      "id": "valparaiso-vina-del-mar-031",
+      "src": "/images/library/valparaiso-vina-del-mar/valparaiso-vina-del-mar-031.webp",
+      "alt": "Valparaíso e Viña del Mar — imagem 31",
+      "category": "valparaiso-vina-del-mar",
+      "categories": [
+        "valparaiso-vina-del-mar"
+      ],
+      "label": "Valparaíso e Viña del Mar",
+      "tags": [
+        "valparaiso",
+        "vina-del-mar",
+        "litoral",
+        "praia"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1478
+    },
+    {
+      "id": "valparaiso-vina-del-mar-032",
+      "src": "/images/library/valparaiso-vina-del-mar/valparaiso-vina-del-mar-032.webp",
+      "alt": "Valparaíso e Viña del Mar — imagem 32",
+      "category": "valparaiso-vina-del-mar",
+      "categories": [
+        "valparaiso-vina-del-mar"
+      ],
+      "label": "Valparaíso e Viña del Mar",
+      "tags": [
+        "valparaiso",
+        "vina-del-mar",
+        "litoral",
+        "praia"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1440
+    },
+    {
+      "id": "valparaiso-vina-del-mar-033",
+      "src": "/images/library/valparaiso-vina-del-mar/valparaiso-vina-del-mar-033.webp",
+      "alt": "Valparaíso e Viña del Mar — imagem 33",
+      "category": "valparaiso-vina-del-mar",
+      "categories": [
+        "valparaiso-vina-del-mar"
+      ],
+      "label": "Valparaíso e Viña del Mar",
+      "tags": [
+        "valparaiso",
+        "vina-del-mar",
+        "litoral",
+        "praia"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "valparaiso-vina-del-mar-034",
+      "src": "/images/library/valparaiso-vina-del-mar/valparaiso-vina-del-mar-034.webp",
+      "alt": "Valparaíso e Viña del Mar — imagem 34",
+      "category": "valparaiso-vina-del-mar",
+      "categories": [
+        "valparaiso-vina-del-mar"
+      ],
+      "label": "Valparaíso e Viña del Mar",
+      "tags": [
+        "valparaiso",
+        "vina-del-mar",
+        "litoral",
+        "praia"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1440
+    },
+    {
+      "id": "valparaiso-vina-del-mar-035",
+      "src": "/images/library/valparaiso-vina-del-mar/valparaiso-vina-del-mar-035.webp",
+      "alt": "Valparaíso e Viña del Mar — imagem 35",
+      "category": "valparaiso-vina-del-mar",
+      "categories": [
+        "valparaiso-vina-del-mar"
+      ],
+      "label": "Valparaíso e Viña del Mar",
+      "tags": [
+        "valparaiso",
+        "vina-del-mar",
+        "litoral",
+        "praia"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "vinicola-alyan-001",
+      "src": "/images/library/vinicola-alyan/vinicola-alyan-001.webp",
+      "alt": "Vinícola Alyan — imagem 01",
+      "category": "vinicola-alyan",
+      "categories": [
+        "vinicola-alyan"
+      ],
+      "label": "Vinícola Alyan",
+      "tags": [
+        "vinicola",
+        "alyan",
+        "vinho",
+        "enoturismo"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "vinicola-alyan-002",
+      "src": "/images/library/vinicola-alyan/vinicola-alyan-002.webp",
+      "alt": "Vinícola Alyan — imagem 02",
+      "category": "vinicola-alyan",
+      "categories": [
+        "vinicola-alyan"
+      ],
+      "label": "Vinícola Alyan",
+      "tags": [
+        "vinicola",
+        "alyan",
+        "vinho",
+        "enoturismo"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1372
+    },
+    {
+      "id": "vinicola-alyan-003",
+      "src": "/images/library/vinicola-alyan/vinicola-alyan-003.webp",
+      "alt": "Vinícola Alyan — imagem 03",
+      "category": "vinicola-alyan",
+      "categories": [
+        "vinicola-alyan"
+      ],
+      "label": "Vinícola Alyan",
+      "tags": [
+        "vinicola",
+        "alyan",
+        "vinho",
+        "enoturismo"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "vinicola-alyan-004",
+      "src": "/images/library/vinicola-alyan/vinicola-alyan-004.webp",
+      "alt": "Vinícola Alyan — imagem 04",
+      "category": "vinicola-alyan",
+      "categories": [
+        "vinicola-alyan"
+      ],
+      "label": "Vinícola Alyan",
+      "tags": [
+        "vinicola",
+        "alyan",
+        "vinho",
+        "enoturismo"
+      ],
+      "orientation": "portrait",
+      "width": 1895,
+      "height": 1920
+    },
+    {
+      "id": "vinicola-alyan-005",
+      "src": "/images/library/vinicola-alyan/vinicola-alyan-005.webp",
+      "alt": "Vinícola Alyan — imagem 05",
+      "category": "vinicola-alyan",
+      "categories": [
+        "vinicola-alyan"
+      ],
+      "label": "Vinícola Alyan",
+      "tags": [
+        "vinicola",
+        "alyan",
+        "vinho",
+        "enoturismo"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "vinicola-alyan-006",
+      "src": "/images/library/vinicola-alyan/vinicola-alyan-006.webp",
+      "alt": "Vinícola Alyan — imagem 06",
+      "category": "vinicola-alyan",
+      "categories": [
+        "vinicola-alyan"
+      ],
+      "label": "Vinícola Alyan",
+      "tags": [
+        "vinicola",
+        "alyan",
+        "vinho",
+        "enoturismo"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "vinicola-alyan-007",
+      "src": "/images/library/vinicola-alyan/vinicola-alyan-007.webp",
+      "alt": "Vinícola Alyan — imagem 07",
+      "category": "vinicola-alyan",
+      "categories": [
+        "vinicola-alyan"
+      ],
+      "label": "Vinícola Alyan",
+      "tags": [
+        "vinicola",
+        "alyan",
+        "vinho",
+        "enoturismo"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1908
+    },
+    {
+      "id": "vinicola-alyan-008",
+      "src": "/images/library/vinicola-alyan/vinicola-alyan-008.webp",
+      "alt": "Vinícola Alyan — imagem 08",
+      "category": "vinicola-alyan",
+      "categories": [
+        "vinicola-alyan"
+      ],
+      "label": "Vinícola Alyan",
+      "tags": [
+        "vinicola",
+        "alyan",
+        "vinho",
+        "enoturismo"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "vinicola-alyan-009",
+      "src": "/images/library/vinicola-alyan/vinicola-alyan-009.webp",
+      "alt": "Vinícola Alyan — imagem 09",
+      "category": "vinicola-alyan",
+      "categories": [
+        "vinicola-alyan"
+      ],
+      "label": "Vinícola Alyan",
+      "tags": [
+        "vinicola",
+        "alyan",
+        "vinho",
+        "enoturismo"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "vinicola-alyan-010",
+      "src": "/images/library/vinicola-alyan/vinicola-alyan-010.webp",
+      "alt": "Vinícola Alyan — imagem 10",
+      "category": "vinicola-alyan",
+      "categories": [
+        "vinicola-alyan"
+      ],
+      "label": "Vinícola Alyan",
+      "tags": [
+        "vinicola",
+        "alyan",
+        "vinho",
+        "enoturismo"
+      ],
+      "orientation": "portrait",
+      "width": 1885,
+      "height": 1920
+    },
+    {
+      "id": "vinicola-alyan-011",
+      "src": "/images/library/vinicola-alyan/vinicola-alyan-011.webp",
+      "alt": "Vinícola Alyan — imagem 11",
+      "category": "vinicola-alyan",
+      "categories": [
+        "vinicola-alyan"
+      ],
+      "label": "Vinícola Alyan",
+      "tags": [
+        "vinicola",
+        "alyan",
+        "vinho",
+        "enoturismo"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1440
+    },
+    {
+      "id": "vinicola-alyan-012",
+      "src": "/images/library/vinicola-alyan/vinicola-alyan-012.webp",
+      "alt": "Vinícola Alyan — imagem 12",
+      "category": "vinicola-alyan",
+      "categories": [
+        "vinicola-alyan"
+      ],
+      "label": "Vinícola Alyan",
+      "tags": [
+        "vinicola",
+        "alyan",
+        "vinho",
+        "enoturismo"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1440
+    },
+    {
+      "id": "vinicola-alyan-013",
+      "src": "/images/library/vinicola-alyan/vinicola-alyan-013.webp",
+      "alt": "Vinícola Alyan — imagem 13",
+      "category": "vinicola-alyan",
+      "categories": [
+        "vinicola-alyan"
+      ],
+      "label": "Vinícola Alyan",
+      "tags": [
+        "vinicola",
+        "alyan",
+        "vinho",
+        "enoturismo"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "vinicola-alyan-014",
+      "src": "/images/library/vinicola-alyan/vinicola-alyan-014.webp",
+      "alt": "Vinícola Alyan — imagem 14",
+      "category": "vinicola-alyan",
+      "categories": [
+        "vinicola-alyan"
+      ],
+      "label": "Vinícola Alyan",
+      "tags": [
+        "vinicola",
+        "alyan",
+        "vinho",
+        "enoturismo"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "vinicola-alyan-015",
+      "src": "/images/library/vinicola-alyan/vinicola-alyan-015.webp",
+      "alt": "Vinícola Alyan — imagem 15",
+      "category": "vinicola-alyan",
+      "categories": [
+        "vinicola-alyan"
+      ],
+      "label": "Vinícola Alyan",
+      "tags": [
+        "vinicola",
+        "alyan",
+        "vinho",
+        "enoturismo"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "vinicola-alyan-016",
+      "src": "/images/library/vinicola-alyan/vinicola-alyan-016.webp",
+      "alt": "Vinícola Alyan — imagem 16",
+      "category": "vinicola-alyan",
+      "categories": [
+        "vinicola-alyan"
+      ],
+      "label": "Vinícola Alyan",
+      "tags": [
+        "vinicola",
+        "alyan",
+        "vinho",
+        "enoturismo"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1396
+    },
+    {
+      "id": "vinicola-alyan-017",
+      "src": "/images/library/vinicola-alyan/vinicola-alyan-017.webp",
+      "alt": "Vinícola Alyan — imagem 17",
+      "category": "vinicola-alyan",
+      "categories": [
+        "vinicola-alyan"
+      ],
+      "label": "Vinícola Alyan",
+      "tags": [
+        "vinicola",
+        "alyan",
+        "vinho",
+        "enoturismo"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "vinicola-alyan-018",
+      "src": "/images/library/vinicola-alyan/vinicola-alyan-018.webp",
+      "alt": "Vinícola Alyan — imagem 18",
+      "category": "vinicola-alyan",
+      "categories": [
+        "vinicola-alyan"
+      ],
+      "label": "Vinícola Alyan",
+      "tags": [
+        "vinicola",
+        "alyan",
+        "vinho",
+        "enoturismo"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "vinicola-alyan-019",
+      "src": "/images/library/vinicola-alyan/vinicola-alyan-019.webp",
+      "alt": "Vinícola Alyan — imagem 19",
+      "category": "vinicola-alyan",
+      "categories": [
+        "vinicola-alyan"
+      ],
+      "label": "Vinícola Alyan",
+      "tags": [
+        "vinicola",
+        "alyan",
+        "vinho",
+        "enoturismo"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "vinicola-alyan-020",
+      "src": "/images/library/vinicola-alyan/vinicola-alyan-020.webp",
+      "alt": "Vinícola Alyan — imagem 20",
+      "category": "vinicola-alyan",
+      "categories": [
+        "vinicola-alyan"
+      ],
+      "label": "Vinícola Alyan",
+      "tags": [
+        "vinicola",
+        "alyan",
+        "vinho",
+        "enoturismo"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1440
+    },
+    {
+      "id": "vinicola-alyan-021",
+      "src": "/images/library/vinicola-alyan/vinicola-alyan-021.webp",
+      "alt": "Vinícola Alyan — imagem 21",
+      "category": "vinicola-alyan",
+      "categories": [
+        "vinicola-alyan"
+      ],
+      "label": "Vinícola Alyan",
+      "tags": [
+        "vinicola",
+        "alyan",
+        "vinho",
+        "enoturismo"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1239
+    },
+    {
+      "id": "vinicola-alyan-022",
+      "src": "/images/library/vinicola-alyan/vinicola-alyan-022.webp",
+      "alt": "Vinícola Alyan — imagem 22",
+      "category": "vinicola-alyan",
+      "categories": [
+        "vinicola-alyan"
+      ],
+      "label": "Vinícola Alyan",
+      "tags": [
+        "vinicola",
+        "alyan",
+        "vinho",
+        "enoturismo"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1440
+    },
+    {
+      "id": "vinicola-alyan-023",
+      "src": "/images/library/vinicola-alyan/vinicola-alyan-023.webp",
+      "alt": "Vinícola Alyan — imagem 23",
+      "category": "vinicola-alyan",
+      "categories": [
+        "vinicola-alyan"
+      ],
+      "label": "Vinícola Alyan",
+      "tags": [
+        "vinicola",
+        "alyan",
+        "vinho",
+        "enoturismo"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "vinicola-alyan-024",
+      "src": "/images/library/vinicola-alyan/vinicola-alyan-024.webp",
+      "alt": "Vinícola Alyan — imagem 24",
+      "category": "vinicola-alyan",
+      "categories": [
+        "vinicola-alyan"
+      ],
+      "label": "Vinícola Alyan",
+      "tags": [
+        "vinicola",
+        "alyan",
+        "vinho",
+        "enoturismo"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "vinicola-alyan-025",
+      "src": "/images/library/vinicola-alyan/vinicola-alyan-025.webp",
+      "alt": "Vinícola Alyan — imagem 25",
+      "category": "vinicola-alyan",
+      "categories": [
+        "vinicola-alyan"
+      ],
+      "label": "Vinícola Alyan",
+      "tags": [
+        "vinicola",
+        "alyan",
+        "vinho",
+        "enoturismo"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "vinicola-alyan-026",
+      "src": "/images/library/vinicola-alyan/vinicola-alyan-026.webp",
+      "alt": "Vinícola Alyan — imagem 26",
+      "category": "vinicola-alyan",
+      "categories": [
+        "vinicola-alyan"
+      ],
+      "label": "Vinícola Alyan",
+      "tags": [
+        "vinicola",
+        "alyan",
+        "vinho",
+        "enoturismo"
+      ],
+      "orientation": "portrait",
+      "width": 1280,
+      "height": 1920
+    },
+    {
+      "id": "vinicola-alyan-027",
+      "src": "/images/library/vinicola-alyan/vinicola-alyan-027.webp",
+      "alt": "Vinícola Alyan — imagem 27",
+      "category": "vinicola-alyan",
+      "categories": [
+        "vinicola-alyan"
+      ],
+      "label": "Vinícola Alyan",
+      "tags": [
+        "vinicola",
+        "alyan",
+        "vinho",
+        "enoturismo"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1406
+    },
+    {
+      "id": "vinicola-alyan-028",
+      "src": "/images/library/vinicola-alyan/vinicola-alyan-028.webp",
+      "alt": "Vinícola Alyan — imagem 28",
+      "category": "vinicola-alyan",
+      "categories": [
+        "vinicola-alyan"
+      ],
+      "label": "Vinícola Alyan",
+      "tags": [
+        "vinicola",
+        "alyan",
+        "vinho",
+        "enoturismo"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "vinicola-alyan-029",
+      "src": "/images/library/vinicola-alyan/vinicola-alyan-029.webp",
+      "alt": "Vinícola Alyan — imagem 29",
+      "category": "vinicola-alyan",
+      "categories": [
+        "vinicola-alyan"
+      ],
+      "label": "Vinícola Alyan",
+      "tags": [
+        "vinicola",
+        "alyan",
+        "vinho",
+        "enoturismo"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1440
+    },
+    {
+      "id": "vinicola-alyan-030",
+      "src": "/images/library/vinicola-alyan/vinicola-alyan-030.webp",
+      "alt": "Vinícola Alyan — imagem 30",
+      "category": "vinicola-alyan",
+      "categories": [
+        "vinicola-alyan"
+      ],
+      "label": "Vinícola Alyan",
+      "tags": [
+        "vinicola",
+        "alyan",
+        "vinho",
+        "enoturismo"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "vinicola-alyan-031",
+      "src": "/images/library/vinicola-alyan/vinicola-alyan-031.webp",
+      "alt": "Vinícola Alyan — imagem 31",
+      "category": "vinicola-alyan",
+      "categories": [
+        "vinicola-alyan"
+      ],
+      "label": "Vinícola Alyan",
+      "tags": [
+        "vinicola",
+        "alyan",
+        "vinho",
+        "enoturismo"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1440
+    },
+    {
+      "id": "vinicola-concha-y-toro-001",
+      "src": "/images/library/vinicola-concha-y-toro/vinicola-concha-y-toro-001.webp",
+      "alt": "Vinícola Concha y Toro — imagem 01",
+      "category": "vinicola-concha-y-toro",
+      "categories": [
+        "vinicola-concha-y-toro"
+      ],
+      "label": "Vinícola Concha y Toro",
+      "tags": [
+        "vinicola",
+        "concha-y-toro",
+        "vinho",
+        "enoturismo"
+      ],
+      "orientation": "portrait",
+      "width": 1634,
+      "height": 1920
+    },
+    {
+      "id": "vinicola-concha-y-toro-002",
+      "src": "/images/library/vinicola-concha-y-toro/vinicola-concha-y-toro-002.webp",
+      "alt": "Vinícola Concha y Toro — imagem 02",
+      "category": "vinicola-concha-y-toro",
+      "categories": [
+        "vinicola-concha-y-toro"
+      ],
+      "label": "Vinícola Concha y Toro",
+      "tags": [
+        "vinicola",
+        "concha-y-toro",
+        "vinho",
+        "enoturismo"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1439
+    },
+    {
+      "id": "vinicola-concha-y-toro-003",
+      "src": "/images/library/vinicola-concha-y-toro/vinicola-concha-y-toro-003.webp",
+      "alt": "Vinícola Concha y Toro — imagem 03",
+      "category": "vinicola-concha-y-toro",
+      "categories": [
+        "vinicola-concha-y-toro"
+      ],
+      "label": "Vinícola Concha y Toro",
+      "tags": [
+        "vinicola",
+        "concha-y-toro",
+        "vinho",
+        "enoturismo"
+      ],
+      "orientation": "portrait",
+      "width": 1727,
+      "height": 1920
+    },
+    {
+      "id": "vinicola-concha-y-toro-004",
+      "src": "/images/library/vinicola-concha-y-toro/vinicola-concha-y-toro-004.webp",
+      "alt": "Vinícola Concha y Toro — imagem 04",
+      "category": "vinicola-concha-y-toro",
+      "categories": [
+        "vinicola-concha-y-toro"
+      ],
+      "label": "Vinícola Concha y Toro",
+      "tags": [
+        "vinicola",
+        "concha-y-toro",
+        "vinho",
+        "enoturismo"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1228
+    },
+    {
+      "id": "vinicola-concha-y-toro-005",
+      "src": "/images/library/vinicola-concha-y-toro/vinicola-concha-y-toro-005.webp",
+      "alt": "Vinícola Concha y Toro — imagem 05",
+      "category": "vinicola-concha-y-toro",
+      "categories": [
+        "vinicola-concha-y-toro"
+      ],
+      "label": "Vinícola Concha y Toro",
+      "tags": [
+        "vinicola",
+        "concha-y-toro",
+        "vinho",
+        "enoturismo"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1829
+    },
+    {
+      "id": "vinicola-concha-y-toro-006",
+      "src": "/images/library/vinicola-concha-y-toro/vinicola-concha-y-toro-006.webp",
+      "alt": "Vinícola Concha y Toro — imagem 06",
+      "category": "vinicola-concha-y-toro",
+      "categories": [
+        "vinicola-concha-y-toro"
+      ],
+      "label": "Vinícola Concha y Toro",
+      "tags": [
+        "vinicola",
+        "concha-y-toro",
+        "vinho",
+        "enoturismo"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1691
+    },
+    {
+      "id": "vinicola-santa-rita-001",
+      "src": "/images/library/vinicola-santa-rita/vinicola-santa-rita-001.webp",
+      "alt": "Vinícola Santa Rita — imagem 01",
+      "category": "vinicola-santa-rita",
+      "categories": [
+        "vinicola-santa-rita"
+      ],
+      "label": "Vinícola Santa Rita",
+      "tags": [
+        "vinicola",
+        "santa-rita",
+        "vinho",
+        "enoturismo"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "vinicola-santa-rita-002",
+      "src": "/images/library/vinicola-santa-rita/vinicola-santa-rita-002.webp",
+      "alt": "Vinícola Santa Rita — imagem 02",
+      "category": "vinicola-santa-rita",
+      "categories": [
+        "vinicola-santa-rita"
+      ],
+      "label": "Vinícola Santa Rita",
+      "tags": [
+        "vinicola",
+        "santa-rita",
+        "vinho",
+        "enoturismo"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1355
+    },
+    {
+      "id": "vinicola-santa-rita-003",
+      "src": "/images/library/vinicola-santa-rita/vinicola-santa-rita-003.webp",
+      "alt": "Vinícola Santa Rita — imagem 03",
+      "category": "vinicola-santa-rita",
+      "categories": [
+        "vinicola-santa-rita"
+      ],
+      "label": "Vinícola Santa Rita",
+      "tags": [
+        "vinicola",
+        "santa-rita",
+        "vinho",
+        "enoturismo"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "vinicola-santa-rita-004",
+      "src": "/images/library/vinicola-santa-rita/vinicola-santa-rita-004.webp",
+      "alt": "Vinícola Santa Rita — imagem 04",
+      "category": "vinicola-santa-rita",
+      "categories": [
+        "vinicola-santa-rita"
+      ],
+      "label": "Vinícola Santa Rita",
+      "tags": [
+        "vinicola",
+        "santa-rita",
+        "vinho",
+        "enoturismo"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "vinicola-santa-rita-005",
+      "src": "/images/library/vinicola-santa-rita/vinicola-santa-rita-005.webp",
+      "alt": "Vinícola Santa Rita — imagem 05",
+      "category": "vinicola-santa-rita",
+      "categories": [
+        "vinicola-santa-rita"
+      ],
+      "label": "Vinícola Santa Rita",
+      "tags": [
+        "vinicola",
+        "santa-rita",
+        "vinho",
+        "enoturismo"
+      ],
+      "orientation": "portrait",
+      "width": 1641,
+      "height": 1920
+    },
+    {
+      "id": "vinicola-undurraga-001",
+      "src": "/images/library/vinicola-undurraga/vinicola-undurraga-001.webp",
+      "alt": "Vinícola Undurraga — imagem 01",
+      "category": "vinicola-undurraga",
+      "categories": [
+        "vinicola-undurraga"
+      ],
+      "label": "Vinícola Undurraga",
+      "tags": [
+        "vinicola",
+        "undurraga",
+        "vinho",
+        "enoturismo"
+      ],
+      "orientation": "portrait",
+      "width": 1440,
+      "height": 1920
+    },
+    {
+      "id": "vinicola-undurraga-002",
+      "src": "/images/library/vinicola-undurraga/vinicola-undurraga-002.webp",
+      "alt": "Vinícola Undurraga — imagem 02",
+      "category": "vinicola-undurraga",
+      "categories": [
+        "vinicola-undurraga"
+      ],
+      "label": "Vinícola Undurraga",
+      "tags": [
+        "vinicola",
+        "undurraga",
+        "vinho",
+        "enoturismo"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1872
+    },
+    {
+      "id": "vinicola-undurraga-003",
+      "src": "/images/library/vinicola-undurraga/vinicola-undurraga-003.webp",
+      "alt": "Vinícola Undurraga — imagem 03",
+      "category": "vinicola-undurraga",
+      "categories": [
+        "vinicola-undurraga"
+      ],
+      "label": "Vinícola Undurraga",
+      "tags": [
+        "vinicola",
+        "undurraga",
+        "vinho",
+        "enoturismo"
+      ],
+      "orientation": "portrait",
+      "width": 1620,
+      "height": 1920
+    },
+    {
+      "id": "vinicola-undurraga-004",
+      "src": "/images/library/vinicola-undurraga/vinicola-undurraga-004.webp",
+      "alt": "Vinícola Undurraga — imagem 04",
+      "category": "vinicola-undurraga",
+      "categories": [
+        "vinicola-undurraga"
+      ],
+      "label": "Vinícola Undurraga",
+      "tags": [
+        "vinicola",
+        "undurraga",
+        "vinho",
+        "enoturismo"
+      ],
+      "orientation": "portrait",
+      "width": 1080,
+      "height": 1920
+    },
+    {
+      "id": "vinicola-undurraga-005",
+      "src": "/images/library/vinicola-undurraga/vinicola-undurraga-005.webp",
+      "alt": "Vinícola Undurraga — imagem 05",
+      "category": "vinicola-undurraga",
+      "categories": [
+        "vinicola-undurraga"
+      ],
+      "label": "Vinícola Undurraga",
+      "tags": [
+        "vinicola",
+        "undurraga",
+        "vinho",
+        "enoturismo"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1440
+    },
+    {
+      "id": "vinicola-undurraga-006",
+      "src": "/images/library/vinicola-undurraga/vinicola-undurraga-006.webp",
+      "alt": "Vinícola Undurraga — imagem 06",
+      "category": "vinicola-undurraga",
+      "categories": [
+        "vinicola-undurraga"
+      ],
+      "label": "Vinícola Undurraga",
+      "tags": [
+        "vinicola",
+        "undurraga",
+        "vinho",
+        "enoturismo"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1081
+    },
+    {
+      "id": "vinicola-undurraga-007",
+      "src": "/images/library/vinicola-undurraga/vinicola-undurraga-007.webp",
+      "alt": "Vinícola Undurraga — imagem 07",
+      "category": "vinicola-undurraga",
+      "categories": [
+        "vinicola-undurraga"
+      ],
+      "label": "Vinícola Undurraga",
+      "tags": [
+        "vinicola",
+        "undurraga",
+        "vinho",
+        "enoturismo"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1840
+    }
+  ]
+}
