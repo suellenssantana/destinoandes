@@ -7,6 +7,9 @@ export type Language = "PT" | "ES" | "EN";
 
 export const LANGUAGE_STORAGE_KEY = "destino-andes-language";
 export const LANGUAGE_EVENT = "destino-language";
+const AUTOMATIC_TRANSLATION_STORAGE_KEY = "destino-andes-automatic-translations-v1";
+const AUTOMATIC_TRANSLATION_EVENT = "destino-automatic-translation";
+const AUTOMATIC_TRANSLATION_SEPARATOR = "\n<<<DESTINO_ANDES_AUTO_SPLIT_7A4>>>\n";
 
 const htmlLanguages: Record<Language, string> = {
   PT: "pt-BR",
@@ -36,6 +39,11 @@ type TranslatedLanguage = Exclude<Language, "PT">;
 type Dictionary = Record<string, string>;
 
 const dictionaries = generatedTranslations as unknown as Record<TranslatedLanguage, Dictionary>;
+const automaticTranslations: Record<TranslatedLanguage, Dictionary> = { ES: {}, EN: {} };
+const automaticQueue: Record<TranslatedLanguage, Set<string>> = { ES: new Set(), EN: new Set() };
+const automaticPending: Record<TranslatedLanguage, Set<string>> = { ES: new Set(), EN: new Set() };
+let automaticCacheLoaded = false;
+let automaticFlushTimer: ReturnType<typeof setTimeout> | undefined;
 const reverseDictionaries: Record<TranslatedLanguage, Dictionary> = {
   ES: Object.fromEntries(Object.entries(dictionaries.ES).map(([source, value]) => [value, source])),
   EN: Object.fromEntries(Object.entries(dictionaries.EN).map(([source, value]) => [value, source])),
@@ -221,6 +229,98 @@ function translateWithGlossary(value: string, language: TranslatedLanguage) {
   return translated;
 }
 
+function loadAutomaticCache() {
+  if (automaticCacheLoaded || typeof window === "undefined") return;
+  automaticCacheLoaded = true;
+  try {
+    const stored = JSON.parse(window.localStorage.getItem(AUTOMATIC_TRANSLATION_STORAGE_KEY) ?? "{}");
+    if (stored?.ES && typeof stored.ES === "object") Object.assign(automaticTranslations.ES, stored.ES);
+    if (stored?.EN && typeof stored.EN === "object") Object.assign(automaticTranslations.EN, stored.EN);
+  } catch {
+    window.localStorage.removeItem(AUTOMATIC_TRANSLATION_STORAGE_KEY);
+  }
+}
+
+function storeAutomaticCache() {
+  try {
+    window.localStorage.setItem(AUTOMATIC_TRANSLATION_STORAGE_KEY, JSON.stringify(automaticTranslations));
+  } catch {
+    // Translation still works for the current page if browser storage is unavailable.
+  }
+}
+
+function shouldTranslateAutomatically(value: string) {
+  if (value.length < 2 || value.length > 1600) return false;
+  if (!/\p{L}/u.test(value)) return false;
+  if (/@|https?:\/\/|www\.|^\+?\d[\d\s().-]+$/.test(value)) return false;
+  if (/^(?:Destino Andes|WhatsApp|E-mail|Instagram|Facebook|YouTube)$/i.test(value)) return false;
+  return true;
+}
+
+function scheduleAutomaticTranslation(value: string, language: TranslatedLanguage) {
+  if (typeof window === "undefined" || !shouldTranslateAutomatically(value)) return;
+  loadAutomaticCache();
+  if (automaticTranslations[language][value] || automaticPending[language].has(value)) return;
+  automaticQueue[language].add(value);
+  if (automaticFlushTimer) return;
+  automaticFlushTimer = setTimeout(flushAutomaticTranslations, 80);
+}
+
+function takeAutomaticBatch(language: TranslatedLanguage, maxCharacters = 3000) {
+  const phrases: string[] = [];
+  let size = 0;
+  for (const phrase of automaticQueue[language]) {
+    const nextSize = size + phrase.length + AUTOMATIC_TRANSLATION_SEPARATOR.length;
+    if (phrases.length && nextSize > maxCharacters) break;
+    automaticQueue[language].delete(phrase);
+    automaticPending[language].add(phrase);
+    phrases.push(phrase);
+    size = nextSize;
+  }
+  return phrases;
+}
+
+async function requestAutomaticBatch(phrases: string[], language: TranslatedLanguage) {
+  const parameters = new URLSearchParams({
+    client: "gtx",
+    sl: "pt",
+    tl: language === "ES" ? "es" : "en",
+    dt: "t",
+    q: phrases.join(AUTOMATIC_TRANSLATION_SEPARATOR),
+  });
+  const response = await fetch(`https://translate.googleapis.com/translate_a/single?${parameters}`);
+  if (!response.ok) throw new Error(`Automatic translation failed with status ${response.status}`);
+  const payload = await response.json();
+  const translatedText = payload[0].map((part: [string]) => part[0]).join("");
+  const translatedPhrases = translatedText
+    .split(/[\r\n]*<<<DESTINO_ANDES_AUTO_SPLIT_7A4>>>[\r\n]*/)
+    .map((part: string) => part.trim());
+  if (translatedPhrases.length !== phrases.length) throw new Error("Automatic translation response mismatch");
+  phrases.forEach((phrase, index) => {
+    automaticTranslations[language][phrase] = translatedPhrases[index];
+  });
+  storeAutomaticCache();
+  window.dispatchEvent(new Event(AUTOMATIC_TRANSLATION_EVENT));
+}
+
+async function flushAutomaticTranslations() {
+  automaticFlushTimer = undefined;
+  for (const language of ["ES", "EN"] as const) {
+    const phrases = takeAutomaticBatch(language);
+    if (!phrases.length) continue;
+    try {
+      await requestAutomaticBatch(phrases, language);
+    } catch {
+      // Keep the local glossary result and allow a retry on a future language change.
+    } finally {
+      phrases.forEach((phrase) => automaticPending[language].delete(phrase));
+    }
+  }
+  if (automaticQueue.ES.size || automaticQueue.EN.size) {
+    automaticFlushTimer = setTimeout(flushAutomaticTranslations, 80);
+  }
+}
+
 export function getStoredLanguage(): Language {
   if (typeof window === "undefined") return "PT";
   const stored = window.localStorage.getItem(LANGUAGE_STORAGE_KEY);
@@ -234,7 +334,11 @@ function canonicalPhrase(value: string) {
 export function translatePhrase(value: string, language: Language) {
   const canonical = canonicalPhrase(value);
   if (language === "PT") return canonical;
-  return dictionaries[language][canonical] ?? translateWithGlossary(canonical, language);
+  loadAutomaticCache();
+  const localTranslation = dictionaries[language][canonical] ?? automaticTranslations[language][canonical];
+  if (localTranslation) return localTranslation;
+  scheduleAutomaticTranslation(canonical, language);
+  return translateWithGlossary(canonical, language);
 }
 
 function translateValue(value: string, language: Language) {
@@ -250,6 +354,7 @@ const appliedText = new WeakMap<Text, string>();
 const originalAttributes = new WeakMap<Element, Map<string, string>>();
 
 function translateTextNode(node: Text, language: Language) {
+  if (node.parentElement?.closest('script, style, noscript, code, pre, [translate="no"]')) return;
   const current = node.nodeValue ?? "";
   const lastApplied = appliedText.get(node);
   if (!originalText.has(node) || (lastApplied !== undefined && current !== lastApplied)) {
@@ -261,6 +366,7 @@ function translateTextNode(node: Text, language: Language) {
 }
 
 function translateElement(element: Element, language: Language) {
+  if (element.matches('script, style, noscript, code, pre, [translate="no"]')) return;
   let originals = originalAttributes.get(element);
   if (!originals) {
     originals = new Map();
@@ -303,6 +409,7 @@ function applyMetadata(language: Language) {
 
 export function LanguageRuntime() {
   useEffect(() => {
+    loadAutomaticCache();
     let language = getStoredLanguage();
     let translating = false;
 
@@ -335,11 +442,13 @@ export function LanguageRuntime() {
     apply();
     observer.observe(document.body, { childList: true, characterData: true, subtree: true });
     window.addEventListener(LANGUAGE_EVENT, onLanguageChange);
+    window.addEventListener(AUTOMATIC_TRANSLATION_EVENT, apply);
     window.addEventListener("storage", onLanguageChange);
 
     return () => {
       observer.disconnect();
       window.removeEventListener(LANGUAGE_EVENT, onLanguageChange);
+      window.removeEventListener(AUTOMATIC_TRANSLATION_EVENT, apply);
       window.removeEventListener("storage", onLanguageChange);
     };
   }, []);
