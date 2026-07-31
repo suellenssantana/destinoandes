@@ -53,9 +53,39 @@ export default async function PostPage({ params }: PostPageProps) {
             {post.sections.map((section) => (
               <section key={section.title}>
                 <h2>{section.title}</h2>
+                {section.image && (
+                  <figure className="article-section-media">
+                    <img src={section.image} alt={section.imageAlt ?? section.title} loading="lazy" />
+                    {section.imageCaption && <figcaption>{section.imageCaption}</figcaption>}
+                  </figure>
+                )}
                 {(Array.isArray(section.body) ? section.body : [section.body]).map((paragraph) => (
                   <p key={paragraph}>{paragraph}</p>
                 ))}
+                {section.highlight && (
+                  <div className="article-highlight">
+                    <strong>{section.highlight.label}</strong>
+                    <p>{section.highlight.text}</p>
+                  </div>
+                )}
+                {section.subSections?.map((subSection) => (
+                  <div className="article-subsection" key={subSection.title}>
+                    <h3>{subSection.title}</h3>
+                    {(Array.isArray(subSection.body) ? subSection.body : [subSection.body]).map((paragraph) => (
+                      <p key={paragraph}>{paragraph}</p>
+                    ))}
+                    {subSection.bullets && (
+                      <ul className="article-list">
+                        {subSection.bullets.map((item) => <li key={item}>{item}</li>)}
+                      </ul>
+                    )}
+                  </div>
+                ))}
+                {section.bullets && (
+                  <ul className="article-list">
+                    {section.bullets.map((item) => <li key={item}>{item}</li>)}
+                  </ul>
+                )}
               </section>
             ))}
             <aside>

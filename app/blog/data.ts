@@ -8,7 +8,20 @@ export type Post = {
   image: string;
   intro: string;
   keywords?: string[];
-  sections: { title: string; body: string | string[] }[];
+  sections: {
+    title: string;
+    body: string | string[];
+    image?: string;
+    imageAlt?: string;
+    imageCaption?: string;
+    highlight?: { label: string; text: string };
+    bullets?: string[];
+    subSections?: {
+      title: string;
+      body: string | string[];
+      bullets?: string[];
+    }[];
+  }[];
 };
 
 export const posts: Post[] = [
@@ -141,31 +154,218 @@ export const posts: Post[] = [
     ],
   },
   {
-    slug: "neve-no-chile-primeira-vez",
-    title: "Neve no Chile pela primeira vez: o que realmente planejar",
+    slug: "neve-no-chile-pela-primeira-vez",
+    title: "Neve no Chile pela primeira vez: guia completo para sua viagem",
     excerpt:
-      "Roupa, horários, estrada e escolha do passeio: um guia direto para aproveitar a neve com conforto e sem expectativas erradas.",
+      "Descubra quando ir, onde encontrar neve, como se vestir, o que levar e como viver a Cordilheira com conforto, segurança e tranquilidade.",
     category: "Cordilheira",
     country: "Chile",
-    readTime: "6 min",
-    image: "/images/library/farellones/farellones-008.webp",
+    readTime: "15 min",
+    image: "/images/tours/andes-panoramico-farellones-nevado.webp",
+    keywords: [
+      "neve no Chile pela primeira vez",
+      "quando neva no Chile",
+      "onde ver neve em Santiago",
+      "roupa para neve",
+      "Farellones",
+      "Valle Nevado",
+      "viagem ao Chile no inverno",
+    ],
     intro:
-      "Ver a Cordilheira coberta de neve costuma ser um dos momentos mais esperados da viagem. A experiência fica muito melhor quando você entende que montanha tem ritmo próprio e exige preparação.",
+      "O silêncio da montanha, o branco cobrindo os Andes e a sensação de tocar a neve pela primeira vez transformam um dia de inverno em memória para a vida inteira. Para que esse encontro seja tão bonito quanto você imagina, o segredo está em escolher a experiência certa e chegar preparado.",
     sections: [
       {
-        title: "Escolha a experiência, não apenas o destino",
-        body:
-          "Valle Nevado, Farellones, Portillo e os roteiros panorâmicos entregam propostas diferentes. Pense se o objetivo é contemplar, brincar na neve, conhecer um centro de esqui ou passar um dia inteiro em família.",
+        title: "Quando tem neve no Chile?",
+        body: [
+          "A temporada de neve costuma acompanhar o inverno do Hemisfério Sul, geralmente entre junho e setembro. As datas de abertura dos centros, a quantidade acumulada e o funcionamento das atividades mudam conforme o clima de cada ano.",
+          "Julho e agosto normalmente concentram as melhores possibilidades de encontrar a Cordilheira coberta de branco — e também a maior procura. Junho e setembro podem trazer valores mais interessantes e menos movimento, porém a neve tende a ser menos previsível.",
+          "Santiago pode registrar bastante frio sem nevar na cidade. O contato com a neve acontece principalmente nas áreas mais altas da Cordilheira. Quanto mais flexível for o roteiro, maiores serão as chances de ajustar o passeio às condições reais da montanha.",
+        ],
+        highlight: {
+          label: "RESPOSTA RÁPIDA",
+          text: "Para aumentar as chances de ver neve, julho e agosto são os meses mais procurados. Ainda assim, neve é natureza: nenhuma data oferece garantia absoluta.",
+        },
       },
       {
-        title: "Vista-se em camadas e proteja as extremidades",
+        title: "Onde ver neve perto de Santiago?",
         body:
-          "Roupa térmica, camada impermeável, luvas, meias adequadas e calçado com boa aderência fazem diferença. Óculos de sol e protetor solar continuam importantes mesmo em dias frios ou nublados.",
+          "Os destinos de montanha próximos à capital oferecem experiências diferentes. Antes de reservar, decida se você quer brincar, contemplar, fotografar, conhecer uma estação ou dedicar o dia aos esportes de inverno.",
+        image: "/images/tours/andes-panoramico-estrada-valle-nevado.webp",
+        imageAlt: "Estrada panorâmica entre as montanhas da região de Valle Nevado",
+        imageCaption: "A subida aos Andes já faz parte da experiência — e exige transporte preparado para a montanha.",
+        subSections: [
+          {
+            title: "Farellones: neve recreativa e clima de povoado",
+            body: [
+              "Farellones é um tradicional vilarejo de montanha e uma escolha muito procurada por famílias, casais e viajantes em seu primeiro encontro com a neve.",
+              "O parque da região pode oferecer atrações recreativas como tubing e outras atividades de inverno. A operação varia conforme clima, temporada e disponibilidade, portanto confirme antecipadamente o que estará funcionando.",
+            ],
+          },
+          {
+            title: "Valle Nevado: estação, paisagem e esportes de inverno",
+            body: [
+              "Valle Nevado é uma das estações mais conhecidas da América do Sul, com estrutura para esqui e snowboard, restaurantes, aluguel de equipamentos e aulas.",
+              "Quem deseja esquiar deve reservar um dia inteiro e considerar uma aula. Quem prefere contemplar precisa escolher um passeio panorâmico compatível com essa expectativa, pois conhecer a região não significa automaticamente ter acesso às pistas ou atividades.",
+            ],
+          },
+          {
+            title: "El Colorado e La Parva",
+            body:
+              "El Colorado reúne pistas de diferentes níveis e costuma interessar a quem quer aprender ou evoluir no esporte. La Parva combina atmosfera de vila e estrutura voltada principalmente ao esqui e snowboard. Em ambos os casos, confirme acesso, permanência e serviços incluídos.",
+          },
+          {
+            title: "Portillo e Laguna del Inca",
+            body:
+              "Mais distante de Santiago e próximo à fronteira com a Argentina, Portillo recompensa o trajeto com uma das paisagens mais marcantes dos Andes. A Laguna del Inca e as montanhas formam um cenário inesquecível, mas a operação depende das condições da estrada e das decisões de segurança.",
+          },
+        ],
       },
       {
-        title: "Aceite a flexibilidade como parte da montanha",
+        title: "Preciso saber esquiar para conhecer a neve?",
+        body: [
+          "Não. Caminhar, brincar, fotografar e simplesmente contemplar a Cordilheira já formam uma experiência completa. Para muitas pessoas, principalmente na primeira viagem, essa é a forma mais gostosa de descobrir a neve.",
+          "Se você quiser experimentar esqui ou snowboard, reserve tempo suficiente para aprender. Os primeiros movimentos exigem técnica, equilíbrio, equipamentos específicos e orientação. Uma aula torna o começo mais seguro e evita perder boa parte do dia tentando entender tudo sozinho.",
+        ],
+        highlight: {
+          label: "NÃO CONFUNDA",
+          text: "Passeio panorâmico, parque de neve e dia de esqui são experiências diferentes. Compare ingresso, roupa, equipamentos, aula, tempo de permanência e transporte antes de escolher.",
+        },
+      },
+      {
+        title: "Como se vestir para um dia na neve",
         body:
-          "Neve, vento, trânsito e decisões das autoridades podem alterar horários, paradas ou até a operação. Escolha fornecedores que comuniquem as condições com clareza e priorizem segurança acima do roteiro.",
+          "O segredo não é vestir o maior número possível de peças. São as camadas corretas que conservam o calor, controlam a umidade e protegem contra vento e neve.",
+        image: "/images/tours/valle-nevado-infantil.webp",
+        imageAlt: "Criança com roupa impermeável em Valle Nevado",
+        imageCaption: "Roupa adequada deixa adultos e crianças livres para aproveitar sem desconforto.",
+        subSections: [
+          {
+            title: "Primeira camada: proteção térmica",
+            body:
+              "Blusa e calça térmicas ficam em contato com a pele e ajudam a manter o corpo aquecido sem reter suor. Evite usar algodão como única camada: quando molha, demora a secar e aumenta a sensação de frio.",
+          },
+          {
+            title: "Segunda camada: isolamento",
+            body:
+              "Fleece, lã ou materiais semelhantes retêm o calor corporal. A espessura depende da temperatura e do nível de atividade: quem ficará parado costuma sentir mais frio do que quem estará esquiando ou caminhando.",
+          },
+          {
+            title: "Terceira camada: vento e umidade ficam do lado de fora",
+            body:
+              "Jaqueta e calça impermeáveis são essenciais para brincar, sentar ou praticar esportes na neve. Um casaco comum pode ser quente, mas perde eficiência se absorver água.",
+          },
+        ],
+        bullets: [
+          "Meias térmicas e uma meia extra",
+          "Luvas impermeáveis",
+          "Gorro e protetor de pescoço",
+          "Óculos de sol com proteção UV",
+          "Botas impermeáveis com solado aderente",
+          "Protetor solar e protetor labial",
+        ],
+      },
+      {
+        title: "Comprar ou alugar roupa de neve?",
+        body: [
+          "Para quem não pretende usar esse vestuário com frequência, o aluguel costuma ser mais prático e econômico. Jaqueta, calça e botas impermeáveis podem ser alugadas em Santiago ou no caminho para a Cordilheira.",
+          "Segunda pele, meias, gorro e protetor de pescoço são peças pessoais e geralmente valem a compra. Em dias movimentados, qualidade e tamanhos disponíveis nas lojas podem variar — principalmente para crianças —, então confirme as opções com antecedência.",
+        ],
+      },
+      {
+        title: "O que levar na mochila",
+        body:
+          "Leve apenas o que protege o seu conforto durante o dia. Na altitude, peso e esforço podem parecer maiores do que o habitual.",
+        bullets: [
+          "Água e um lanche leve",
+          "Protetor solar e labial para reaplicação",
+          "Óculos de sol",
+          "Luvas e meias extras",
+          "Medicamentos de uso pessoal",
+          "Carregador portátil",
+          "Saco impermeável para roupas molhadas",
+          "Documentos, dinheiro ou cartão e lenços",
+        ],
+        highlight: {
+          label: "DICA DO GUIA CHILE",
+          text: "O frio reduz a duração da bateria. Leve o celular protegido da umidade e mantenha um carregador portátil à mão.",
+        },
+      },
+      {
+        title: "Sol, estrada e altitude: três cuidados que fazem diferença",
+        body: [
+          "A neve reflete a radiação solar. Mesmo em dias frios ou nublados, use protetor solar, protetor labial e óculos com proteção UV. Para esquiar ou praticar snowboard, prefira óculos específicos para a atividade.",
+          "A subida inclui curvas acentuadas e condições que podem mudar rapidamente. No inverno, gelo, correntes nos pneus, interrupções e controle de trânsito pelas autoridades fazem parte da realidade. O trajeto deve ser realizado por profissionais acostumados à estrada e em veículos preparados.",
+          "Em áreas elevadas, algumas pessoas sentem dor de cabeça, cansaço, tontura, náusea ou falta de ar. Hidrate-se, evite álcool no dia anterior, faça movimentos com calma e avise o guia imediatamente se não estiver se sentindo bem.",
+        ],
+        highlight: {
+          label: "ATENÇÃO À SAÚDE",
+          text: "Crianças, idosos, gestantes e pessoas com condições cardíacas ou respiratórias devem buscar orientação médica antes de visitar áreas de grande altitude.",
+        },
+      },
+      {
+        title: "Neve com crianças ou idosos: dá para aproveitar?",
+        body: [
+          "Com crianças, escolha atividades compatíveis com a idade, confirme limites de altura ou peso e leve peças extras. Elas costumam brincar diretamente na neve e molhar luvas, meias e calças com facilidade. Faça pausas e observe sinais de frio, cansaço ou desconforto.",
+          "Para idosos, passeios panorâmicos com menor necessidade de caminhada podem ser mais apropriados. Confirme acessibilidade, estrutura para descanso, tempo ao ar livre e compatibilidade do roteiro com a mobilidade e as condições de saúde do viajante.",
+        ],
+        image: "/images/tours/valle-nevado-panorama.webp",
+        imageAlt: "Vista panorâmica das montanhas e da estação de Valle Nevado",
+        imageCaption: "A experiência ideal é aquela que respeita o ritmo de cada pessoa do grupo.",
+      },
+      {
+        title: "Erros que podem estragar a primeira experiência",
+        body:
+          "Na neve, pequenos detalhes têm um impacto enorme. Evite decisões que parecem econômicas ou simples, mas comprometem conforto, segurança e tempo de passeio.",
+        bullets: [
+          "Ir com tênis de tecido, que molha e oferece pouca aderência",
+          "Usar somente luvas de lã para brincar na neve",
+          "Confiar em um casaco quente, porém não impermeável",
+          "Esquecer protetor solar porque o dia está frio ou nublado",
+          "Tentar encaixar muitas atividades no mesmo dia",
+          "Escolher apenas pelo menor preço, sem comparar inclusões",
+          "Reservar um passeio panorâmico esperando passar o dia esquiando",
+        ],
+      },
+      {
+        title: "Como tirar fotos bonitas sem deixar de viver o momento",
+        body:
+          "O branco da paisagem pede contraste e cuidado com a luz. Use roupas coloridas, limpe a lente, evite apontar diretamente para o sol e aproveite momentos espontâneos. Proteja o aparelho da umidade e lembre-se de que a bateria descarrega mais rápido no frio.",
+        highlight: {
+          label: "A FOTO MAIS IMPORTANTE",
+          text: "Registre a experiência, mas guarde o celular por alguns minutos. A primeira neve merece ser vista, tocada e sentida — não apenas fotografada.",
+        },
+      },
+      {
+        title: "Quantos dias ficar em Santiago no inverno?",
+        body: [
+          "Quatro ou cinco dias permitem combinar a Cordilheira com outras experiências da capital e arredores. Uma viagem equilibrada reserva um dia para a cidade, um para a neve, um para vinícola, um para litoral ou novos bairros e uma margem de flexibilidade caso o clima exija mudanças.",
+          "Quem deseja aprender a esquiar deve considerar mais tempo. Adaptar-se à altitude, fazer aula e aproveitar a estação com tranquilidade pode exigir dois ou mais dias de montanha.",
+        ],
+        bullets: [
+          "1 dia para Santiago e seus principais bairros",
+          "1 dia dedicado à neve",
+          "1 dia de vinícola",
+          "1 dia para litoral ou outras experiências",
+          "1 data flexível para ajustes por clima e estrada",
+        ],
+      },
+      {
+        title: "A neve é garantida?",
+        body: [
+          "Não existe garantia absoluta quando o assunto é natureza. Intensidade, frequência e duração das nevascas variam, e a produção de neve artificial em algumas pistas não significa que toda a Cordilheira estará branca da mesma maneira.",
+          "A melhor estratégia é viajar na janela de maior probabilidade, permanecer alguns dias em Santiago e manter flexibilidade. Informação atualizada e uma equipe que conheça a montanha ajudam a escolher a experiência mais coerente perto da data.",
+        ],
+        image: "/images/tours/portillo-hotel.webp",
+        imageAlt: "Hotel Portillo cercado pela Cordilheira coberta de neve",
+        imageCaption: "Cada temporada desenha os Andes de uma forma diferente — e essa imprevisibilidade faz parte da montanha.",
+      },
+      {
+        title: "Vale a pena conhecer a neve no Chile?",
+        body: [
+          "Vale — e muito. A proximidade com o Brasil, a estrutura turística de Santiago e a imponência dos Andes fazem do Chile um destino especial para essa primeira experiência.",
+          "Seja brincando, aprendendo a esquiar ou apenas contemplando, o dia fica melhor quando o passeio combina com o perfil do grupo, a roupa protege de verdade e o roteiro respeita clima, estrada e altitude.",
+          "Sua primeira vez na neve merece cuidado em cada detalhe. Conte ao Guia Chile como você imagina esse momento: a Destino Andes aproxima as opções certas das suas datas, do seu ritmo e da experiência que você quer guardar para sempre.",
+        ],
       },
     ],
   },
@@ -202,7 +402,8 @@ export const posts: Post[] = [
 
 const legacySlugs: Record<string, string> = {
   "liberdade-de-alugar-um-carro": "o-que-fazer-em-santiago",
-  "wise-como-levar-dinheiro": "neve-no-chile-primeira-vez",
+  "wise-como-levar-dinheiro": "neve-no-chile-pela-primeira-vez",
+  "neve-no-chile-primeira-vez": "neve-no-chile-pela-primeira-vez",
 };
 
 export const getPost = (slug: string) => {
