@@ -524,6 +524,191 @@ export const posts: Post[] = [
     ],
   },
   {
+    slug: "como-escolher-seguro-viagem",
+    title: "Como escolher o seguro viagem ideal: guia completo",
+    excerpt:
+      "Aprenda a comparar cobertura médica, bagagem, esportes, condições preexistentes, atendimento e exclusões para viajar realmente protegido.",
+    category: "Planejamento",
+    country: "Chile",
+    readTime: "13 min",
+    image: "/images/blog/como-escolher-seguro-viagem.jpg",
+    keywords: [
+      "como escolher seguro viagem",
+      "melhor seguro viagem",
+      "seguro viagem internacional",
+      "seguro viagem Chile",
+      "seguro viagem para neve",
+      "cobertura seguro viagem",
+      "seguro viagem para gestante",
+      "seguro viagem esportes",
+      "Seguros Promo",
+    ],
+    intro:
+      "Passagens compradas, hospedagem reservada e roteiro organizado. Tudo parece pronto — até surgir a pergunta que muita gente deixa para o final: qual seguro viagem contratar? A resposta não está automaticamente no plano mais barato nem no mais caro, mas na proteção que acompanha o destino, as pessoas e as experiências reais da viagem.",
+    sections: [
+      {
+        title: "Seguro viagem não é só uma exigência: é uma rede de apoio",
+        body: [
+          "Mesmo uma viagem cuidadosamente planejada pode ser atravessada por uma indisposição, um acidente, uma bagagem extraviada ou a necessidade de atendimento longe de casa. No exterior, um episódio aparentemente simples pode gerar despesas relevantes e exigir decisões rápidas em outro idioma.",
+          "O seguro existe para oferecer as coberturas e os serviços previstos no plano contratado. Despesas médicas, hospitalares e odontológicas costumam formar a base; traslado, regresso sanitário, bagagem e interrupção variam conforme o produto.",
+          "Mais do que cumprir uma eventual regra do destino, contratar bem significa saber a quem recorrer, como acionar o atendimento e até onde vai a proteção quando algo foge do roteiro.",
+        ],
+        highlight: {
+          label: "RESPOSTA RÁPIDA",
+          text: "Cruze seis informações antes de olhar o preço: destino, duração, idade, condições de saúde, atividades previstas e limite financeiro das coberturas.",
+        },
+      },
+      {
+        title: "1. Comece pelo destino — não pelo preço",
+        body: [
+          "O mesmo limite de cobertura não oferece necessariamente o mesmo nível de proteção em todos os países. Custos médicos, moeda, duração da estadia, deslocamentos e regras de entrada mudam a análise.",
+          "Na Europa, confira a validade territorial e as regras aplicáveis ao seu caso. Nos Estados Unidos e em outros destinos com atendimento médico caro, considere limites mais amplos. Na América do Sul, a proximidade com o Brasil não elimina riscos de saúde, acidentes, cancelamentos ou bagagem.",
+          "Para o Chile, pense no roteiro completo: dias em Santiago, estradas de montanha, altitude no Atacama, neve, trilhas e qualquer extensão para outras regiões ou países.",
+        ],
+        bullets: [
+          "A cobertura vale em todos os países e conexões do roteiro?",
+          "As datas incluem ida, volta e todo o período fora do Brasil?",
+          "O limite médico é coerente com o custo do destino?",
+          "A moeda da cobertura foi considerada na comparação?",
+          "Viagens longas respeitam o limite máximo de dias do plano?",
+        ],
+      },
+      {
+        title: "2. Considere quem está viajando",
+        body: [
+          "Duas pessoas no mesmo voo e no mesmo hotel podem precisar de proteções diferentes. Idade, gravidez, condições preexistentes, mobilidade e uso contínuo de medicamentos alteram a comparação.",
+          "Não presuma que uma necessidade está coberta porque o plano menciona assistência médica. Procure o limite específico, as condições de utilização, eventual carência e exclusões. Se a informação não estiver clara, confirme antes do pagamento.",
+        ],
+        bullets: [
+          "Confira limites de idade e eventuais preços diferenciados",
+          "Verifique a definição e a cobertura de condições preexistentes",
+          "Para gestantes, confirme período gestacional, idade, eventos e limites aceitos",
+          "Considere as necessidades de crianças, idosos e pessoas com mobilidade reduzida",
+          "Informe corretamente tudo o que for solicitado na contratação",
+        ],
+      },
+      {
+        title: "3. Faça o seguro acompanhar o que você fará",
+        image: "/images/library/valle-nevado/valle-nevado-021.webp",
+        imageAlt: "Montanhas nevadas do Valle Nevado, no Chile",
+        imageCaption:
+          "Neve, esqui, snowboard, trilhas e altitude pedem uma leitura específica das atividades aceitas pelo plano.",
+        body: [
+          "Uma viagem urbana tem riscos diferentes de um roteiro com esqui, snowboard, mergulho, trilhas em altitude ou outras atividades de aventura. Viajar para ver neve não é a mesma coisa que entrar em uma pista para praticar esporte.",
+          "Antes de contratar, confirme se a modalidade aparece expressamente nas condições, se exige acompanhamento profissional e qual limite vale para acidentes durante a prática. Uma expressão genérica como “cobertura para esportes” não substitui a lista de atividades aceitas.",
+        ],
+        bullets: [
+          "A atividade planejada aparece expressamente nas condições?",
+          "Existe cobertura específica ou adicional para esportes?",
+          "Há exigência de guia, instrutor ou equipamento de segurança?",
+          "Qual limite é aplicado ao atendimento decorrente da atividade?",
+          "Competições e prática profissional estão excluídas?",
+        ],
+      },
+      {
+        title: "4. Compare as coberturas que realmente importam",
+        body: [
+          "Despesas médicas e hospitalares costumam ser o ponto de partida, mas não devem ser analisadas isoladamente. O valor exibido é um limite máximo sujeito aos eventos, regras e condições do plano — não um saldo livre para qualquer despesa.",
+          "Compare a moeda da cobertura, o custo do atendimento no destino, a duração da viagem e as necessidades dos viajantes. Depois observe proteções complementares que façam sentido para aquele roteiro.",
+        ],
+        bullets: [
+          "Despesas médicas, hospitalares e odontológicas",
+          "Traslado médico e regresso sanitário",
+          "Atendimento relacionado a condições preexistentes",
+          "Cobertura farmacêutica, quando prevista",
+          "Regresso antecipado e interrupção de viagem",
+          "Extravio, atraso ou dano à bagagem",
+          "Cancelamento, atraso de voo e perda de conexão, conforme o plano",
+        ],
+        highlight: {
+          label: "NÃO COMPARE SÓ O NÚMERO MAIOR",
+          text: "Dois planos com limites parecidos podem ter franquias, exclusões, moedas e formas de atendimento completamente diferentes.",
+        },
+      },
+      {
+        title: "5. Entenda como o atendimento funciona",
+        body: [
+          "Em algumas situações, o viajante aciona a central e recebe orientação para um serviço da rede. Em outras, precisa pagar a despesa e pedir reembolso depois, apresentando recibos, relatórios e documentos definidos no contrato.",
+          "Descobrir esse fluxo durante uma emergência adiciona tensão a um momento que já é difícil. Antes do embarque, entenda os canais, o idioma do suporte, a necessidade de autorização prévia e os prazos para enviar documentos.",
+        ],
+        bullets: [
+          "Salve telefone, WhatsApp, aplicativo e número do certificado",
+          "Confirme se a central funciona 24 horas e oferece suporte em português",
+          "Entenda quando o atendimento é direto e quando ocorre por reembolso",
+          "Pergunte quais comprovantes precisam ser guardados",
+          "Compartilhe a apólice com alguém que viajará com você",
+        ],
+      },
+      {
+        title: "6. Bagagem e voos: leia além do título da cobertura",
+        body: [
+          "Extravio, atraso na entrega, danos à mala, cancelamento e interrupção podem aparecer no plano, mas cada proteção possui limites, gatilhos e documentos próprios.",
+          "A indenização por bagagem pode complementar o pagamento da companhia aérea ou seguir outra regra contratual. Confira quando a cobertura começa, como o valor é calculado e quais comprovantes serão exigidos.",
+          "Ao perceber um problema, comunique imediatamente a companhia responsável, registre o ocorrido e guarde protocolos, notas e comprovantes. O seguro pode exigir esses documentos para analisar o pedido.",
+        ],
+      },
+      {
+        title: "7. Leia as exclusões antes de se encantar pelos benefícios",
+        body: [
+          "Saber o que o seguro não cobre é tão importante quanto conhecer seus benefícios. Dois planos parecidos na tela de cotação podem ter regras muito diferentes nas condições gerais.",
+          "Não dependa apenas do resumo comercial. Observe franquias, restrições, prazos, necessidade de comunicação imediata e procedimentos para reembolso. Em caso de dúvida, peça esclarecimento antes de concluir a compra.",
+        ],
+        bullets: [
+          "Tratamentos, eventos e situações excluídas",
+          "Regras para condições preexistentes, gestantes e idosos",
+          "Modalidades esportivas não aceitas",
+          "Consequências relacionadas ao consumo de álcool ou outras substâncias",
+          "Limites de idade, duração e território",
+          "Prazos e documentos obrigatórios para atendimento ou reembolso",
+        ],
+      },
+      {
+        title: "Como comparar seguros sem se perder entre tantos planos",
+        body: [
+          "Um comparador reúne ofertas de diferentes seguradoras e permite visualizar lado a lado preço, cobertura médica, bagagem e benefícios adicionais. Isso reduz o trabalho da pesquisa, mas não substitui a leitura das condições do plano escolhido.",
+          "Preencha destino, datas e idade corretamente. Separe algumas opções compatíveis com o perfil da viagem e compare os limites relevantes, em vez de simplesmente ordenar pelo menor preço.",
+        ],
+        bullets: [
+          "Elimine planos incompatíveis com o destino ou com os viajantes",
+          "Compare coberturas equivalentes e na mesma moeda",
+          "Observe seguradora, rede de atendimento e forma de acionamento",
+          "Abra as condições gerais antes de finalizar",
+          "Confirme nomes, documentos, datas e todos os viajantes no certificado",
+        ],
+        highlight: {
+          label: "GUIA CHILE RECOMENDA",
+          text: "Use o cartão da Seguros Promo no final desta matéria para comparar planos. A cotação é feita no ambiente do parceiro e você deve conferir todas as condições antes de contratar.",
+        },
+      },
+      {
+        title: "Checklist final antes de contratar",
+        body:
+          "Faça esta conferência antes do pagamento. São poucos minutos que podem evitar uma apólice inadequada ou dados incorretos quando você mais precisar.",
+        bullets: [
+          "Destino e datas abrangem todo o período, inclusive deslocamentos",
+          "Todos os viajantes estão incluídos e os nomes conferem com os documentos",
+          "O limite médico é compatível com o destino e a duração",
+          "Condições de saúde, idade e gestação foram consideradas",
+          "As atividades esportivas planejadas estão expressamente incluídas",
+          "Regras para bagagem, cancelamento e reembolso foram compreendidas",
+          "Canais de emergência foram salvos em mais de um lugar",
+          "Exclusões e condições gerais foram lidas",
+        ],
+        highlight: {
+          label: "A ESCOLHA CERTA É PESSOAL",
+          text: "O melhor seguro não é um produto universal: é o plano que acompanha o destino, as pessoas e as experiências do seu roteiro.",
+        },
+      },
+      {
+        title: "Contrate com calma e viaje com o apoio certo",
+        body: [
+          "Compare coberturas, leia as condições e trate a proteção como parte do planejamento — não como um item de última hora. Depois da contratação, deixe a apólice disponível no celular e também fora dele.",
+          "Informações, limites, regras e preços podem mudar. Confirme tudo no site e nas condições do parceiro antes do pagamento e do embarque.",
+        ],
+      },
+    ],
+  },
+  {
     slug: "valparaiso-vina-del-mar-vinicolas",
     title: "Valparaíso, Viña del Mar e vinícolas: combine o Chile central",
     excerpt:
