@@ -182,8 +182,9 @@ export function Price({ tour, compact = false }: { tour: Tour; compact?: boolean
 }
 
 export function TourCard({ tour }: { tour: Tour }) {
-  return <article className="tour-card">
-    <Link className="card-image" href={`/chile/passeios/${tour.slug}`}><img src={tour.images[0]} alt={tour.name} loading="lazy" /><span>{tour.duration}</span></Link>
+  const isPackage = tour.category.includes("Pacotes");
+  return <article className={`tour-card${isPackage ? " package-card" : ""}`}>
+    <Link className="card-image" href={`/chile/passeios/${tour.slug}`}><img src={tour.images[0]} alt={tour.name} loading="lazy" />{isPackage && <span className="package-badge">PACOTE 2026</span>}<span className="duration-badge">{tour.duration}</span></Link>
     <div className="card-body"><p className="kicker">{tour.eyebrow}</p><h3><Link href={`/chile/passeios/${tour.slug}`}>{tour.name}</Link></h3><p>{tour.short}</p>
       <div className="chips">{tour.category.slice(0,2).map(c => <span key={c}>{c}</span>)}</div>
       <Price tour={tour} compact/><Link className="text-link" href={`/chile/passeios/${tour.slug}`}>Ver experiência <span>→</span></Link>

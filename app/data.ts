@@ -287,7 +287,7 @@ export const tours: Tour[] = [
     ],
     climate: "Santiago vive o inverno nesse período, com manhãs frias e possibilidade de neve na Cordilheira. A operação segue as condições climáticas e de estrada.",
     images: [
-      media("santiago", "santiago-005"),
+      "/images/packages/package-santiago-essencial-cover.webp",
       media("cordilheira-dos-andes", "cordilheira-dos-andes-004"),
       "/images/tours/andes-panoramico-estrada-valle-nevado.webp",
     ],
@@ -314,7 +314,7 @@ export const tours: Tour[] = [
     ],
     climate: "A presença de neve, as rotas e o funcionamento das atrações variam conforme o clima, a estrada e as orientações das autoridades de montanha.",
     images: [
-      "/images/tours/valle-nevado-panorama.webp",
+      "/images/packages/package-chile-dos-sonhos-cover.webp",
       "/images/tours/valle-nevado-infantil.webp",
       "/images/tours/andes-panoramico-farellones-nevado.webp",
     ],
@@ -342,7 +342,7 @@ export const tours: Tour[] = [
     included: ["Transfer", "Passeio com guia de turismo"],
     climate: "A presença de neve e a operação dependem do clima, das condições da estrada e das orientações das autoridades de montanha.",
     images: [
-      "/images/tours/andes-panoramico-farellones-nevado.webp",
+      "/images/packages/package-neve-sem-preocupacao-cover.webp",
       "/images/tours/valle-nevado-panorama.webp",
       "/images/tours/portillo-laguna-nevada.webp",
     ],
@@ -369,7 +369,7 @@ export const tours: Tour[] = [
     ],
     climate: "O inverno em Santiago combina dias frios e secos na cidade com condições variáveis na Cordilheira. Consulte a orientação de bagagem e vestuário na proposta.",
     images: [
-      media("santiago", "santiago-003"),
+      "/images/packages/package-chile-completo-salvador-cover.webp",
       media("cordilheira-dos-andes", "cordilheira-dos-andes-005"),
       "/images/tours/valle-nevado-panorama.webp",
     ],
@@ -402,7 +402,7 @@ export const tours: Tour[] = [
     ],
     climate: "O Atacama tem grande amplitude térmica, sol intenso, ar seco e passeios que podem alcançar elevada altitude. Leve proteção solar e roupas em camadas.",
     images: [
-      "/images/tours/atacama-valle-luna-4k.webp",
+      "/images/packages/package-atacama-inesquecivel-cover.webp",
       "/images/tours/atacama-lagunas-altiplanicas-4k.webp",
       "/images/tours/atacama-geiseres-tatio-4k.webp",
     ],
