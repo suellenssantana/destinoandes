@@ -710,30 +710,259 @@ export const posts: Post[] = [
   },
   {
     slug: "valparaiso-vina-del-mar-vinicolas",
-    title: "Valparaíso, Viña del Mar e vinícolas: combine o Chile central",
+    title: "Valparaíso, Viña del Mar e vinícolas: roteiro pelo Chile Central",
     excerpt:
-      "Arte, Pacífico e vinhos em experiências que revelam como paisagens muito diferentes convivem a pouca distância de Santiago.",
+      "Descubra como combinar Valparaíso, Viña del Mar e as vinícolas de Casablanca e Maipo em um roteiro completo pelo Chile Central.",
     category: "Litoral & vinhos",
     country: "Chile",
-    readTime: "7 min",
-    image: "/images/library/valparaiso-vina-del-mar/valparaiso-vina-del-mar-023.webp",
+    readTime: "12 min",
+    image: "/images/tours/valparaiso-colorido.webp",
+    keywords: [
+      "Valparaíso e Viña del Mar",
+      "vinícolas perto de Santiago",
+      "Vale de Casablanca",
+      "Vale do Maipo",
+      "roteiro Chile Central",
+      "bate-volta de Santiago",
+      "vinhos chilenos",
+    ],
     intro:
-      "Uma das melhores qualidades do Chile central é a possibilidade de atravessar universos diferentes em poucos dias: a energia de Santiago, os morros de Valparaíso, a elegância de Viña del Mar e os vales do vinho.",
+      "Arte, Pacífico e vinhos em uma viagem que atravessa paisagens completamente diferentes — todas a pouca distância de Santiago. Em poucas horas, o Chile Central troca a capital pelos vinhedos, sobe os morros coloridos de Valparaíso e termina diante do mar em Viña del Mar.",
     sections: [
       {
-        title: "Valparaíso pede tempo para observar",
-        body:
-          "Escadarias, elevadores, arte urbana, casarões e vistas do porto formam uma cidade que não se resume a um único cartão-postal. Caminhar com contexto ajuda a entender sua identidade artística e portuária.",
+        title: "Três paisagens, uma viagem cheia de contrastes",
+        body: [
+          "Poucos roteiros entregam tantas mudanças de cenário em distâncias tão curtas. Valparaíso é intensa, histórica e imprevisível; Viña del Mar é mais organizada, ajardinada e voltada para a orla; os vales de Casablanca e Maipo desaceleram a viagem entre parreiras, história e degustações.",
+          "O segredo não é tentar transformar tudo em uma corrida. É escolher o ritmo certo para cada lugar e entender que o contraste faz parte da experiência.",
+        ],
+        highlight: {
+          label: "O ROTEIRO EM UMA FRASE",
+          text: "Valparaíso para sentir a arte, Viña del Mar para respirar o Pacífico e uma vinícola para brindar ao Chile.",
+        },
       },
       {
-        title: "Viña del Mar muda o ritmo do dia",
-        body:
-          "Jardins, orla e mar trazem uma pausa mais leve ao roteiro. Mesmo no verão, vale levar uma camada extra: manhãs nubladas e vento fazem parte da atmosfera do litoral central.",
+        title: "Valparaíso: uma cidade que pede curiosidade",
+        body: [
+          "Valparaíso não foi feita para ser admirada apenas da janela. A cidade revela sua personalidade nas escadarias, passagens estreitas, fachadas coloridas, murais e mirantes que aparecem entre um morro e outro.",
+          "Seu porto histórico e a arquitetura adaptada ao relevo ajudam a explicar por que a área histórica foi reconhecida como Patrimônio Mundial. Nos cerros Alegre e Concepción, caminhar com calma transforma paredes, portas e becos em parte do passeio.",
+          "Ela é uma cidade real, com contrastes urbanos e marcas do tempo. É justamente essa mistura de arte, história portuária e vida cotidiana que torna a visita tão diferente de um cartão-postal convencional.",
+        ],
+        image: "/images/library/valparaiso-vina-del-mar/valparaiso-vina-del-mar-013.webp",
+        imageAlt: "Visitante diante de um grande mural colorido em Valparaíso",
+        imageCaption: "Em Valparaíso, a arte urbana não é um detalhe: ela conduz o caminho.",
+        highlight: {
+          label: "OLHAR DE VIAJANTE",
+          text: "Vá com espaço para o inesperado. Muitas das melhores cenas de Valparaíso aparecem entre uma atração e outra.",
+        },
       },
       {
-        title: "Os vales do vinho completam a viagem",
+        title: "Entre elevadores, escadas e mirantes",
+        body: [
+          "Os elevadores históricos ajudam a vencer parte das subidas e são uma atração por si só, mas a experiência ainda envolve ladeiras e degraus. Os trajetos mais interessantes conectam mirantes, pequenas galerias, cafés e corredores de arte.",
+          "Em vez de colecionar pontos isolados, organize o passeio por áreas próximas. Isso reduz deslocamentos e deixa tempo para observar os detalhes que fazem a cidade ser tão singular.",
+        ],
+        image: "/images/library/valparaiso-vina-del-mar/valparaiso-vina-del-mar-030.webp",
+        imageAlt: "Viajantes em uma escadaria cercada por murais em Valparaíso",
+        imageCaption: "Escadas e ladeiras fazem parte da paisagem — e da experiência.",
+        bullets: [
+          "Use calçado confortável e com boa aderência.",
+          "Leve bolsa pequena e mantenha as mãos livres para as subidas.",
+          "Prefira um trajeto bem conectado a tentar cruzar muitos morros no mesmo dia.",
+          "Com guia, a arte e a história portuária ganham contexto e a caminhada rende mais.",
+        ],
+      },
+      {
+        title: "Viña del Mar: quando a viagem muda de ritmo",
+        body: [
+          "A curta distância de Valparaíso, Viña del Mar muda completamente o cenário. Avenidas mais largas, jardins, arquitetura elegante e uma orla aberta dão à cidade um ritmo mais leve.",
+          "O Relógio de Flores é a parada clássica; o Castelo Wulff acrescenta arquitetura e vista para o mar; e o litoral convida a caminhar sem pressa. A graça está em sentir a transição entre duas cidades vizinhas que parecem pertencer a universos diferentes.",
+        ],
+        image: "/images/library/valparaiso-vina-del-mar/valparaiso-vina-del-mar-006.webp",
+        imageAlt: "Relógio de Flores em Viña del Mar",
+        imageCaption: "O Relógio de Flores é um dos símbolos mais fotografados de Viña del Mar.",
+        highlight: {
+          label: "O CONTRASTE É O PASSEIO",
+          text: "Valparaíso provoca e surpreende; Viña del Mar desacelera e abre a paisagem para o Pacífico.",
+        },
+      },
+      {
+        title: "O Pacífico é mais frio do que parece",
+        body: [
+          "O céu azul pode enganar: a costa chilena recebe a influência da corrente de Humboldt, e a água costuma ser fria mesmo no verão. O vento também pode mudar rapidamente a sensação térmica.",
+          "Em algumas manhãs, uma névoa costeira conhecida como camanchaca cobre a orla e se dissipa ao longo do dia. Ela não estraga o passeio — apenas cria outra atmosfera para o litoral.",
+        ],
+        image: "/images/tours/vina-lobos-marinhos.webp",
+        imageAlt: "Lobos-marinhos na costa de Viña del Mar diante do oceano Pacífico",
+        imageCaption: "A vida marinha e a brisa fria lembram que este é o Pacífico sul.",
+        bullets: [
+          "Vista-se em camadas, mesmo em dias ensolarados.",
+          "Leve uma jaqueta corta-vento para a orla.",
+          "Não planeje Viña apenas como destino de banho: paisagem, arquitetura e caminhada são parte central da visita.",
+        ],
+      },
+      {
+        title: "Valparaíso e Viña no mesmo dia: vale a pena?",
         body:
-          "Maipo, Casablanca e outros vales próximos reúnem paisagem, história e gastronomia. Escolha a vinícola pelo estilo de experiência que você procura, do tour clássico à degustação intimista ao pôr do sol.",
+          "Sim, desde que a proposta seja ter uma boa visão geral. As duas cidades combinam muito bem em um bate-volta desde Santiago, mas o dia precisa de escolhas: alguns cerros e mirantes em Valparaíso, depois os principais pontos de Viña del Mar.",
+        subSections: [
+          {
+            title: "Para quem tem apenas um dia",
+            body:
+              "Comece por Valparaíso, quando há mais energia para caminhar, e deixe Viña para a segunda parte do passeio. Um roteiro organizado reduz o tempo perdido em deslocamentos e estacionamentos.",
+          },
+          {
+            title: "Para quem quer sentir a costa com calma",
+            body:
+              "Uma ou duas noites permitem ver o fim de tarde no Pacífico, jantar sem pressa e explorar a arte porteña além das paradas mais conhecidas.",
+          },
+        ],
+      },
+      {
+        title: "Casablanca: vinhos entre Santiago e o litoral",
+        body: [
+          "O Vale de Casablanca fica no caminho entre Santiago e a costa, por isso é a escolha mais natural para combinar vinhos com Valparaíso e Viña del Mar.",
+          "A influência marítima e o clima mais fresco favorecem variedades como Sauvignon Blanc, Chardonnay e Pinot Noir. Muitas propriedades oferecem experiências contemporâneas, com arquitetura, gastronomia e paisagens abertas sobre os vinhedos.",
+          "Uma parada breve funciona para conhecer a produção e degustar alguns rótulos. Para almoçar, caminhar pelos vinhedos e participar de uma experiência mais completa, reserve meio dia ou um dia inteiro.",
+        ],
+        image: "/images/library/vinicola-alyan/vinicola-alyan-016.webp",
+        imageAlt: "Vinhedos chilenos iluminados pelo sol diante das montanhas",
+        imageCaption: "Os vales chilenos unem paisagem, vinho e um ritmo mais contemplativo.",
+        highlight: {
+          label: "MELHOR COMBINAÇÃO",
+          text: "Casablanca é ideal para quem quer encaixar uma experiência de vinho no mesmo eixo da viagem ao litoral.",
+        },
+      },
+      {
+        title: "Maipo: tradição aos pés dos Andes",
+        body: [
+          "O Vale do Maipo está associado à história do vinho chileno e a rótulos tintos, especialmente Cabernet Sauvignon. A proximidade com Santiago facilita visitas de meio dia ou de dia inteiro.",
+          "Aqui, a experiência costuma destacar tradição, antigas construções, jardins e a relação entre o vale e a Cordilheira. É uma escolha forte para quem deseja dedicar um dia específico ao vinho, sem seguir em direção ao litoral.",
+        ],
+        image: "/images/library/vinicola-undurraga/vinicola-undurraga-005.webp",
+        imageAlt: "Jardins de uma vinícola tradicional no Vale do Maipo",
+        imageCaption: "No Maipo, história e paisagismo fazem parte da visita tanto quanto a degustação.",
+      },
+      {
+        title: "Maipo ou Casablanca: qual escolher?",
+        body:
+          "Não existe um vale melhor para todos. A escolha depende da direção do roteiro, do perfil de vinho que você prefere e do tempo disponível.",
+        subSections: [
+          {
+            title: "Escolha Casablanca se você quer",
+            body: "Um dia que conecte vinho e litoral com deslocamentos mais eficientes.",
+            bullets: [
+              "Vinhos de clima fresco, com destaque para brancos e Pinot Noir.",
+              "Enoturismo contemporâneo e boa integração com gastronomia.",
+              "Combinar a visita com Valparaíso e Viña del Mar.",
+            ],
+          },
+          {
+            title: "Escolha Maipo se você quer",
+            body: "Uma experiência clássica de vinícola partindo de Santiago.",
+            bullets: [
+              "Cabernet Sauvignon e tradição vitivinícola.",
+              "Propriedades históricas, jardins e paisagem andina.",
+              "Dedicar meio dia ou um dia inteiro exclusivamente ao vinho.",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Como escolher a vinícola ideal",
+        body: [
+          "A vinícola certa não é necessariamente a mais famosa, e sim a que combina com a experiência que você deseja. Antes de reservar, compare duração, idioma, estilo de degustação e estrutura do local.",
+          "Se houver degustação, evite dirigir. Transfer privativo ou passeio organizado torna o dia mais seguro e permite que todos aproveitem a experiência.",
+        ],
+        image: "/images/library/vinicola-alyan/vinicola-alyan-021.webp",
+        imageAlt: "Mesa preparada para uma experiência gastronômica em vinícola chilena",
+        imageCaption: "Almoço harmonizado, visita técnica ou degustação breve: escolha o formato antes de reservar.",
+        bullets: [
+          "Quer uma visita histórica, técnica, gastronômica ou mais descontraída?",
+          "A degustação está incluída e há opções para quem não bebe?",
+          "O tour acontece em português ou espanhol?",
+          "Há restaurante e ele exige reserva separada?",
+          "O local recebe crianças e tem acessibilidade adequada ao seu grupo?",
+          "O horário funciona com os outros deslocamentos do dia?",
+        ],
+      },
+      {
+        title: "A melhor época muda a experiência",
+        body:
+          "O Chile Central pode ser visitado o ano todo, mas cada estação transforma a luz, os vinhedos e o clima da costa.",
+        image: "/images/library/vinicola-santa-rita/vinicola-santa-rita-002.webp",
+        imageAlt: "Jardim histórico florido em uma vinícola chilena",
+        imageCaption: "Jardins, vinhedos e cores mudam ao longo das estações.",
+        subSections: [
+          {
+            title: "Primavera — setembro a novembro",
+            body:
+              "Vinhedos mais verdes, jardins floridos e dias progressivamente longos. É uma época muito equilibrada para combinar costa e vinho.",
+          },
+          {
+            title: "Verão — dezembro a fevereiro",
+            body:
+              "Dias longos e mais movimento no litoral. Reserve com antecedência e mantenha o corta-vento na bolsa: o Pacífico continua fresco.",
+          },
+          {
+            title: "Outono — março a maio",
+            body:
+              "Os vinhedos ganham tons dourados e a época de colheita traz outra energia aos vales. É uma das fases mais fotogênicas para o enoturismo.",
+          },
+          {
+            title: "Inverno — junho a agosto",
+            body:
+              "A costa pode ter chuva, vento e temperaturas mais baixas, enquanto os vales ficam mais tranquilos. É importante confirmar horários e manter o roteiro flexível.",
+          },
+        ],
+      },
+      {
+        title: "Um, dois ou três dias?",
+        body:
+          "A melhor divisão depende menos da quantidade de atrações e mais do quanto você quer se aprofundar em cada experiência.",
+        subSections: [
+          {
+            title: "Em 1 dia",
+            body:
+              "Faça Valparaíso e Viña del Mar com paradas essenciais. Inclua Casablanca apenas se a visita à vinícola for breve e estiver muito bem coordenada.",
+          },
+          {
+            title: "Em 2 dias",
+            body:
+              "Dedique o primeiro dia à costa, com possibilidade de pernoite. No segundo, conheça Casablanca com almoço ou degustação sem pressa.",
+          },
+          {
+            title: "Em 3 dias",
+            body:
+              "Separe Valparaíso, combine Viña del Mar com Casablanca e reserve um terceiro dia para uma experiência clássica no Maipo.",
+          },
+        ],
+        highlight: {
+          label: "NOSSA ESCOLHA",
+          text: "Dois dias oferecem o melhor equilíbrio: costa com tempo para olhar e vinícola com tempo para saborear.",
+        },
+      },
+      {
+        title: "Dicas práticas para aproveitar melhor",
+        body:
+          "Pequenas decisões deixam o roteiro mais fluido e evitam que o dia vire uma sequência apressada de fotos.",
+        image: "/images/library/valparaiso-vina-del-mar/valparaiso-vina-del-mar-018.webp",
+        imageAlt: "Grupo de viajantes em uma rua colorida de Valparaíso",
+        imageCaption: "Com o ritmo certo, o roteiro funciona para casais, famílias e grupos de amigos.",
+        bullets: [
+          "Reserve vinícolas, degustações e restaurantes com antecedência.",
+          "Confirme o funcionamento dos elevadores de Valparaíso no dia da visita.",
+          "Use calçado confortável e leve uma camada corta-vento.",
+          "Não sobrecarregue o dia com muitas degustações ou atrações distantes.",
+          "Guarde tempo livre para mirantes, cafés e pausas junto ao mar.",
+          "Se beber, use transporte contratado ou participe de um passeio organizado.",
+        ],
+      },
+      {
+        title: "Três paisagens, uma viagem inesquecível",
+        body: [
+          "Valparaíso, Viña del Mar e os vales do vinho mostram como o Chile muda de personalidade em poucos quilômetros. O melhor roteiro não é o que acumula mais paradas, mas o que cria espaço para perceber essas diferenças.",
+          "A Destino Andes organiza essa experiência de acordo com o seu ritmo, com deslocamentos coordenados, escolhas de vinícolas alinhadas ao seu perfil e tempo para viver cada lugar. Seu Guia Chile sempre à mão — da primeira curva até o último brinde.",
+        ],
       },
     ],
   },
