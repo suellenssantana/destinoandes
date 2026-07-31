@@ -120,9 +120,15 @@ export default async function PostPage({ params }: PostPageProps) {
           <img className="article-cover" src={post.image} alt={post.title} />
           <div className="article-body">
             <p className="article-intro">{post.intro}</p>
-            {post.sections.map((section) => (
-              <section key={section.title}>
-                <h2>{section.title}</h2>
+            {post.sections.map((section, sectionIndex) => (
+              <section
+                className={`article-content-section${section.cards ? " article-content-section-visual" : ""}`}
+                key={section.title}
+              >
+                <div className="article-section-heading">
+                  <span aria-hidden="true">{String(sectionIndex + 1).padStart(2, "0")}</span>
+                  <h2>{section.title}</h2>
+                </div>
                 {section.image && (
                   <figure className="article-section-media">
                     <img src={section.image} alt={section.imageAlt ?? section.title} loading="lazy" />
@@ -136,6 +142,17 @@ export default async function PostPage({ params }: PostPageProps) {
                   <div className="article-highlight">
                     <strong>{section.highlight.label}</strong>
                     <p>{section.highlight.text}</p>
+                  </div>
+                )}
+                {section.cards && (
+                  <div className="article-visual-grid">
+                    {section.cards.map((card) => (
+                      <article key={card.title}>
+                        <span>{card.label}</span>
+                        <h3>{card.title}</h3>
+                        <p>{card.text}</p>
+                      </article>
+                    ))}
                   </div>
                 )}
                 {section.subSections?.map((subSection) => (

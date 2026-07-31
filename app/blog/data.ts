@@ -16,6 +16,11 @@ export type Post = {
     imageCaption?: string;
     highlight?: { label: string; text: string };
     bullets?: string[];
+    cards?: {
+      label: string;
+      title: string;
+      text: string;
+    }[];
     subSections?: {
       title: string;
       body: string | string[];
@@ -60,6 +65,9 @@ export const posts: Post[] = [
           "Na Patagônia e na Região dos Lagos, os meses mais quentes ampliam as possibilidades de trilhas, navegações e atividades ao ar livre. Isso também significa alta temporada: janeiro e fevereiro exigem antecedência para passagens, hospedagens, parques e experiências concorridas.",
           "Quem não gosta de calor intenso deve planejar os passeios urbanos para o começo da manhã ou fim da tarde. Mesmo no verão, leve uma camada adicional para o litoral e para destinos de altitude, onde o vento e a queda de temperatura mudam rapidamente a sensação térmica.",
         ],
+        image: "/images/tours/valparaiso-colorido.webp",
+        imageAlt: "Casas coloridas nos morros de Valparaíso durante um dia de verão",
+        imageCaption: "Dias longos favorecem roteiros que conectam Santiago ao litoral central.",
       },
       {
         title: "Fevereiro e março: o momento especial das vindimas",
@@ -67,6 +75,13 @@ export const posts: Post[] = [
           "O fim do verão marca a colheita das uvas em importantes vales chilenos. Maipo, Casablanca, Colchagua, Aconcágua e Curicó ganham experiências ligadas à produção do vinho, gastronomia e celebrações locais.",
           "As datas variam conforme o clima, a maturação das uvas e a programação de cada vinícola. Se a vindima for uma prioridade, confirme o calendário antes de fechar a viagem. Fora dos eventos, os tours regulares continuam sendo uma excelente forma de conhecer vinhedos, caves e rótulos chilenos.",
         ],
+        image: "/images/library/vinicola-alyan/vinicola-alyan-016.webp",
+        imageAlt: "Vinhedos chilenos iluminados pelo sol diante das montanhas",
+        imageCaption: "No fim do verão, os vales ganham ritmo de colheita e celebração.",
+        highlight: {
+          label: "PARA QUEM AMA VINHOS",
+          text: "Fevereiro e março aproximam o visitante da colheita, mas a agenda muda a cada safra: confirme datas antes de reservar.",
+        },
       },
       {
         title: "Outono, de março a maio: clima agradável e viagem mais tranquila",
@@ -75,6 +90,9 @@ export const posts: Post[] = [
           "No Atacama, março, abril e maio podem oferecer uma boa combinação de temperaturas, paisagens abertas e menor pressão turística. A amplitude térmica continua importante: dias com sol forte podem terminar em noites bastante frias.",
           "É uma estação de transição, portanto a mala deve funcionar em camadas. Também vale acompanhar feriados e eventos, que podem alterar horários e disponibilidade mesmo fora da alta temporada tradicional.",
         ],
+        image: "/images/library/vinicola-santa-rita/vinicola-santa-rita-002.webp",
+        imageAlt: "Jardim histórico de uma vinícola chilena no outono",
+        imageCaption: "O outono combina temperaturas mais agradáveis, vales tranquilos e cores especiais.",
       },
       {
         title: "Inverno, de junho a agosto: a temporada mais desejada para ver neve",
@@ -83,6 +101,13 @@ export const posts: Post[] = [
           "Julho e agosto costumam ser as janelas mais desejadas, mas nenhuma data oferece garantia absoluta de neve. O volume acumulado, a abertura das pistas, o funcionamento dos parques e as condições das estradas dependem do clima de cada temporada.",
           "Santiago não permanece coberta de neve durante o inverno. Na maior parte das viagens, o contato com a neve acontece nas áreas de montanha, acessadas a partir da capital. Por isso, transporte adequado, roupas em camadas e flexibilidade para mudanças de rota são partes essenciais do planejamento.",
         ],
+        image: "/images/tours/valle-nevado-panorama.webp",
+        imageAlt: "Montanhas cobertas de neve na região de Valle Nevado",
+        imageCaption: "A neve está na Cordilheira: Santiago funciona como base para chegar à montanha.",
+        highlight: {
+          label: "EXPECTATIVA REALISTA",
+          text: "Julho e agosto aumentam as chances, mas neve, estradas e operações continuam dependendo do clima de cada temporada.",
+        },
       },
       {
         title: "Qual mês escolher para ver neve no Chile?",
@@ -97,6 +122,9 @@ export const posts: Post[] = [
           "A primavera traz dias gradualmente mais longos, parques floridos e temperaturas convidativas para explorar Santiago a pé. É um ótimo período para combinar a capital com Valparaíso, Viña del Mar e os vales do vinho.",
           "Atacama, trekking e Região dos Lagos também entram bem em roteiros de primavera. Setembro ainda é uma transição e pode conservar neve nas áreas mais altas, mas ela não deve ser tratada como garantida. Outubro e novembro são especialmente interessantes para quem procura diversidade de passeios e menor movimento do que nas férias de verão.",
         ],
+        image: "/images/library/santiago/santiago-003.webp",
+        imageAlt: "Santiago em um dia claro com a Cordilheira dos Andes ao fundo",
+        imageCaption: "Na primavera, cidade, litoral e vinícolas cabem com naturalidade no mesmo roteiro.",
       },
       {
         title: "Melhor época por destino: Santiago, Atacama e Patagônia",
@@ -104,6 +132,23 @@ export const posts: Post[] = [
           "Santiago funciona durante todo o ano. Março a maio e setembro a novembro favorecem passeios urbanos; o inverno é ideal para combinar a cidade com a Cordilheira; e o verão oferece dias longos, embora possa ser quente e seco.",
           "San Pedro de Atacama também recebe visitantes o ano inteiro. Outono e primavera costumam entregar bom equilíbrio, mas noites frias, sol intenso e altitude fazem parte da experiência em qualquer mês. Alguns fenômenos climáticos podem alterar passeios, sobretudo em áreas elevadas.",
           "Na Patagônia chilena, novembro a março é a janela mais procurada para trilhas e natureza, devido às temperaturas menos rigorosas e aos dias mais longos. Ainda assim, vento, chuva e mudanças rápidas de tempo são normais: planejamento e equipamento adequado continuam indispensáveis.",
+        ],
+        image: "/images/tours/atacama-lagunas-altiplanicas-4k.webp",
+        imageAlt: "Lagunas Altiplânicas no deserto do Atacama",
+        imageCaption: "No Atacama, altitude, sol intenso e noites frias fazem parte da experiência em qualquer estação.",
+        subSections: [
+          {
+            title: "Santiago",
+            body: "Melhor equilíbrio no outono e na primavera; inverno para combinar com a neve; verão para aproveitar dias longos.",
+          },
+          {
+            title: "Atacama",
+            body: "Funciona o ano inteiro, com atenção permanente à altitude, à amplitude térmica e às condições dos passeios.",
+          },
+          {
+            title: "Patagônia",
+            body: "Novembro a março é a janela mais procurada para trilhas, mas vento e mudanças de tempo continuam presentes.",
+          },
         ],
       },
       {
@@ -117,10 +162,46 @@ export const posts: Post[] = [
       {
         title: "Checklist para transformar a época certa no roteiro certo",
         body: [
-          "Defina as experiências prioritárias, escolha regiões compatíveis com a quantidade de dias e evite tentar atravessar um país tão extenso em um roteiro curto. Confirme horários, funcionamento, requisitos de altitude e políticas de alteração antes de reservar.",
-          "Monte uma mala em camadas, considere proteção solar mesmo no frio e mantenha alguma flexibilidade para montanha, neve e fenômenos naturais. Em períodos disputados, antecipe hospedagem e passeios; fora deles, verifique se as atrações desejadas estarão operando.",
+          "Use esta sequência antes de reservar. Ela transforma a ideia da viagem em um roteiro possível, coerente e preparado para as mudanças de clima do Chile.",
           "O melhor mês não é igual para todos. Quando datas, orçamento, ritmo e interesses conversam entre si, o Chile deixa de ser apenas uma lista de lugares e se transforma em uma viagem realmente bem planejada — com o Guia Chile sempre à mão.",
         ],
+        image: "/images/library/cordilheira-dos-andes/cordilheira-dos-andes-001.webp",
+        imageAlt: "Estrada atravessando a Cordilheira dos Andes no Chile",
+        imageCaption: "Um bom roteiro conecta prioridades, distâncias, clima e tempo disponível.",
+        cards: [
+          {
+            label: "PASSO 01",
+            title: "Escolha a experiência",
+            text: "Neve, vinho, cidade, deserto ou trilhas: defina primeiro o que não pode faltar.",
+          },
+          {
+            label: "PASSO 02",
+            title: "Respeite as distâncias",
+            text: "Combine regiões compatíveis com a quantidade de dias e com o ritmo do seu grupo.",
+          },
+          {
+            label: "PASSO 03",
+            title: "Confirme a operação",
+            text: "Revise horários, reservas, altitude, estradas e políticas de alteração.",
+          },
+          {
+            label: "PASSO 04",
+            title: "Deixe um plano B",
+            text: "Montanha e fenômenos naturais pedem flexibilidade para adaptar o dia.",
+          },
+        ],
+        bullets: [
+          "Mala em camadas para mudanças de temperatura",
+          "Protetor solar mesmo no frio e na neve",
+          "Hospedagem e passeios antecipados na alta temporada",
+          "Atrações e horários reconfirmados fora da temporada",
+          "Tempo livre entre deslocamentos longos",
+          "Transporte adequado para montanha e degustações",
+        ],
+        highlight: {
+          label: "GUIA CHILE",
+          text: "A data certa nasce do encontro entre o que você quer viver e o ritmo que deseja levar para a viagem.",
+        },
       },
     ],
   },
