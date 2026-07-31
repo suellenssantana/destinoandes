@@ -5,10 +5,16 @@ export type Tour = {
   short: string;
   description: string;
   category: string[];
-  duration: "Dia inteiro" | "Meio período";
+  duration: "Dia inteiro" | "Meio período" | "5 dias";
   mode: "Compartilhado" | "Privativo";
   season: string;
-  price: { clp: number; brlReference: number; updatedAt: string; referenceOnly: true };
+  price: {
+    clp?: number;
+    brlReference: number;
+    currency?: "CLP" | "BRL";
+    updatedAt: string;
+    referenceOnly: true;
+  };
   times: string;
   pickup: string;
   itinerary: string[];
@@ -33,6 +39,20 @@ const shared = {
   cancellation: "Cancelamento gratuito até 72 horas antes, salvo ingressos nominativos ou serviços de terceiros. Após esse prazo, consulte as condições da reserva.",
 };
 const price = (clp: number, brlReference: number) => ({ clp, brlReference, updatedAt: "2026-01-06", referenceOnly: true as const });
+const priceBrl = (brlReference: number) => ({
+  brlReference,
+  currency: "BRL" as const,
+  updatedAt: "2026-07-31",
+  referenceOnly: true as const,
+});
+const packageConditions = {
+  mode: "Compartilhado" as const,
+  pickup: "Ponto de encontro, transfers e horários são informados na proposta comercial da data escolhida e confirmados antes da reserva.",
+  included: ["Serviços e inclusões descritos na proposta comercial da data escolhida"],
+  notIncluded: ["Itens não indicados na proposta comercial", "Despesas pessoais"],
+  requirements: ["Documento de identificação válido", "Confirmação da data e dos requisitos indicados na proposta"],
+  cancellation: "As condições de alteração, cancelamento e reembolso são informadas na proposta comercial e confirmadas antes da reserva.",
+};
 
 export const tours: Tour[] = [
   {
@@ -113,7 +133,7 @@ export const tours: Tour[] = [
     duration: "Dia inteiro",
     season: "Inverno",
     price: price(197000, 1265),
-    times: "Aos sábados • saída entre 11h e 12h • retorno após o pôr do sol (aprox. 18h)",
+    times: "Datas publicadas para 2026: 24/07, 07/08 e 04/09 • saída entre 11h e 12h • retorno após o pôr do sol (aprox. 18h)",
     pickup: "Transfer de ida e volta com retirada em hospedagens localizadas na área de busca de Santiago. Endereços fora do perímetro são combinados previamente.",
     itinerary: [
       "Retirada na hospedagem",
@@ -245,7 +265,154 @@ export const tours: Tour[] = [
       { author: "Rodrigo Fernández", href: "https://commons.wikimedia.org/wiki/File:Isla_Negra_20171109_fRF50.jpg", license: "CC BY-SA 4.0" },
     ],
   },
+  {
+    ...packageConditions,
+    slug: "santiago-essencial-andes-2026",
+    name: "Santiago Essencial & Andes — 5 dias",
+    eyebrow: "Cidade, cultura & Cordilheira",
+    short: "Cinco dias para viver a energia de Santiago com a Cordilheira dos Andes sempre no horizonte.",
+    description: "Uma viagem pensada para quem deseja descobrir Santiago e sentir de perto a presença dos Andes. O programa completo, os serviços incluídos, os horários e os pontos de encontro são apresentados na proposta comercial correspondente à saída escolhida.",
+    category: ["Pacotes", "Santiago"],
+    duration: "5 dias",
+    season: "Datas selecionadas",
+    price: priceBrl(5290),
+    times: "Saídas de 22 a 26/07, 05 a 09/08, 12 a 16/08, 03 a 07/09 e 10 a 14/09 de 2026",
+    itinerary: [
+      "22 a 26 de julho de 2026",
+      "05 a 09 de agosto de 2026",
+      "12 a 16 de agosto de 2026",
+      "03 a 07 de setembro de 2026",
+      "10 a 14 de setembro de 2026",
+      "Roteiro detalhado confirmado na proposta da saída escolhida",
+    ],
+    climate: "Santiago vive o inverno nesse período, com manhãs frias e possibilidade de neve na Cordilheira. A operação segue as condições climáticas e de estrada.",
+    images: [
+      media("santiago", "santiago-005"),
+      media("cordilheira-dos-andes", "cordilheira-dos-andes-004"),
+      "/images/tours/andes-panoramico-estrada-valle-nevado.webp",
+    ],
+  },
+  {
+    ...packageConditions,
+    slug: "chile-dos-sonhos-neve-2026",
+    name: "Chile dos Sonhos — Temporada de Neve",
+    eyebrow: "Seu primeiro encontro com a neve",
+    short: "Uma viagem desenhada para transformar o primeiro encontro com a neve em uma memória inesquecível.",
+    description: "Cinco dias para viver o inverno chileno e a emoção das paisagens nevadas. A composição final do pacote, as atividades, os deslocamentos e os demais serviços são detalhados na proposta comercial de cada saída.",
+    category: ["Pacotes", "Neve e montanha"],
+    duration: "5 dias",
+    season: "Inverno",
+    price: priceBrl(5748.85),
+    times: "Saídas de 22 a 26/07, 05 a 09/08, 12 a 16/08, 03 a 07/09 e 10 a 14/09 de 2026",
+    itinerary: [
+      "22 a 26 de julho de 2026",
+      "05 a 09 de agosto de 2026",
+      "12 a 16 de agosto de 2026",
+      "03 a 07 de setembro de 2026",
+      "10 a 14 de setembro de 2026",
+      "Programação final conforme a proposta da data escolhida",
+    ],
+    climate: "A presença de neve, as rotas e o funcionamento das atrações variam conforme o clima, a estrada e as orientações das autoridades de montanha.",
+    images: [
+      "/images/tours/valle-nevado-panorama.webp",
+      "/images/tours/valle-nevado-infantil.webp",
+      "/images/tours/andes-panoramico-farellones-nevado.webp",
+    ],
+  },
+  {
+    ...packageConditions,
+    slug: "combo-neve-sem-preocupacao-2026",
+    name: "Neve sem Preocupação — Combo de Passeios",
+    eyebrow: "Transfer & guia organizados",
+    short: "A escolha prática para explorar a temporada de neve com deslocamento e acompanhamento organizados.",
+    description: "Um combo para aproveitar a temporada de neve com transfer e passeio acompanhado por guia de turismo. A rota, os horários, as paradas e as demais condições são confirmados na proposta da data selecionada.",
+    category: ["Pacotes", "Neve e montanha"],
+    duration: "5 dias",
+    season: "Inverno",
+    price: priceBrl(805),
+    times: "Saídas de 22 a 26/07, 05 a 09/08, 12 a 16/08, 03 a 07/09 e 10 a 14/09 de 2026",
+    itinerary: [
+      "22 a 26 de julho de 2026",
+      "05 a 09 de agosto de 2026",
+      "12 a 16 de agosto de 2026",
+      "03 a 07 de setembro de 2026",
+      "10 a 14 de setembro de 2026",
+      "Rota e horários confirmados na proposta",
+    ],
+    included: ["Transfer", "Passeio com guia de turismo"],
+    climate: "A presença de neve e a operação dependem do clima, das condições da estrada e das orientações das autoridades de montanha.",
+    images: [
+      "/images/tours/andes-panoramico-farellones-nevado.webp",
+      "/images/tours/valle-nevado-panorama.webp",
+      "/images/tours/portillo-laguna-nevada.webp",
+    ],
+  },
+  {
+    ...packageConditions,
+    slug: "chile-completo-saida-salvador-2026",
+    name: "Chile Completo — Saída de Salvador",
+    eyebrow: "Sua viagem começa em Salvador",
+    short: "Uma opção completa para começar sua jornada rumo ao Chile diretamente de Salvador.",
+    description: "Cinco dias de viagem para conhecer o Chile com saída de Salvador. A proposta comercial da data escolhida confirma os trechos, os serviços, os horários, os requisitos e todas as condições antes da reserva.",
+    category: ["Pacotes", "Santiago"],
+    duration: "5 dias",
+    season: "Datas selecionadas",
+    price: priceBrl(7473.85),
+    times: "Saídas de 23 a 27/07, 06 a 10/08, 13 a 17/08, 03 a 07/09 e 10 a 14/09 de 2026",
+    itinerary: [
+      "23 a 27 de julho de 2026",
+      "06 a 10 de agosto de 2026",
+      "13 a 17 de agosto de 2026",
+      "03 a 07 de setembro de 2026",
+      "10 a 14 de setembro de 2026",
+      "Programa e serviços confirmados na proposta comercial",
+    ],
+    climate: "O inverno em Santiago combina dias frios e secos na cidade com condições variáveis na Cordilheira. Consulte a orientação de bagagem e vestuário na proposta.",
+    images: [
+      media("santiago", "santiago-003"),
+      media("cordilheira-dos-andes", "cordilheira-dos-andes-005"),
+      "/images/tours/valle-nevado-panorama.webp",
+    ],
+  },
+  {
+    ...packageConditions,
+    slug: "atacama-deserto-ceu-estrelado-2026",
+    name: "Atacama Inesquecível — Deserto & Céu Estrelado",
+    eyebrow: "Cinco dias em outro planeta",
+    short: "Paisagens extraordinárias e a imensidão do deserto mais fascinante do Chile em uma viagem de cinco dias.",
+    description: "Uma jornada pelo Deserto do Atacama para sentir a força de cenários únicos, dos vales esculpidos pelo tempo às paisagens altiplânicas. A programação, as inclusões, os pontos de encontro e os requisitos de altitude são confirmados na proposta da saída escolhida.",
+    category: ["Pacotes", "Atacama"],
+    duration: "5 dias",
+    season: "Datas selecionadas",
+    price: priceBrl(5980),
+    times: "Saídas de 08 a 12/10, 12 a 16/10, 22 a 26/10, 26 a 30/10, 12 a 16/11 e 26 a 30/11 de 2026",
+    itinerary: [
+      "08 a 12 de outubro de 2026",
+      "12 a 16 de outubro de 2026",
+      "22 a 26 de outubro de 2026",
+      "26 a 30 de outubro de 2026",
+      "12 a 16 de novembro de 2026",
+      "26 a 30 de novembro de 2026",
+      "Roteiro e serviços detalhados na proposta da saída escolhida",
+    ],
+    requirements: [
+      "Documento de identificação válido",
+      "Confirmação da data e dos requisitos indicados na proposta",
+      "Consultar orientação médica em caso de restrições relacionadas à altitude",
+    ],
+    climate: "O Atacama tem grande amplitude térmica, sol intenso, ar seco e passeios que podem alcançar elevada altitude. Leve proteção solar e roupas em camadas.",
+    images: [
+      "/images/tours/atacama-valle-luna-4k.webp",
+      "/images/tours/atacama-lagunas-altiplanicas-4k.webp",
+      "/images/tours/atacama-geiseres-tatio-4k.webp",
+    ],
+    imageCredits: [
+      { author: "Carlos Teixidor Cadenas", href: "https://commons.wikimedia.org/wiki/File:El_Valle_de_la_Luna_(Chile).jpg", license: "CC BY 4.0" },
+      { author: "Josemaría Pereira Groves", href: "https://commons.wikimedia.org/wiki/File:Lagunas_Altiplanicas,_San_Pedro_de_Atacama.jpg", license: "CC BY-SA 4.0" },
+      { author: "Diego Delso", href: "https://commons.wikimedia.org/wiki/File:G%C3%A9iseres_del_Tatio%2C_Atacama%2C_Chile%2C_2016-02-01%2C_DD_36-38_HDR.JPG", license: "CC BY-SA 4.0" },
+    ],
+  },
 ];
 
-export const categories = ["Todos", "Neve e montanha", "Santiago", "Vinícolas", "Litoral", "Natureza e família"];
+export const categories = ["Todos", "Pacotes", "Atacama", "Neve e montanha", "Santiago", "Vinícolas", "Litoral", "Natureza e família"];
 export const getTour = (slug: string) => tours.find((tour) => tour.slug === slug);

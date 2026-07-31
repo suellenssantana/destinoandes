@@ -20,6 +20,7 @@ export const EMAIL = "destinoandes.cl@gmail.com";
 export const INSTAGRAM = "https://www.instagram.com/destinoandes/";
 export const FACEBOOK = "https://www.facebook.com/profile.php?id=61577088880597";
 const money = new Intl.NumberFormat("es-CL", { style: "currency", currency: "CLP", maximumFractionDigits: 0 });
+const moneyBrl = new Intl.NumberFormat("pt-BR", { style: "currency", currency: "BRL" });
 type Country = "chile" | "peru" | "argentina";
 
 const countries: { id: Country; flag: string; name: string; href: string }[] = [
@@ -168,8 +169,14 @@ export function SiteFrame({children}:{children:React.ReactNode}) {
 }
 
 export function Price({ tour, compact = false }: { tour: Tour; compact?: boolean }) {
+  if (tour.price.currency === "BRL") {
+    return <div className={compact ? "price compact" : "price"}>
+      <span>A partir de</span><strong>{moneyBrl.format(tour.price.brlReference)}</strong><em>por pessoa · consulte condições</em>
+      {!compact && <small>Preço de referência publicado para as datas selecionadas. A proposta comercial confirma disponibilidade, inclusões, requisitos e condições antes da reserva.</small>}
+    </div>;
+  }
   return <div className={compact ? "price compact" : "price"}>
-    <span>A partir de</span><strong>{money.format(tour.price.clp)}</strong><em>≈ R$ {tour.price.brlReference} por pessoa</em>
+    <span>A partir de</span><strong>{money.format(tour.price.clp ?? 0)}</strong><em>≈ R$ {tour.price.brlReference} por pessoa</em>
     {!compact && <small>Valor aproximado em reais, sujeito à variação cambial. Consulte o preço atualizado antes da reserva. Referência atualizada em 06/01/2026.</small>}
   </div>;
 }
@@ -185,7 +192,7 @@ export function TourCard({ tour }: { tour: Tour }) {
 }
 
 export function TourFilters() {
-  const catalogMaxPrice = Math.ceil(Math.max(...tours.map((tour) => tour.price.clp)) / 5000) * 5000;
+  const catalogMaxPrice = Math.ceil(Math.max(...tours.map((tour) => tour.price.brlReference)) / 250) * 250;
   const [category, setCategory] = useState("Todos");
   const [duration, setDuration] = useState("Todos");
   const [mode, setMode] = useState("Todos");
@@ -195,16 +202,16 @@ export function TourFilters() {
     (category === "Todos" || t.category.includes(category)) &&
     (duration === "Todos" || t.duration === duration) &&
     (mode === "Todos" || t.mode === mode) &&
-    (season === "Todos" || t.season === season) && t.price.clp <= priceCap
+    (season === "Todos" || t.season === season) && t.price.brlReference <= priceCap
   ), [category, duration, mode, season, priceCap]);
   return <div className="catalog-layout">
     <aside className="filters">
       <div className="filter-head"><strong>Filtrar experiências</strong><button onClick={() => {setCategory("Todos");setDuration("Todos");setMode("Todos");setSeason("Todos");setPriceCap(catalogMaxPrice)}}>Limpar</button></div>
       <fieldset><legend>Região ou estilo</legend>{categories.map(c => <label key={c}><input type="radio" name="category" checked={category===c} onChange={()=>setCategory(c)}/><span>{c}</span></label>)}</fieldset>
-      <label className="select-label">Duração<select value={duration} onChange={e=>setDuration(e.target.value)}><option>Todos</option><option>Dia inteiro</option><option>Meio período</option></select></label>
+      <label className="select-label">Duração<select value={duration} onChange={e=>setDuration(e.target.value)}><option>Todos</option><option>Dia inteiro</option><option>Meio período</option><option>5 dias</option></select></label>
       <label className="select-label">Modalidade<select value={mode} onChange={e=>setMode(e.target.value)}><option>Todos</option><option>Compartilhado</option><option>Privativo</option></select></label>
-      <label className="select-label">Disponibilidade<select value={season} onChange={e=>setSeason(e.target.value)}><option>Todos</option><option>Ano todo</option><option>Inverno</option></select></label>
-      <label className="range-label">Até <strong>{money.format(priceCap)}</strong><input type="range" min="25000" max={catalogMaxPrice} step="5000" value={priceCap} onChange={e=>setPriceCap(Number(e.target.value))}/></label>
+      <label className="select-label">Disponibilidade<select value={season} onChange={e=>setSeason(e.target.value)}><option>Todos</option><option>Ano todo</option><option>Inverno</option><option>Datas selecionadas</option></select></label>
+      <label className="range-label">Até <strong>{moneyBrl.format(priceCap)}</strong><input type="range" min="250" max={catalogMaxPrice} step="250" value={priceCap} onChange={e=>setPriceCap(Number(e.target.value))}/></label>
     </aside>
     <div><div className="results-head"><p><strong>{filtered.length}</strong> experiências encontradas</p><span>Preços por pessoa</span></div><div className="tour-grid">{filtered.map(t=><TourCard key={t.slug} tour={t}/>)}</div>{!filtered.length && <div className="empty">Nenhum passeio corresponde aos filtros. Tente ampliar a faixa de preço.</div>}</div>
   </div>;
