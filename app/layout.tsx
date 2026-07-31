@@ -4,6 +4,7 @@ import "./globals.css";
 import { WhatsAppFloat } from "./components";
 import { Analytics } from "@vercel/analytics/next";
 import { LanguageRuntime } from "./i18n-runtime";
+import { ShareActions } from "./share-actions";
 
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -36,5 +37,5 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default function RootLayout({children}:{children:React.ReactNode}) {
-  return <html lang="pt-BR"><body>{children}<WhatsAppFloat/><LanguageRuntime/><Analytics /></body></html>;
+  return <html lang="pt-BR"><body>{children}<ShareActions/><WhatsAppFloat/><LanguageRuntime/><Analytics /></body></html>;
 }
