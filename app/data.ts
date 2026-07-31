@@ -268,7 +268,7 @@ export const tours: Tour[] = [
   {
     ...packageConditions,
     slug: "santiago-essencial-andes-2026",
-    name: "Santiago Essencial & Andes — 5 dias",
+    name: "Santiago Essencial",
     eyebrow: "Cidade, cultura & Cordilheira",
     short: "Cinco dias para viver a energia de Santiago com a Cordilheira dos Andes sempre no horizonte.",
     description: "Uma viagem pensada para quem deseja descobrir Santiago e sentir de perto a presença dos Andes. O programa completo, os serviços incluídos, os horários e os pontos de encontro são apresentados na proposta comercial correspondente à saída escolhida.",
@@ -295,7 +295,7 @@ export const tours: Tour[] = [
   {
     ...packageConditions,
     slug: "chile-dos-sonhos-neve-2026",
-    name: "Chile dos Sonhos — Temporada de Neve",
+    name: "Chile na Neve",
     eyebrow: "Seu primeiro encontro com a neve",
     short: "Uma viagem desenhada para transformar o primeiro encontro com a neve em uma memória inesquecível.",
     description: "Cinco dias para viver o inverno chileno e a emoção das paisagens nevadas. A composição final do pacote, as atividades, os deslocamentos e os demais serviços são detalhados na proposta comercial de cada saída.",
@@ -322,7 +322,7 @@ export const tours: Tour[] = [
   {
     ...packageConditions,
     slug: "combo-neve-sem-preocupacao-2026",
-    name: "Neve sem Preocupação — Combo de Passeios",
+    name: "Neve sem Preocupação",
     eyebrow: "Transfer & guia organizados",
     short: "A escolha prática para explorar a temporada de neve com deslocamento e acompanhamento organizados.",
     description: "Um combo para aproveitar a temporada de neve com transfer e passeio acompanhado por guia de turismo. A rota, os horários, as paradas e as demais condições são confirmados na proposta da data selecionada.",
@@ -350,7 +350,7 @@ export const tours: Tour[] = [
   {
     ...packageConditions,
     slug: "chile-completo-saida-salvador-2026",
-    name: "Chile Completo — Saída de Salvador",
+    name: "Chile Completo",
     eyebrow: "Sua viagem começa em Salvador",
     short: "Uma opção completa para começar sua jornada rumo ao Chile diretamente de Salvador.",
     description: "Cinco dias de viagem para conhecer o Chile com saída de Salvador. A proposta comercial da data escolhida confirma os trechos, os serviços, os horários, os requisitos e todas as condições antes da reserva.",
@@ -377,7 +377,7 @@ export const tours: Tour[] = [
   {
     ...packageConditions,
     slug: "atacama-deserto-ceu-estrelado-2026",
-    name: "Atacama Inesquecível — Deserto & Céu Estrelado",
+    name: "Atacama Inesquecível",
     eyebrow: "Cinco dias em outro planeta",
     short: "Paisagens extraordinárias e a imensidão do deserto mais fascinante do Chile em uma viagem de cinco dias.",
     description: "Uma jornada pelo Deserto do Atacama para sentir a força de cenários únicos, dos vales esculpidos pelo tempo às paisagens altiplânicas. A programação, as inclusões, os pontos de encontro e os requisitos de altitude são confirmados na proposta da saída escolhida.",
