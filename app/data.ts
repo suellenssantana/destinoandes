@@ -220,7 +220,11 @@ export const tours: Tour[] = [
     price: price(50000, 323), times: "Saída a partir das 9h • retorno aproximado às 17h",
     itinerary: ["Retirada na hospedagem", "Visita ao Templo Bahá’í", "Tempo de contemplação e mirante", "Cousiño Macul", "Vinhedos e caves", "Degustação guiada", "Retorno"],
     climate: "O templo pode restringir acesso por eventos. A área externa está sujeita ao clima.",
-    images: [media("templo-bahai", "templo-bahai-004"), media("templo-bahai", "templo-bahai-001"), media("templo-bahai", "templo-bahai-002")],
+    images: [
+      "/images/tours/templo-bahai-principal-4k.webp",
+      "/images/tours/templo-bahai-mirante-4k.webp",
+      "/images/tours/templo-bahai-jardins-4k.webp",
+    ],
   },
   {
     ...shared, slug: "isla-negra-algarrobo-undurraga", name: "Isla Negra + Algarrobo + Undurraga", eyebrow: "Poesia, mar & vinho",
