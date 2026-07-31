@@ -88,6 +88,22 @@ export default async function PostPage({ params }: PostPageProps) {
                 )}
               </section>
             ))}
+            {post.partner && (
+              <div className="article-partner">
+                <p className="kicker">{post.partner.eyebrow}</p>
+                <h3>{post.partner.title}</h3>
+                <p>{post.partner.text}</p>
+                <a
+                  className="btn dark"
+                  href={post.partner.href}
+                  target="_blank"
+                  rel="sponsored noopener noreferrer"
+                >
+                  {post.partner.cta} ↗
+                </a>
+                <small>{post.partner.disclosure}</small>
+              </div>
+            )}
             <aside>
               <p className="kicker light">GOSTOU? A GENTE TE AJUDA A VIVER ISSO</p>
               <h3>Seu Guia Chile não te deixa só na inspiração.</h3>

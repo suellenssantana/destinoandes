@@ -26,6 +26,10 @@
 
 @media(max-width:760px){.article-section-media img{height:280px}.article-highlight{padding:22px 20px}.article-highlight p{font-size:18px!important}.article-list li{padding-right:12px}}
 
+.article-partner{margin-top:70px;padding:42px;background:#d9f4c7;border:1px solid #b8dda0}.article-partner h3{font-size:34px;margin:6px 0 16px}.article-partner>p:not(.kicker){font-size:16px;color:var(--petrol)}.article-partner .btn{display:inline-flex;margin-top:18px}.article-partner small{display:block;margin-top:18px;font-size:10px;line-height:1.55;color:#506553}
+
+@media(max-width:760px){.article-partner{padding:30px 22px}.article-partner h3{font-size:29px}.article-partner .btn{width:100%;justify-content:center}}
+
 /* Peru e Argentina usam arte cromática própria até receberem seus acervos oficiais. */
 .country-peru{background:radial-gradient(circle at 72% 20%,#d9a85e 0 8%,transparent 9%),linear-gradient(145deg,#985437,#3f221e 72%)}.country-argentina{background:radial-gradient(circle at 68% 22%,rgba(255,255,255,.2),transparent 25%),linear-gradient(145deg,#5596ac,#173f58 74%)}.country-peru>img,.country-argentina>img{display:none}.peru-theme .country-hero{background:radial-gradient(circle at 76% 24%,#d59c52 0 7%,transparent 8%),linear-gradient(135deg,#98553a,#43251f)}.argentina-theme .country-hero{background:radial-gradient(circle at 70% 22%,rgba(255,255,255,.22),transparent 23%),linear-gradient(145deg,#5b9db3,#153b53 75%)}.peru-theme .country-hero>img,.argentina-theme .country-hero>img{display:none}.peru-theme .country-hero>div:first-of-type,.argentina-theme .country-hero>div:first-of-type{background:linear-gradient(90deg,rgba(10,25,30,.48),transparent)}
 

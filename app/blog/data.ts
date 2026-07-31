@@ -8,6 +8,15 @@ export type Post = {
   image: string;
   intro: string;
   keywords?: string[];
+  partner?: {
+    name: string;
+    href: string;
+    eyebrow: string;
+    title: string;
+    text: string;
+    cta: string;
+    disclosure: string;
+  };
   sections: {
     title: string;
     body: string | string[];
@@ -370,6 +379,170 @@ export const posts: Post[] = [
     ],
   },
   {
+    slug: "wise-como-levar-dinheiro-para-o-exterior",
+    title: "Wise no exterior: como abrir, converter e usar na viagem",
+    excerpt:
+      "Um guia para criar e verificar a conta, converter moedas, preparar o cartão e organizar seus pagamentos internacionais antes do embarque.",
+    category: "Dinheiro no exterior",
+    country: "Chile",
+    readTime: "10 min",
+    image: "/images/blog/wise-exterior-hero.jpg",
+    keywords: [
+      "Wise no exterior",
+      "como abrir conta Wise",
+      "como usar Wise em viagem",
+      "cartão Wise internacional",
+      "dinheiro no exterior",
+      "converter real para moeda estrangeira",
+    ],
+    intro:
+      "O voo está comprado, o roteiro está pronto e a mala começa a ganhar forma. Mas uma pergunta ainda pode virar preocupação se ficar para a última hora: como levar, converter e usar o dinheiro no exterior com segurança?",
+    partner: {
+      name: "Wise",
+      href: "https://wise.com/invite/ilpn/suellens124",
+      eyebrow: "ORGANIZE SEU DINHEIRO ANTES DO EMBARQUE",
+      title: "Conheça a Wise e faça uma operação de teste com calma.",
+      text: "Crie sua conta, confira a disponibilidade para o seu perfil e consulte moedas, tarifas, limites e condições diretamente na plataforma antes de movimentar valores maiores.",
+      cta: "Abrir minha conta Wise",
+      disclosure:
+        "Este é um link de indicação. A Destino Andes pode receber uma comissão sem custo adicional para você. Elegibilidade, benefícios, recursos e condições são definidos pela própria Wise.",
+    },
+    sections: [
+      {
+        title: "Sua viagem financeira começa antes do embarque",
+        body: [
+          "Cadastro pendente, documento recusado, cartão que ainda não chegou ou conversão feita às pressas no aeroporto são problemas evitáveis. A tranquilidade nasce quando cada etapa é resolvida com antecedência.",
+          "A Wise pode fazer parte da estratégia para pagamentos e conversões internacionais, mas não precisa ser a única forma de levar dinheiro. Distribuir os recursos reduz a dependência de um cartão, aplicativo, bateria ou conexão com a internet.",
+          "O objetivo deste guia é ajudar você a criar a conta, concluir a verificação, adicionar dinheiro, converter moedas, preparar o cartão e embarcar com um plano alternativo.",
+        ],
+        highlight: {
+          label: "COMECE CEDO",
+          text: "Resolva cadastro, documentos e cartão semanas antes da viagem. A fila de embarque não é o lugar para descobrir uma pendência financeira.",
+        },
+      },
+      {
+        title: "Antes de abrir sua conta Wise",
+        body: [
+          "A conta permite manter e converter moedas em uma mesma plataforma. A disponibilidade de recursos, moedas, cartão, limites e tarifas varia conforme o país de residência, o perfil e as regras vigentes.",
+          "Consulte sempre os valores apresentados na tela da operação. Tarifas financeiras e tributos podem mudar, portanto uma tabela antiga encontrada na internet não deve substituir a informação atual exibida no aplicativo ou site oficial.",
+        ],
+        bullets: [
+          "Confirme se conta e cartão estão disponíveis para seu país de residência",
+          "Consulte tarifas, tributos, limites e prazos atuais",
+          "Separe outro meio de pagamento para emergências",
+          "Mantenha uma pequena quantia em espécie quando fizer sentido para o destino",
+        ],
+      },
+      {
+        title: "Como abrir uma conta",
+        body:
+          "O cadastro pode começar pelo site ou aplicativo. A sequência muda conforme o perfil, mas normalmente envolve dados de contato, país de residência e informações pessoais.",
+        bullets: [
+          "Acesse o link de indicação e escolha a opção de criar a conta",
+          "Informe seu e-mail e selecione o tipo de conta adequado",
+          "Escolha o país de residência e informe um telefone ativo",
+          "Digite o código de verificação recebido",
+          "Crie uma senha forte e exclusiva",
+          "Preencha os dados exatamente como aparecem nos documentos",
+        ],
+        highlight: {
+          label: "SEGURANÇA",
+          text: "Use uma senha exclusiva e acesse a conta somente pelo aplicativo ou endereço oficial. Desconfie de mensagens que peçam códigos, senhas ou acesso remoto ao aparelho.",
+        },
+      },
+      {
+        title: "Não deixe a verificação para a última hora",
+        body: [
+          "Para liberar determinados recursos, a plataforma pode solicitar verificação de identidade e, em alguns casos, endereço ou informações adicionais. Os documentos aceitos e o tempo de análise dependem das instruções apresentadas para cada usuário.",
+          "Uma fotografia pode ser recusada, um dado pode precisar de correção ou uma nova comprovação pode ser solicitada. Faça o processo com margem suficiente para resolver qualquer pendência sem comprometer a viagem.",
+        ],
+      },
+      {
+        title: "Como adicionar dinheiro e converter moedas",
+        body: [
+          "No aplicativo, escolha a opção de adicionar dinheiro, informe o valor e a moeda e selecione um método de pagamento disponível para sua conta. Quando habilitada, também pode existir a possibilidade de transferir recursos usando dados fornecidos pela própria plataforma.",
+          "Antes de confirmar, revise câmbio, tarifas, tributos, valor final do saldo e titularidade. A tela exibida naquele momento é a referência válida para a operação.",
+          "Comece com um valor menor. Essa primeira movimentação ajuda a conhecer o fluxo, observar prazos e confirmar se os dados estão corretos antes de converter uma parcela maior do orçamento.",
+        ],
+        bullets: [
+          "Confira o valor debitado e quanto chegará na moeda escolhida",
+          "Revise nome do titular e dados da transferência",
+          "Planeje conversões por etapas, sem tentar adivinhar o melhor dia do câmbio",
+          "Guarde comprovantes e acompanhe a confirmação no aplicativo",
+        ],
+      },
+      {
+        title: "Solicite, ative e teste o cartão",
+        body: [
+          "Se o cartão estiver disponível para o seu perfil, a solicitação aparecerá na área correspondente. O processo pode exigir confirmação de endereço, verificação adicional ou outra etapa indicada na plataforma.",
+          "Depois do recebimento, siga as instruções de ativação e faça uma compra simples antes da viagem. Esse teste confirma que senha, aproximação e demais recursos estão funcionando enquanto você ainda pode resolver tudo com calma.",
+        ],
+        bullets: [
+          "Confira senha e limites disponíveis",
+          "Ative notificações de todas as transações",
+          "Verifique compatibilidade com sua carteira digital",
+          "Faça uma compra de teste antes de embarcar",
+          "Saiba como bloquear o cartão pelo aplicativo",
+        ],
+      },
+      {
+        title: "Como usar a Wise no exterior",
+        body: [
+          "Ao pagar em uma maquininha ou sacar em um caixa eletrônico, prefira a cobrança na moeda local do destino. No Chile, escolha pesos chilenos; em países da zona do euro, escolha euros.",
+          "Se o terminal oferecer converter o valor para reais, leia as condições com atenção. Essa conversão pode ser feita pelo estabelecimento ou pelo operador do caixa, usando câmbio e custos próprios. O valor em reais parece familiar, mas nem sempre é a escolha mais econômica.",
+          "Saques podem envolver limites e tarifas da Wise, além de uma cobrança independente do operador do caixa eletrônico. Leia todas as telas antes de confirmar e cancele se o custo não estiver claro.",
+        ],
+        image: "/images/blog/wise-exterior-pagamento.jpg",
+        imageAlt: "Viajante usando cartão internacional em uma maquininha durante a viagem",
+        imageCaption: "Antes de aproximar o cartão, confirme a moeda da cobrança e o valor final.",
+        highlight: {
+          label: "NO CHILE",
+          text: "Prefira pagar em pesos chilenos. Evite selecionar reais apenas porque o valor parece mais fácil de compreender.",
+        },
+      },
+      {
+        title: "Cuidados importantes durante a viagem",
+        body:
+          "Uma estratégia financeira precisa continuar funcionando se o cartão for bloqueado, o celular ficar sem internet ou um estabelecimento aceitar apenas dinheiro. Prepare a redundância antes de sair do Brasil.",
+        bullets: [
+          "Leve outro meio de pagamento separado do cartão principal",
+          "Não concentre todo o orçamento em um único aplicativo",
+          "Proteja a conta com senha e recursos de segurança disponíveis",
+          "Mantenha as notificações de transações ativadas",
+          "Evite redes Wi-Fi públicas para movimentações financeiras",
+          "Guarde comprovantes de conversões, transferências e saques",
+          "Salve os canais oficiais de suporte antes do embarque",
+        ],
+      },
+      {
+        title: "Checklist Wise antes de viajar",
+        body:
+          "Cinco minutos de revisão antes de fechar a mala podem evitar horas de preocupação longe de casa.",
+        bullets: [
+          "Conta criada e cadastro verificado",
+          "Documentos aprovados e dados pessoais conferidos",
+          "Primeira adição e conversão realizadas",
+          "Cartão recebido, ativado e testado",
+          "Senha, notificações e limites revisados",
+          "Carteira digital configurada, quando compatível",
+          "Meio de pagamento alternativo guardado separadamente",
+          "Canais oficiais de suporte salvos",
+        ],
+        highlight: {
+          label: "LEMBRETE FINAL",
+          text: "Recursos, moedas, limites, tarifas e elegibilidade podem mudar. Confirme as condições atuais diretamente na Wise antes de cada operação.",
+        },
+      },
+      {
+        title: "Organize o dinheiro agora e aproveite a viagem depois",
+        body: [
+          "Uma boa estratégia não depende de prever perfeitamente o câmbio. Ela depende de conhecer a ferramenta, testar o cartão, distribuir os recursos e saber o que fazer se o plano principal falhar.",
+          "Prepare a parte financeira com o mesmo cuidado dedicado ao roteiro. Assim, você desembarca com mais controle e pode concentrar a energia no que realmente importa: viver cada experiência da viagem.",
+        ],
+      },
+    ],
+  },
+  {
     slug: "valparaiso-vina-del-mar-vinicolas",
     title: "Valparaíso, Viña del Mar e vinícolas: combine o Chile central",
     excerpt:
@@ -402,7 +575,7 @@ export const posts: Post[] = [
 
 const legacySlugs: Record<string, string> = {
   "liberdade-de-alugar-um-carro": "o-que-fazer-em-santiago",
-  "wise-como-levar-dinheiro": "neve-no-chile-pela-primeira-vez",
+  "wise-como-levar-dinheiro": "wise-como-levar-dinheiro-para-o-exterior",
   "neve-no-chile-primeira-vez": "neve-no-chile-pela-primeira-vez",
 };
 
