@@ -72,7 +72,7 @@ export const tours: Tour[] = [
     price: price(35000, 226), times: "Saída a partir das 5h30 • retorno aproximado às 18h",
     itinerary: ["Retirada na hospedagem", "Subida pela estrada de montanha", "Paradas panorâmicas", "Chegada a Valle Nevado", "Tempo livre e atividades opcionais", "Retorno a Santiago"],
     climate: "Operação condicionada à abertura da estrada e às regras do centro de montanha.",
-    images: ["/images/tours/valle-nevado-panorama.webp", media("valle-nevado", "valle-nevado-017"), "/images/tours/valle-nevado-infantil.webp"],
+    images: ["/images/tours/valle-nevado-infantil.webp", media("valle-nevado", "valle-nevado-017"), "/images/tours/valle-nevado-panorama.webp"],
     imagePositions: ["50% 50%", "50% 28%", "50% 50%"],
   },
   {
