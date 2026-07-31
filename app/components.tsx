@@ -185,11 +185,12 @@ export function TourCard({ tour }: { tour: Tour }) {
 }
 
 export function TourFilters() {
+  const catalogMaxPrice = Math.ceil(Math.max(...tours.map((tour) => tour.price.clp)) / 5000) * 5000;
   const [category, setCategory] = useState("Todos");
   const [duration, setDuration] = useState("Todos");
   const [mode, setMode] = useState("Todos");
   const [season, setSeason] = useState("Todos");
-  const [priceCap, setPriceCap] = useState(75000);
+  const [priceCap, setPriceCap] = useState(catalogMaxPrice);
   const filtered = useMemo(() => tours.filter(t =>
     (category === "Todos" || t.category.includes(category)) &&
     (duration === "Todos" || t.duration === duration) &&
@@ -198,12 +199,12 @@ export function TourFilters() {
   ), [category, duration, mode, season, priceCap]);
   return <div className="catalog-layout">
     <aside className="filters">
-      <div className="filter-head"><strong>Filtrar experiências</strong><button onClick={() => {setCategory("Todos");setDuration("Todos");setMode("Todos");setSeason("Todos");setPriceCap(75000)}}>Limpar</button></div>
+      <div className="filter-head"><strong>Filtrar experiências</strong><button onClick={() => {setCategory("Todos");setDuration("Todos");setMode("Todos");setSeason("Todos");setPriceCap(catalogMaxPrice)}}>Limpar</button></div>
       <fieldset><legend>Região ou estilo</legend>{categories.map(c => <label key={c}><input type="radio" name="category" checked={category===c} onChange={()=>setCategory(c)}/><span>{c}</span></label>)}</fieldset>
       <label className="select-label">Duração<select value={duration} onChange={e=>setDuration(e.target.value)}><option>Todos</option><option>Dia inteiro</option><option>Meio período</option></select></label>
       <label className="select-label">Modalidade<select value={mode} onChange={e=>setMode(e.target.value)}><option>Todos</option><option>Compartilhado</option><option>Privativo</option></select></label>
       <label className="select-label">Disponibilidade<select value={season} onChange={e=>setSeason(e.target.value)}><option>Todos</option><option>Ano todo</option><option>Inverno</option></select></label>
-      <label className="range-label">Até <strong>{money.format(priceCap)}</strong><input type="range" min="25000" max="75000" step="5000" value={priceCap} onChange={e=>setPriceCap(Number(e.target.value))}/></label>
+      <label className="range-label">Até <strong>{money.format(priceCap)}</strong><input type="range" min="25000" max={catalogMaxPrice} step="5000" value={priceCap} onChange={e=>setPriceCap(Number(e.target.value))}/></label>
     </aside>
     <div><div className="results-head"><p><strong>{filtered.length}</strong> experiências encontradas</p><span>Preços por pessoa</span></div><div className="tour-grid">{filtered.map(t=><TourCard key={t.slug} tour={t}/>)}</div>{!filtered.length && <div className="empty">Nenhum passeio corresponde aos filtros. Tente ampliar a faixa de preço.</div>}</div>
   </div>;
