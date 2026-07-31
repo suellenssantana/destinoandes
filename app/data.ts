@@ -202,7 +202,16 @@ export const tours: Tour[] = [
     price: price(72000, 465), times: "Saída a partir das 6h30 • retorno aproximado às 20h",
     itinerary: ["Retirada na hospedagem", "Isla Negra e arredores da casa de Neruda", "Orla de Algarrobo", "Tempo livre para almoço", "Vinícola Undurraga", "Tour e degustação", "Retorno a Santiago"],
     climate: "Litoral com possibilidade de vento e neblina; a degustação segue regras da vinícola.",
-    images: [media("algarrobo-isla-negra", "algarrobo-isla-negra-001"), media("vinicola-undurraga", "vinicola-undurraga-001"), media("algarrobo-isla-negra", "algarrobo-isla-negra-003")],
+    images: [
+      "/images/tours/algarrobo-san-alfonso-piscina-4k.webp",
+      "/images/tours/isla-negra-costa-4k.webp",
+      "/images/tours/casa-pablo-neruda-isla-negra-4k.webp",
+    ],
+    imageCredits: [
+      { author: "Carlos Figueroa Rojas", href: "https://commons.wikimedia.org/wiki/File:San_Alfonso_del_Mar,_Algarrobo_20230314.jpg", license: "CC BY-SA 4.0" },
+      { author: "Rodrigo Fernández", href: "https://commons.wikimedia.org/wiki/File:Isla_Negra_20171109_fRF54.jpg", license: "CC BY-SA 4.0" },
+      { author: "Rodrigo Fernández", href: "https://commons.wikimedia.org/wiki/File:Isla_Negra_20171109_fRF50.jpg", license: "CC BY-SA 4.0" },
+    ],
   },
 ];
 
