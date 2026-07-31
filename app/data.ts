@@ -96,7 +96,11 @@ export const tours: Tour[] = [
     price: price(38000, 245), times: "Saída a partir das 6h30 • retorno aproximado às 18h",
     itinerary: ["Retirada na hospedagem", "Congresso Nacional e porto", "Plaza Sotomayor e Cerro Alegre", "Escadarias e arte urbana", "Viña del Mar e Museu Fonck", "Relógio de Flores e orla", "Retorno a Santiago"],
     climate: "No litoral, manhãs nubladas e vento são comuns. Leve uma camada leve mesmo no verão.",
-    images: [media("valparaiso-vina-del-mar", "valparaiso-vina-del-mar-023"), media("valparaiso-vina-del-mar", "valparaiso-vina-del-mar-027"), media("valparaiso-vina-del-mar", "valparaiso-vina-del-mar-006")],
+    images: [
+      "/images/tours/valparaiso-colorido.webp",
+      "/images/tours/vina-lobos-marinhos.webp",
+      media("valparaiso-vina-del-mar", "valparaiso-vina-del-mar-006"),
+    ],
   },
   {
     ...shared, slug: "zerando-sunset-dj", name: "Sunset nos Andes com DJ", eyebrow: "Capital em movimento",
