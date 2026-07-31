@@ -7,36 +7,107 @@ export type Post = {
   readTime: string;
   image: string;
   intro: string;
-  sections: { title: string; body: string }[];
+  keywords?: string[];
+  sections: { title: string; body: string | string[] }[];
 };
 
 export const posts: Post[] = [
   {
     slug: "melhor-epoca-para-viajar-ao-chile",
-    title: "Melhor época para viajar ao Chile: escolha pela experiência",
+    title: "Melhor época para viajar ao Chile: guia completo por estação",
     excerpt:
-      "Neve, vinhos, litoral ou dias de céu aberto: descubra quando o Chile combina melhor com a viagem que você imagina.",
+      "Descubra quando viajar para ver neve, conhecer Santiago, visitar vinícolas, explorar o Atacama ou viver a Patagônia no melhor momento.",
     category: "Planejamento",
     country: "Chile",
-    readTime: "7 min",
-    image: "/images/library/cordilheira-dos-andes/cordilheira-dos-andes-006.webp",
+    readTime: "12 min",
+    image: "/images/library/santiago/santiago-005.webp",
+    keywords: [
+      "melhor época para viajar ao Chile",
+      "quando neva no Chile",
+      "neve em Santiago",
+      "Chile no inverno",
+      "Atacama melhor época",
+      "Patagônia chilena",
+      "vindima no Chile",
+    ],
     intro:
-      "O Chile se estende por mais de 4.000 quilômetros e muda completamente ao longo do ano. Em vez de procurar uma única época perfeita, comece pela pergunta certa: qual experiência você quer viver?",
+      "Neve na Cordilheira, vinhedos em época de colheita, Santiago sob dias ensolarados, céu estrelado no Atacama ou trilhas na Patagônia: o Chile oferece viagens muito diferentes ao longo do ano. A melhor época começa pelo Chile que você quer viver.",
     sections: [
       {
-        title: "Inverno para encontrar a Cordilheira vestida de branco",
-        body:
-          "Entre junho e setembro, a neve transforma os Andes e aumenta a procura por Valle Nevado, Farellones e Portillo. É a época de reservar com antecedência, acompanhar as condições da montanha e deixar alguma flexibilidade no roteiro.",
+        title: "Resposta rápida: qual é a melhor época para viajar ao Chile?",
+        body: [
+          "Para uma primeira viagem equilibrada, março, abril, outubro e novembro costumam funcionar muito bem. As temperaturas tendem a ser mais agradáveis em Santiago, a procura costuma ser menor do que nas férias e é possível combinar cidade, litoral, vinícolas e, dependendo do roteiro, o Atacama.",
+          "Se o objetivo principal for neve, priorize julho e agosto. Para a vindima, observe fevereiro e março. A Patagônia oferece mais horas de luz e maior disponibilidade de trilhas entre novembro e março. Já o Atacama pode ser visitado o ano inteiro, embora outono e primavera entreguem um equilíbrio especialmente interessante.",
+        ],
       },
       {
-        title: "Primavera e outono para equilibrar clima e movimento",
-        body:
-          "Temperaturas mais amenas e cidades menos concorridas favorecem passeios urbanos, vinícolas e combinações entre Santiago e o litoral. São estações excelentes para quem prefere viajar com mais calma.",
+        title: "Verão, de dezembro a fevereiro: dias longos e natureza em destaque",
+        body: [
+          "O verão chileno traz dias mais longos, tempo geralmente seco na região central e temperaturas elevadas em Santiago. É uma ótima estação para explorar a capital, visitar Valparaíso e Viña del Mar, aproveitar o litoral e organizar roteiros que conectem diferentes regiões.",
+          "Na Patagônia e na Região dos Lagos, os meses mais quentes ampliam as possibilidades de trilhas, navegações e atividades ao ar livre. Isso também significa alta temporada: janeiro e fevereiro exigem antecedência para passagens, hospedagens, parques e experiências concorridas.",
+          "Quem não gosta de calor intenso deve planejar os passeios urbanos para o começo da manhã ou fim da tarde. Mesmo no verão, leve uma camada adicional para o litoral e para destinos de altitude, onde o vento e a queda de temperatura mudam rapidamente a sensação térmica.",
+        ],
       },
       {
-        title: "Verão para dias longos e grandes paisagens",
-        body:
-          "Os dias mais longos ampliam o tempo ao ar livre e favorecem litoral, lagos e Patagônia. Em Santiago, espere um clima geralmente seco e ensolarado, ideal para explorar a cidade e seus arredores.",
+        title: "Fevereiro e março: o momento especial das vindimas",
+        body: [
+          "O fim do verão marca a colheita das uvas em importantes vales chilenos. Maipo, Casablanca, Colchagua, Aconcágua e Curicó ganham experiências ligadas à produção do vinho, gastronomia e celebrações locais.",
+          "As datas variam conforme o clima, a maturação das uvas e a programação de cada vinícola. Se a vindima for uma prioridade, confirme o calendário antes de fechar a viagem. Fora dos eventos, os tours regulares continuam sendo uma excelente forma de conhecer vinhedos, caves e rótulos chilenos.",
+        ],
+      },
+      {
+        title: "Outono, de março a maio: clima agradável e viagem mais tranquila",
+        body: [
+          "O outono é uma das épocas mais versáteis para conhecer o Chile central. Santiago fica mais confortável para caminhadas, os vales do vinho ganham tons dourados e o litoral costuma receber menos visitantes do que durante as férias de verão.",
+          "No Atacama, março, abril e maio podem oferecer uma boa combinação de temperaturas, paisagens abertas e menor pressão turística. A amplitude térmica continua importante: dias com sol forte podem terminar em noites bastante frias.",
+          "É uma estação de transição, portanto a mala deve funcionar em camadas. Também vale acompanhar feriados e eventos, que podem alterar horários e disponibilidade mesmo fora da alta temporada tradicional.",
+        ],
+      },
+      {
+        title: "Inverno, de junho a agosto: a temporada mais desejada para ver neve",
+        body: [
+          "No inverno, a Cordilheira assume o protagonismo. Valle Nevado, Farellones, El Colorado, La Parva e Portillo estão entre os destinos mais procurados por quem deseja ver neve, esquiar, praticar snowboard ou simplesmente viver a montanha pela primeira vez.",
+          "Julho e agosto costumam ser as janelas mais desejadas, mas nenhuma data oferece garantia absoluta de neve. O volume acumulado, a abertura das pistas, o funcionamento dos parques e as condições das estradas dependem do clima de cada temporada.",
+          "Santiago não permanece coberta de neve durante o inverno. Na maior parte das viagens, o contato com a neve acontece nas áreas de montanha, acessadas a partir da capital. Por isso, transporte adequado, roupas em camadas e flexibilidade para mudanças de rota são partes essenciais do planejamento.",
+        ],
+      },
+      {
+        title: "Qual mês escolher para ver neve no Chile?",
+        body: [
+          "Junho pode marcar o começo da temporada, porém a quantidade de neve ainda varia bastante. Julho reúne férias escolares, maior procura e boas chances de encontrar os centros de montanha em operação. Agosto costuma combinar neve acumulada com alta demanda. Setembro pode manter condições de inverno em altitude, mas a neve tende a ficar menos previsível conforme a primavera se aproxima.",
+          "Para famílias e viajantes que querem brincar na neve, uma experiência recreativa pode ser mais adequada do que um dia focado em esqui. Para esportes de inverno, confirme abertura de pistas, aluguel de equipamentos, aulas e regras do centro escolhido. Em qualquer caso, acompanhe clima, estradas e orientações do receptivo perto da data.",
+        ],
+      },
+      {
+        title: "Primavera, de setembro a novembro: roteiros variados e temperaturas amenas",
+        body: [
+          "A primavera traz dias gradualmente mais longos, parques floridos e temperaturas convidativas para explorar Santiago a pé. É um ótimo período para combinar a capital com Valparaíso, Viña del Mar e os vales do vinho.",
+          "Atacama, trekking e Região dos Lagos também entram bem em roteiros de primavera. Setembro ainda é uma transição e pode conservar neve nas áreas mais altas, mas ela não deve ser tratada como garantida. Outubro e novembro são especialmente interessantes para quem procura diversidade de passeios e menor movimento do que nas férias de verão.",
+        ],
+      },
+      {
+        title: "Melhor época por destino: Santiago, Atacama e Patagônia",
+        body: [
+          "Santiago funciona durante todo o ano. Março a maio e setembro a novembro favorecem passeios urbanos; o inverno é ideal para combinar a cidade com a Cordilheira; e o verão oferece dias longos, embora possa ser quente e seco.",
+          "San Pedro de Atacama também recebe visitantes o ano inteiro. Outono e primavera costumam entregar bom equilíbrio, mas noites frias, sol intenso e altitude fazem parte da experiência em qualquer mês. Alguns fenômenos climáticos podem alterar passeios, sobretudo em áreas elevadas.",
+          "Na Patagônia chilena, novembro a março é a janela mais procurada para trilhas e natureza, devido às temperaturas menos rigorosas e aos dias mais longos. Ainda assim, vento, chuva e mudanças rápidas de tempo são normais: planejamento e equipamento adequado continuam indispensáveis.",
+        ],
+      },
+      {
+        title: "Quando viajar para economizar e encontrar menos movimento?",
+        body: [
+          "Janeiro, fevereiro e julho concentram grande parte da procura em destinos específicos: verão e Patagônia no começo do ano, neve e férias escolares no inverno. Nessas épocas, reservar cedo amplia as opções de hospedagem, transporte e passeios.",
+          "Março, abril, outubro e novembro costumam oferecer uma relação interessante entre clima, disponibilidade e movimento. Maio e setembro também podem ser vantajosos, mas são meses de transição: vale aceitar maior variação de temperatura e ajustar as expectativas sobre neve ou atividades sazonais.",
+          "Preço baixo não deve ser o único critério. Uma economia deixa de valer a pena se a atração que motivou a viagem estiver fechada ou fora de temporada. Primeiro defina a experiência indispensável; depois procure a melhor data dentro dessa janela.",
+        ],
+      },
+      {
+        title: "Checklist para transformar a época certa no roteiro certo",
+        body: [
+          "Defina as experiências prioritárias, escolha regiões compatíveis com a quantidade de dias e evite tentar atravessar um país tão extenso em um roteiro curto. Confirme horários, funcionamento, requisitos de altitude e políticas de alteração antes de reservar.",
+          "Monte uma mala em camadas, considere proteção solar mesmo no frio e mantenha alguma flexibilidade para montanha, neve e fenômenos naturais. Em períodos disputados, antecipe hospedagem e passeios; fora deles, verifique se as atrações desejadas estarão operando.",
+          "O melhor mês não é igual para todos. Quando datas, orçamento, ritmo e interesses conversam entre si, o Chile deixa de ser apenas uma lista de lugares e se transforma em uma viagem realmente bem planejada — com o Guia Chile sempre à mão.",
+        ],
       },
     ],
   },

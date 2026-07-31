@@ -14,7 +14,7 @@ export async function generateMetadata({ params }: PostPageProps): Promise<Metad
   return {
     title: post.title,
     description: post.excerpt,
-    keywords: [post.title, post.category, "dicas sobre o Chile", "viagem para o Chile"],
+    keywords: post.keywords ?? [post.title, post.category, "dicas sobre o Chile", "viagem para o Chile"],
     alternates: { canonical: `/blog/${post.slug}` },
     openGraph: {
       title: post.title,
@@ -53,7 +53,9 @@ export default async function PostPage({ params }: PostPageProps) {
             {post.sections.map((section) => (
               <section key={section.title}>
                 <h2>{section.title}</h2>
-                <p>{section.body}</p>
+                {(Array.isArray(section.body) ? section.body : [section.body]).map((paragraph) => (
+                  <p key={paragraph}>{paragraph}</p>
+                ))}
               </section>
             ))}
             <aside>
