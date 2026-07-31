@@ -9,7 +9,7 @@ export default async function TourPage({ params }: { params: Promise<{slug:strin
   const whatsapp = `https://wa.me/56988333161?text=${encodeURIComponent(`Olá! Quero consultar disponibilidade para o passeio ${tour.name}.`)}`;
   return <><Header/><main>
     <section className="tour-heading"><Link href="/chile/passeios">← Todos os passeios</Link><p className="kicker">{tour.eyebrow}</p><h1>{tour.name}</h1><p>{tour.short}</p><div className="quick-facts"><span>◷ {tour.duration}</span><span>◉ {tour.mode}</span><span>❄ {tour.season}</span></div></section>
-    <section className="tour-gallery-wrap"><Gallery tour={tour}/></section>
+    <section className="tour-gallery-wrap"><Gallery tour={tour}/>{tour.imageCredits&&<div className="photo-credits"><span>Créditos · arquivos convertidos para WebP:</span>{tour.imageCredits.map(credit=><a key={credit.href} href={credit.href} target="_blank" rel="noreferrer">{credit.author} · {credit.license}</a>)}</div>}</section>
     <section className="tour-content">
       <div className="tour-copy">
         <div className="lead"><p className="kicker">A EXPERIÊNCIA</p><h2>O que torna este passeio especial</h2><p>{tour.description}</p></div>

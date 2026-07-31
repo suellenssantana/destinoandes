@@ -18,6 +18,7 @@ export type Tour = {
   climate: string;
   cancellation: string;
   images: string[];
+  imageCredits?: { author: string; href: string; license: string }[];
 };
 
 const media = (category: string, name: string) =>
@@ -51,7 +52,16 @@ export const tours: Tour[] = [
     price: price(35000, 226), times: "Saída a partir das 6h • retorno aproximado às 17h",
     itinerary: ["Retirada na hospedagem", "Curva 40 e mirantes da Cordilheira", "Parada panorâmica na neve", "Tempo livre para fotos", "Povoado de Farellones", "Retorno a Santiago"],
     climate: "A rota e as paradas podem mudar por segurança, fluxo da estrada ou disponibilidade de neve.",
-    images: [media("cajon-del-maipo-embalse-el-yeso", "cajon-del-maipo-embalse-el-yeso-031"), media("cordilheira-dos-andes", "cordilheira-dos-andes-001"), media("cajon-del-maipo-embalse-el-yeso", "cajon-del-maipo-embalse-el-yeso-019")],
+    images: [
+      "/images/tours/andes-panoramico-estrada-valle-nevado.webp",
+      "/images/tours/andes-panoramico-farellones-nevado.webp",
+      "/images/tours/andes-panoramico-casa-piedra.webp",
+    ],
+    imageCredits: [
+      { author: "Cesar I. Martins", href: "https://commons.wikimedia.org/wiki/File:Way_to_Vale_Nevado_-_Caminho_para_Vale_Nevado_(14764178330).jpg", license: "CC BY 2.0" },
+      { author: "Rawderson Rangel", href: "https://commons.wikimedia.org/wiki/File:Farellones_(21).JPG", license: "CC BY-SA 3.0" },
+      { author: "Ennio Nasi", href: "https://commons.wikimedia.org/wiki/File:Casa_cultura_Aconcagua,_Farellones.jpg", license: "CC BY 4.0" },
+    ],
   },
   {
     ...shared, slug: "valle-nevado", name: "Valle Nevado", eyebrow: "O alto dos Andes",
