@@ -250,18 +250,30 @@ export function FAQ({ items }: { items: [string,string][] }) {
 
 export function ContactForm() {
   const { language } = useLanguage();
-  const [sent, setSent] = useState(false);
-  const submit = (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    const data = new FormData(event.currentTarget);
-    const introductions: Record<Language, string> = {
-      PT: `Olá! Meu nome é ${data.get("name")}. Meu e-mail é ${data.get("email")}.`,
-      ES: `¡Hola! Mi nombre es ${data.get("name")}. Mi e-mail es ${data.get("email")}.`,
-      EN: `Hello! My name is ${data.get("name")}. My email is ${data.get("email")}.`,
-    };
-    const message = `${introductions[language]}\n\n${data.get("message")}`;
-    window.open(`${WHATSAPP}?text=${encodeURIComponent(message)}`, "_blank", "noopener,noreferrer");
-    setSent(true);
+  const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
+  const copy: Record<Language, { send: string; sending: string; sent: string; success: string; error: string; privacy: string }> = {
+    PT: { send: "Enviar mensagem", sending: "Enviando com segurança...", sent: "Mensagem enviada ✓", success: "Recebemos sua mensagem. Nossa equipe responderá pelo e-mail informado.", error: "Não foi possível enviar agora. Tente novamente ou fale conosco pelo WhatsApp.", privacy: "Envio privado e seguro. Seus dados serão usados somente para responder ao seu contato." },
+    ES: { send: "Enviar mensaje", sending: "Enviando de forma segura...", sent: "Mensaje enviado ✓", success: "Recibimos tu mensaje. Nuestro equipo responderá al e-mail informado.", error: "No fue posible enviar ahora. Inténtalo de nuevo o habla con nosotros por WhatsApp.", privacy: "Envío privado y seguro. Tus datos se utilizarán únicamente para responder a tu contacto." },
+    EN: { send: "Send message", sending: "Sending securely...", sent: "Message sent ✓", success: "We received your message. Our team will reply to the email provided.", error: "We could not send it now. Please try again or contact us on WhatsApp.", privacy: "Private and secure submission. Your data will only be used to reply to your enquiry." },
   };
-  return <form className="contact-form" onSubmit={submit}><label>{translatePhrase("Nome", language)}<input name="name" required/></label><label>E-mail<input name="email" type="email" required/></label><label>{translatePhrase("Mensagem", language)}<textarea name="message" rows={6} required/></label><button className="btn dark" type="submit">{translatePhrase(sent?"Mensagem preparada ✓":"Enviar mensagem", language)}</button><small>{translatePhrase("Ao enviar, abriremos o WhatsApp com sua mensagem pronta para confirmação.", language)}</small></form>;
+  const submit = async (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    const form = event.currentTarget;
+    const data = new FormData(form);
+    setStatus("sending");
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name: data.get("name"), email: data.get("email"), message: data.get("message"), website: data.get("website"), page: window.location.href }),
+      });
+      if (!response.ok) throw new Error("Contact request failed");
+      form.reset();
+      setStatus("success");
+    } catch {
+      setStatus("error");
+    }
+  };
+  const buttonText = status === "sending" ? copy[language].sending : status === "success" ? copy[language].sent : copy[language].send;
+  return <form className="contact-form" onSubmit={submit} onChange={() => status !== "sending" && status !== "idle" && setStatus("idle")}><label>{translatePhrase("Nome", language)}<input name="name" autoComplete="name" minLength={2} maxLength={100} required/></label><label>E-mail<input name="email" type="email" autoComplete="email" maxLength={254} required/></label><label>{translatePhrase("Mensagem", language)}<textarea name="message" rows={6} minLength={10} maxLength={5000} required/></label><label className="contact-trap" aria-hidden="true">Website<input name="website" tabIndex={-1} autoComplete="off"/></label><button className="btn dark" type="submit" disabled={status === "sending"}>{buttonText}</button>{status === "success" && <p className="contact-form-status success" role="status" aria-live="polite">{copy[language].success}</p>}{status === "error" && <p className="contact-form-status error" role="alert">{copy[language].error}</p>}<small>{copy[language].privacy}</small></form>;
 }
