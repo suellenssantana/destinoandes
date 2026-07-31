@@ -8,15 +8,6 @@ export type Post = {
   image: string;
   intro: string;
   keywords?: string[];
-  partner?: {
-    name: string;
-    href: string;
-    eyebrow: string;
-    title: string;
-    text: string;
-    cta: string;
-    disclosure: string;
-  };
   sections: {
     title: string;
     body: string | string[];
@@ -397,16 +388,6 @@ export const posts: Post[] = [
     ],
     intro:
       "O voo está comprado, o roteiro está pronto e a mala começa a ganhar forma. Mas uma pergunta ainda pode virar preocupação se ficar para a última hora: como levar, converter e usar o dinheiro no exterior com segurança?",
-    partner: {
-      name: "Wise",
-      href: "https://wise.com/invite/ilpn/suellens124",
-      eyebrow: "ORGANIZE SEU DINHEIRO ANTES DO EMBARQUE",
-      title: "Conheça a Wise e faça uma operação de teste com calma.",
-      text: "Crie sua conta, confira a disponibilidade para o seu perfil e consulte moedas, tarifas, limites e condições diretamente na plataforma antes de movimentar valores maiores.",
-      cta: "Abrir minha conta Wise",
-      disclosure:
-        "Este é um link de indicação. A Destino Andes pode receber uma comissão sem custo adicional para você. Elegibilidade, benefícios, recursos e condições são definidos pela própria Wise.",
-    },
     sections: [
       {
         title: "Sua viagem financeira começa antes do embarque",

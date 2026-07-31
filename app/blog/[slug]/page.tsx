@@ -6,6 +6,76 @@ import { getPost, posts } from "../data";
 
 type PostPageProps = { params: Promise<{ slug: string }> };
 
+const affiliates = [
+  {
+    slug: "seguros-promo",
+    name: "Seguros Promo",
+    headline: "Viaje protegido do embarque ao retorno.",
+    description: "Compare planos, coberturas e seguradoras para o seu roteiro.",
+    cta: "Comparar seguro viagem",
+    href: "https://www.segurospromo.com.br/?utm_medium=afiliado&pcrid=13588&utm_source=site-blog&pcrtt=site,blog,agência",
+    logo: "/images/partners/seguro-promo.png",
+  },
+  {
+    slug: "esim-travel",
+    name: "eSIM Travel",
+    headline: "Tenha internet assim que chegar ao destino.",
+    description: "Escolha um eSIM compatível e prepare sua conexão antes da viagem.",
+    cta: "Escolher meu eSIM",
+    href: "https://www.parceirospromo.com.br/partners/affiliate/travel-bds?page=https://travelbds.com&utm_medium=afiliado&pcrid=13588&utm_source=site-blog&pcrtt=site,blog,chip",
+    logo: "/images/partners/esim-travel.png",
+  },
+  {
+    slug: "wise",
+    name: "Wise",
+    headline: "Leve seu dinheiro de forma mais prática.",
+    description: "Organize moedas, conversões e pagamentos internacionais antes de embarcar.",
+    cta: "Abrir minha conta Wise",
+    href: "https://wise.com/invite/ilpn/suellens124",
+    logo: "/images/partners/wise.png",
+  },
+] as const;
+
+function AffiliateEssentials() {
+  return (
+    <section className="affiliate-essentials" aria-labelledby="affiliate-essentials-title">
+      <div className="affiliate-essentials-heading">
+        <p className="kicker">COMPLETE SUA PREPARAÇÃO</p>
+        <h2 id="affiliate-essentials-title">Deixe os essenciais da viagem prontos agora</h2>
+        <p>Proteja seu roteiro, desembarque conectado e organize seus pagamentos antes de fazer as malas.</p>
+      </div>
+      <div className="affiliate-list">
+        {affiliates.map((affiliate) => (
+          <article className={`affiliate-card affiliate-${affiliate.slug}`} key={affiliate.slug}>
+            <div className="affiliate-logo">
+              <img src={affiliate.logo} alt={`Logo ${affiliate.name}`} loading="lazy" />
+            </div>
+            <div className="affiliate-copy">
+              <h3>{affiliate.name}</h3>
+              <strong>{affiliate.headline}</strong>
+              <p>{affiliate.description}</p>
+            </div>
+            <a
+              className="affiliate-action"
+              href={affiliate.href}
+              target="_blank"
+              rel="sponsored noopener noreferrer"
+              aria-label={`${affiliate.cta} — abre em uma nova aba`}
+            >
+              {affiliate.cta} <span aria-hidden="true">↗</span>
+            </a>
+          </article>
+        ))}
+      </div>
+      <p className="affiliate-disclosure">
+        Ao contratar por estes links, a Destino Andes pode receber uma comissão, sem custo adicional para você.
+        Consulte condições, cobertura e compatibilidade no site de cada parceiro. O link da Wise é um link de
+        indicação; elegibilidade e benefícios são definidos pela própria Wise.
+      </p>
+    </section>
+  );
+}
+
 export async function generateMetadata({ params }: PostPageProps): Promise<Metadata> {
   const { slug } = await params;
   const post = getPost(slug);
@@ -88,22 +158,6 @@ export default async function PostPage({ params }: PostPageProps) {
                 )}
               </section>
             ))}
-            {post.partner && (
-              <div className="article-partner">
-                <p className="kicker">{post.partner.eyebrow}</p>
-                <h3>{post.partner.title}</h3>
-                <p>{post.partner.text}</p>
-                <a
-                  className="btn dark"
-                  href={post.partner.href}
-                  target="_blank"
-                  rel="sponsored noopener noreferrer"
-                >
-                  {post.partner.cta} ↗
-                </a>
-                <small>{post.partner.disclosure}</small>
-              </div>
-            )}
             <aside>
               <p className="kicker light">GOSTOU? A GENTE TE AJUDA A VIVER ISSO</p>
               <h3>Seu Guia Chile não te deixa só na inspiração.</h3>
@@ -122,6 +176,7 @@ export default async function PostPage({ params }: PostPageProps) {
             </aside>
           </div>
         </article>
+        <AffiliateEssentials />
         <section className="related-posts section">
           <div className="section-title">
             <div>
