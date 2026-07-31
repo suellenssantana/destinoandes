@@ -156,7 +156,11 @@ export const tours: Tour[] = [
     price: price(65000, 419), times: "Saída a partir das 7h • retorno aproximado às 18h",
     itinerary: ["Retirada na hospedagem", "Viagem até Rancagua", "Entrada no parque", "Percursos e áreas de observação", "Tempo para alimentação", "Retorno a Santiago"],
     climate: "Algumas experiências podem ser suspensas por chuva, calor intenso ou bem-estar dos animais.",
-    images: [media("parque-safari", "parque-safari-025"), media("parque-safari", "parque-safari-024"), media("parque-safari", "parque-safari-026")],
+    images: [
+      "/images/tours/parque-safari-leao-4k.webp",
+      "/images/tours/parque-safari-tigre-branco-4k.webp",
+      "/images/tours/parque-safari-entrada-4k.webp",
+    ],
   },
   {
     ...shared, slug: "concha-y-toro-tradicional", name: "Concha y Toro Tradicional", eyebrow: "Clássico do vinho chileno",
