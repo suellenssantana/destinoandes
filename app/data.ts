@@ -41,7 +41,7 @@ export const tours: Tour[] = [
     price: price(50000, 323), times: "Saída a partir das 5h30 • retorno aproximado às 17h30",
     itinerary: ["Retirada na hospedagem", "Estrada Los Caracoles e mirantes", "Centro de esqui Portillo", "Laguna del Inca", "Tempo livre para contemplação e almoço", "Retorno a Santiago"],
     climate: "Passeio sujeito às condições da estrada, neve, vento e orientações das autoridades de montanha.",
-    images: [media("portillo", "portillo-001"), media("portillo", "portillo-011"), media("portillo", "portillo-002")],
+    images: ["/images/tours/portillo-hotel.webp", media("portillo", "portillo-009"), "/images/tours/portillo-laguna-nevada.webp"],
   },
   {
     ...shared, slug: "andes-panoramico", name: "Andes Panorâmico", eyebrow: "Neve sem complicação",
