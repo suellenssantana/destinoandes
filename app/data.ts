@@ -18,6 +18,7 @@ export type Tour = {
   climate: string;
   cancellation: string;
   images: string[];
+  imagePositions?: string[];
   imageCredits?: { author: string; href: string; license: string }[];
 };
 
@@ -71,7 +72,8 @@ export const tours: Tour[] = [
     price: price(35000, 226), times: "Saída a partir das 5h30 • retorno aproximado às 18h",
     itinerary: ["Retirada na hospedagem", "Subida pela estrada de montanha", "Paradas panorâmicas", "Chegada a Valle Nevado", "Tempo livre e atividades opcionais", "Retorno a Santiago"],
     climate: "Operação condicionada à abertura da estrada e às regras do centro de montanha.",
-    images: [media("valle-nevado", "valle-nevado-021"), media("valle-nevado", "valle-nevado-017"), media("valle-nevado", "valle-nevado-023")],
+    images: ["/images/tours/valle-nevado-panorama.webp", media("valle-nevado", "valle-nevado-017"), "/images/tours/valle-nevado-infantil.webp"],
+    imagePositions: ["50% 50%", "50% 28%", "50% 50%"],
   },
   {
     ...shared, slug: "farellones", name: "Farellones", eyebrow: "Diversão na neve",
@@ -81,7 +83,10 @@ export const tours: Tour[] = [
     price: price(35000, 226), times: "Saída a partir das 5h30 • retorno aproximado às 18h",
     itinerary: ["Retirada na hospedagem", "Subida à Cordilheira", "Povoado de Farellones", "Tempo livre no parque", "Atividades opcionais", "Retorno a Santiago"],
     climate: "Neve e atrações variam conforme clima e operação do parque. Ingressos não estão incluídos.",
-    images: [media("farellones", "farellones-008"), media("farellones", "farellones-009"), media("farellones", "farellones-007")],
+    images: [media("farellones", "farellones-008"), media("farellones", "farellones-009"), "/images/tours/farellones-parque-neve-4k.webp"],
+    imageCredits: [
+      { author: "Dario Alpern", href: "https://commons.wikimedia.org/wiki/File:Aerosillas_que_unen_Farellones_y_El_Colorado.jpg", license: "CC BY-SA 3.0" },
+    ],
   },
   {
     ...shared, slug: "vina-del-mar-valparaiso", name: "Viña del Mar + Valparaíso", eyebrow: "Pacífico & patrimônio",
@@ -113,7 +118,7 @@ export const tours: Tour[] = [
     pickup: "Ponto de encontro central informado na confirmação. Transporte de ida e retorno à hospedagem não incluído.",
     itinerary: ["Plaza de Armas", "Antigo Congresso e Calle Bandera", "Bolsa de Valores", "Palacio de La Moneda", "Paris-Londres", "Cerro Santa Lucía", "Barrio Lastarria e Parque Forestal"],
     climate: "Tour urbano operado com sol ou chuva leve. Em eventos oficiais, o percurso pode ser ajustado.",
-    images: [media("santiago", "santiago-003"), media("santiago", "santiago-006"), media("santiago", "santiago-001")],
+    images: [media("santiago", "santiago-003"), "/images/tours/city-tour-canon-santa-lucia.webp", "/images/tours/city-tour-jardim-japones.webp"],
   },
   {
     ...shared, slug: "safari", name: "Safari", eyebrow: "Natureza para todas as idades",

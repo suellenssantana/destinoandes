@@ -211,7 +211,7 @@ export function TourFilters() {
 
 export function Gallery({ tour }: { tour: Tour }) {
   const [active, setActive] = useState(0);
-  return <div className="gallery"><button className="gallery-main" onClick={()=>setActive((active+1)%tour.images.length)} aria-label="Ver próxima foto"><img src={tour.images[active]} alt={`${tour.name} — foto ${active+1}`}/><span>{active+1} / {tour.images.length}</span></button><div className="thumbs">{tour.images.map((image,i)=><button key={image} className={i===active?"active":""} onClick={()=>setActive(i)}><img src={image} alt=""/></button>)}</div></div>;
+  return <div className="gallery"><button className="gallery-main" onClick={()=>setActive((active+1)%tour.images.length)} aria-label="Ver próxima foto"><img src={tour.images[active]} alt={`${tour.name} — foto ${active+1}`} style={{objectPosition:tour.imagePositions?.[active]??"50% 50%"}}/><span>{active+1} / {tour.images.length}</span></button><div className="thumbs">{tour.images.map((image,i)=><button key={image} className={i===active?"active":""} onClick={()=>setActive(i)}><img src={image} alt="" style={{objectPosition:tour.imagePositions?.[i]??"50% 50%"}}/></button>)}</div></div>;
 }
 
 export function FAQ({ items }: { items: [string,string][] }) {
