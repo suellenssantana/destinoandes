@@ -30,9 +30,9 @@ const countries: { id: Country; flag: string; name: string; href: string }[] = [
 ];
 
 const ui = {
-  PT: { home:"Início", tours:"Passeios", blog:"Guia Chile", how:"Como funciona", contact:"Contato", doubts:"Dúvidas", talk:"Montar minha viagem", specialist:"Fale com um especialista", newsletter:"Receba nossos guias por e-mail", monthly:"Uma vez por mês, sem spam.", subscribe:"Assinar", placeholder:"seu@email.com", saved:"Inscrição recebida!", explore:"Explore", plan:"Planeje", allTours:"Todos os passeios", reserve:"Como reservar", faq:"Perguntas frequentes", payments:"Formas de pagamento", cancellation:"Alterações e cancelamento", documents:"Documentos necessários" },
-  ES: { home:"Inicio", tours:"Tours", blog:"Guía Chile", how:"Cómo funciona", contact:"Contacto", doubts:"Dudas", talk:"Planificar mi viaje", specialist:"Habla con un especialista", newsletter:"Recibe nuestras guías por e-mail", monthly:"Una vez al mes, sin spam.", subscribe:"Suscribirme", placeholder:"tu@email.com", saved:"¡Suscripción recibida!", explore:"Explora", plan:"Planifica", allTours:"Todos los tours", reserve:"Cómo reservar", faq:"Preguntas frecuentes", payments:"Formas de pago", cancellation:"Cambios y cancelación", documents:"Documentos necesarios" },
-  EN: { home:"Home", tours:"Tours", blog:"Chile Guide", how:"How it works", contact:"Contact", doubts:"FAQ", talk:"Plan my trip", specialist:"Talk to a specialist", newsletter:"Get our travel guides by email", monthly:"Once a month, no spam.", subscribe:"Subscribe", placeholder:"your@email.com", saved:"Subscription received!", explore:"Explore", plan:"Plan", allTours:"All tours", reserve:"How to book", faq:"Frequently asked questions", payments:"Payment methods", cancellation:"Changes and cancellation", documents:"Required documents" },
+  PT: { home:"Início", tours:"Passeios", blog:"Guia Chile", how:"Como funciona", contact:"Contato", doubts:"Dúvidas", talk:"Montar minha viagem", specialist:"Fale com um especialista", newsletter:"Receba nossos guias por e-mail", monthly:"Uma vez por mês, sem spam.", subscribe:"Assinar", subscribing:"Enviando...", placeholder:"seu@email.com", saved:"Inscrição recebida!", subscribeError:"Não foi possível cadastrar agora. Tente novamente.", privacy:"Seu e-mail será usado somente para a newsletter.", explore:"Explore", plan:"Planeje", allTours:"Todos os passeios", reserve:"Como reservar", faq:"Perguntas frequentes", payments:"Formas de pagamento", cancellation:"Alterações e cancelamento", documents:"Documentos necessários" },
+  ES: { home:"Inicio", tours:"Tours", blog:"Guía Chile", how:"Cómo funciona", contact:"Contacto", doubts:"Dudas", talk:"Planificar mi viaje", specialist:"Habla con un especialista", newsletter:"Recibe nuestras guías por e-mail", monthly:"Una vez al mes, sin spam.", subscribe:"Suscribirme", subscribing:"Enviando...", placeholder:"tu@email.com", saved:"¡Suscripción recibida!", subscribeError:"No fue posible registrarte ahora. Inténtalo de nuevo.", privacy:"Tu e-mail será usado solamente para la newsletter.", explore:"Explora", plan:"Planifica", allTours:"Todos los tours", reserve:"Cómo reservar", faq:"Preguntas frecuentes", payments:"Formas de pago", cancellation:"Cambios y cancelación", documents:"Documentos necesarios" },
+  EN: { home:"Home", tours:"Tours", blog:"Chile Guide", how:"How it works", contact:"Contact", doubts:"FAQ", talk:"Plan my trip", specialist:"Talk to a specialist", newsletter:"Get our travel guides by email", monthly:"Once a month, no spam.", subscribe:"Subscribe", subscribing:"Sending...", placeholder:"your@email.com", saved:"Subscription received!", subscribeError:"We could not register you right now. Please try again.", privacy:"Your email will only be used for the newsletter.", explore:"Explore", plan:"Plan", allTours:"All tours", reserve:"How to book", faq:"Frequently asked questions", payments:"Payment methods", cancellation:"Changes and cancellation", documents:"Required documents" },
 };
 
 function currentCountry(pathname: string): Country {
@@ -120,9 +120,30 @@ export function Header() {
 
 function Newsletter() {
   const { labels } = useLanguage();
-  const [sent, setSent] = useState(false);
-  const submit = (event: FormEvent<HTMLFormElement>) => { event.preventDefault(); setSent(true); };
-  return <div className="newsletter"><div><span>{labels.newsletter}</span><p>{labels.monthly}</p></div>{sent?<strong>✓ {labels.saved}</strong>:<form onSubmit={submit}><input required type="email" aria-label="E-mail" placeholder={labels.placeholder}/><button type="submit">↗ {labels.subscribe}</button></form>}</div>;
+  const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
+  const submit = async (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    const form = event.currentTarget;
+    const data = new FormData(form);
+    setStatus("sending");
+    try {
+      const response = await fetch("/api/newsletter", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          email: data.get("email"),
+          website: data.get("website"),
+          page: window.location.href,
+        }),
+      });
+      if (!response.ok) throw new Error("Newsletter request failed");
+      form.reset();
+      setStatus("success");
+    } catch {
+      setStatus("error");
+    }
+  };
+  return <div className="newsletter"><div><span>{labels.newsletter}</span><p>{labels.monthly}</p></div>{status==="success"?<strong role="status">✓ {labels.saved}</strong>:<><form onSubmit={submit}><input required name="email" type="email" autoComplete="email" aria-label="E-mail" placeholder={labels.placeholder}/><input className="newsletter-trap" name="website" type="text" tabIndex={-1} autoComplete="off" aria-hidden="true"/><button type="submit" disabled={status==="sending"}>↗ {status==="sending"?labels.subscribing:labels.subscribe}</button></form><small>{labels.privacy}</small>{status==="error"&&<strong className="newsletter-error" role="alert">{labels.subscribeError}</strong>}</>}</div>;
 }
 
 export function SocialLinks({ className = "" }: { className?: string }) {
