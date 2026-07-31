@@ -71,7 +71,7 @@ const rows: TranslationRow[] = [
   ["Explorar passeios", "Explorar tours", "Explore tours"],
   ["Montar meu roteiro", "Crear mi itinerario", "Build my itinerary"],
   ["Especialistas locais", "Especialistas locales", "Local experts"],
-  ["Atendimento em português", "Atención en portugués", "Service in Portuguese"],
+  ["Atendimento em português, espanhol e inglês", "Atención en portugués, español e inglés", "Service in Portuguese, Spanish and English"],
   ["Curadoria humana", "Curaduría humana", "Human curation"],
   ["VIAJE COM PRESENÇA LOCAL", "VIAJA CON PRESENCIA LOCAL", "TRAVEL WITH LOCAL EXPERTISE"],
   ["Seu tempo no Chile merece mais do que um roteiro pronto.", "Tu tiempo en Chile merece más que un itinerario prefabricado.", "Your time in Chile deserves more than an off-the-shelf itinerary."],
